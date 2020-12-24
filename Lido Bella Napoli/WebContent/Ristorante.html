@@ -30,7 +30,7 @@
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/styleRistorante.css" rel="stylesheet">
 
 <!-- =======================================================
   * Template Name: Squadfree - v2.3.0
@@ -57,9 +57,9 @@
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
-					<li><a href="Ristorante.html">Home</a></li>
-					<li><a href="#portfolio">Menu</a></li>
-					<li><a href="#services">Book a table</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="">Menu</a></li>
+					<li><a href="">Book a table</a></li>
 					<li><a href="#portfolio">Gallery</a></li>
 					<li class="drop-down"><a href="">Services</a>
 						<ul>
@@ -80,8 +80,10 @@
 		<div class="hero-container" data-aos="fade-up">
 			<h1>RISTORANTE PIZZERIA BELLA NAPOLI</h1>
 			<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
-			<!-- da aggiustare -->
-			<button><a href="Prenotazione.html">Book a table</a></button> <button><a href="Menu.html">Book a Pizza</a></button>
+			<div class = "bottoni" >
+				<button href="Prenotazione.html">Book a table</button> 
+				<button href="Menu.html">Book a Pizza</button>
+			</div>
 		</div>
 		
 	</section>
@@ -325,7 +327,7 @@
 							<div class="info-box mb-4">
 								<i class="bx bx-map"></i>
 								<h3>Our Address</h3>
-								<p>Via capri 5, Rossano Scalo, C</p>
+								<p>Via corfù 7, Rossano Scalo, C</p>
 							</div>
 						</div>
 
@@ -350,10 +352,7 @@
 					<div class="row" data-aos="fade-up" data-aos-delay="200">
 
 						<div class="col-lg-6 ">
-							<iframe class="mb-4 mb-lg-0"
-								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-								frameborder="0" style="border: 0; width: 100%; height: 384px;"
-								allowfullscreen></iframe>
+							<iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3073.4769013198775!2d16.635944!3d39.6164647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13409b65ae124733%3A0xd5b0bd02f9a4220f!2sBella%20Napoli%20Rossano!5e0!3m2!1sit!2sit!4v1608808366058!5m2!1sit!2sit" frameborder="0" style="border: 0; width: 100%; height: 384px;" allowfullscreen></iframe>
 						</div>
 
 						<div class="col-lg-6">
@@ -361,22 +360,16 @@
 								class="php-email-form">
 								<div class="form-row">
 									<div class="col-md-6 form-group">
-										<input type="text" name="name" class="form-control" id="name"
-											placeholder="Your Name" data-rule="minlen:4"
-											data-msg="Please enter at least 4 chars" />
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
 										<div class="validate"></div>
 									</div>
 									<div class="col-md-6 form-group">
-										<input type="email" class="form-control" name="email"
-											id="email" placeholder="Your Email" data-rule="email"
-											data-msg="Please enter a valid email" />
+										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"></input>
 										<div class="validate"></div>
 									</div>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" name="subject"
-										id="subject" placeholder="Subject" data-rule="minlen:4"
-										data-msg="Please enter at least 8 chars of subject" />
+									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 									<div class="validate"></div>
 								</div>
 								<div class="form-group">
@@ -406,68 +399,45 @@
 
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
+		
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
 
 					<div class="col-lg-4 col-md-6">
 						<div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-							<h3>Scrivi la tua recensione da aggiustare</h3>
-							<p class="pb-3">
-								<em>Qui repudiandae et eum dolores alias sed ea. Qui
-									suscipit veniam excepturi quod.</em>
-							</p>
-							<p>
-								A108 Adam Street <br> NY 535022, USA<br>
-								<br> <strong>Phone:</strong> +1 5589 55488 55<br> <strong>Email:</strong>
-								info@example.com<br>
-							</p>
-							<div class="social-links mt-3">
-								<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a
-									href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a
-									href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-								<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-								<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-							</div>
+							<form action="forms/contact.php" method="post" role="form"
+								class="php-email-form">
+								<h3>Write a review</h3>
+								<div class="form-group">
+									<textarea class="form-control" name="message" rows="5"
+										data-rule="required" data-msg="Please write something for us"
+										placeholder="Message"></textarea>
+									<div class="validate"></div>
+								</div>
+								<div class="mb-3">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">Your message has been sent.
+										Thank you!</div>
+								</div>
+								<div class="footer-newsletter">
+									<button type="submit">Send Review</button>
+								</div>
+								<div class="social-links mt-3">
+									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"
+										class="facebook"><i class="bx bxl-facebook"></i></a> <a
+										href="https://www.instagram.com/_pizzeriabellanapoli/"
+										class="instagram"><i class="bx bxl-instagram"></i></a>
+								</div>
+							</form>
 						</div>
 					</div>
-
-					<div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up"
-						data-aos-delay="150">
-						<h4>Useful Links</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">About
-									us</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Terms
-									of service</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy
-									policy</a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up"
-						data-aos-delay="250">
-						<h4>Our Services</h4>
-						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web
-									Design</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Web
-									Development</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Product
-									Management</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Graphic
-									Design</a></li>
-						</ul>
-					</div>
-
+					<span></span>
+					
 					<div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up"
 						data-aos-delay="350">
 						<h4>Our Newsletter</h4>
-						<p>Tamen quem nulla quae legam multos aute sint culpa legam
-							noster magna</p>
 						<form action="" method="post">
 							<input type="email" name="email"><input type="submit"
 								value="Subscribe">

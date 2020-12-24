@@ -383,18 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-shadow: -1px 0 2px #2f4d5a;
 }
 
-#hero button {
-	background-color: gold;
-	color:black;
-	opacity: 0.5;
-	border: 2px solid gold;
-	font-weight: bold;
-	padding: 0;
-	height: 50px;             
-  	width: 80px; 
-  	text-align: center;
-   	margin: 10px 15px 10px 20px;
-}
+
 
 #hero .btn-get-started {
 	font-size: 36px;
