@@ -48,42 +48,6 @@ div#menu {
 
 
 
-dl {
-	width: 100%;
-	overflow: hidden;
-	margin: 0 0 1em;
-	background: url(dot.gif) repeat-x 0 1.2em
-}
-
-dt, dd.price {
-	background: #FFF;
-	font-size: 130%;
-	font-weight: bold
-}
-
-dt {
-	float: left;
-	padding-right: 3px;
-	color: #F60
-}
-
-dd {
-	margin: 0
-}
-
-dd.price {
-	float: right;
-	color: black;
-}
-
-dd.ingredients {
-	float: left;
-	width: 100%;
-	padding: 3px 0;
-	font-style: italic;
-	font-family: Georgia, Times, sans-serif;
-	color: #555
-}
 
 
 
@@ -848,8 +812,33 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	
 }
+/*
+.portfolio {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/istockphoto-1066358524-170667a.jpg);
+	
+	background-size: cover;
+	position: relative;
+	
+}
+*/
+
+#menu{
+	width: 100%;
+	background: skyblue;
+}
+
+#col1, #col2{
+	margin:0;
+	padding:0;
+	
+	width:200px;
+	
+}??
 
 .portfolio #portfolio-flters {
 	padding: 0;
@@ -944,6 +933,68 @@ section {
 	opacity: 1;
 	bottom: 0;
 }
+
+.portfolio h2{
+	font-family: "Raleway", sans-serif;
+	color: red;
+}
+
+.portfolio dl {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 1em;
+	background: url(dot.gif) repeat-x 0 1.2em
+}
+
+.portfolio dt, dd.price {
+	background: #FFF;
+	font-size: 130%;
+	font-weight: bold
+}
+
+.portfolio dt {
+	float: left;
+	padding-right: 3px;
+	color: #F60
+}
+
+.portfolio dd {
+	margin: 0
+}
+
+.portfolio dd.price {
+	float: right;
+	color: black;
+}
+
+.portfolio dd.ingredients {
+	float: left;
+	width: 100%;
+	padding: 3px 0;
+	font-style: italic;
+	font-family: Georgia, Times, sans-serif;
+	color: #555
+}
+
+#col1{
+	float: left;
+}
+
+#col2{
+	float: right;
+}
+??
+
+.portfolio a{
+	float: right;
+	position: absolute;
+	margin-left: 10px;
+}
+.portfolio a:hover{
+	opacity: 0.8;
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
