@@ -11,8 +11,18 @@
 # General
 --------------------------------------------------------------*/
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
 	color: #444444;
+	font-size: 22px;
+	padding: 0 30px;
+}
+
+main{
+	width: 100%;
 }
 
 a {
@@ -34,10 +44,82 @@ h2 {
 	font-size: 250%;
 	text-align: center
 }
+main > h1{
+	text-align: center;
+	color: gold;
+	margin-bottom: 10px;
+}
+
+.button{
+	background: none;
+	color: inherit;
+	padding: 4px 12px;
+	border: 1px solid gold;
+	transition: all .4s ease-in;
+}
+.button:hover{
+	color: skyblue;
+	border: 1px solid skyblue;
+}
+
+section#info-w{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px solid rgba(30, 48, 56, 0.2);
+	padding: 6px 0px;
+	margin-bottom: 50px;
+}
+
+section#tavoli-w{
+	display: flex;
+	flex-basis: 100%;
+	margin-bottom: 50px;
+	justify-content: space-around;
+
+}
+
+section#tavoli-w > div.tavolo{
+	flex-grow: 1;
+	text-align: center;
+	margin: 10px;
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	transition: .3s ease-in-out;
+}
+
+section#tavoli-w > div.tavolo.x2{
+	flex-grow: 0.5;
+
+}
+section#tavoli-w > div.tavolo.x6{
+	flex-grow: 1.5;
+
+}
+section#tavoli-w > div.tavolo.x10{
+	flex-grow: 2.5;
+
+}
+section#tavoli-w > div.tavolo.x14{
+	flex-grow: 3;
+
+}
+
+section#tavoli-w > div.tavolo.libero{
+	background-color: lightgreen;
+}
+
+section#tavoli-w > div.tavolo.occupato{
+	background-color: red;
+}
+section#tavoli-w > div.tavolo:not(.occupato):hover{
+	transform: scale(1.2,1.2);
+}
 
 body{
 	background: #FFF;
-	text-align:center
+	/*text-align:center*/
 }
 div#menu {
 	width: 550px;
