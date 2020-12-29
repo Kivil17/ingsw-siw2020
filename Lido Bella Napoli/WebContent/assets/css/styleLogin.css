@@ -1,0 +1,25 @@
+body {
+	background-color: skyblue;
+}
+.container-fluid {
+	padding:50px;
+}
+.container{
+	background-color:white;
+	padding:50px;   
+}
+#title{
+	font-family: 'Lobster';
+	color: navy;
+}
+p{
+	color: navy;
+}
+input[type="submit"]{
+	font-weight: bold;
+	font-family: 'monospace';
+	color:white;
+}
+input{
+	background-color:navy;
+}
