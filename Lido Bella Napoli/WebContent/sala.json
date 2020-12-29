@@ -1,0 +1,15 @@
+{
+	"numero tavoli" : 10,
+	"tavoli" : [
+		{ "posti" : 6, "occupato" : false},
+		{ "posti" : 4, "occupato" : false},
+		{ "posti" : 2, "occupato" : false},
+		{ "posti" : 4, "occupato" : false},
+		{ "posti" : 6, "occupato" : false},
+		{ "posti" : 6, "occupato" : false},
+		{ "posti" : 6, "occupato" : false},
+		{ "posti" : 4, "occupato" : false},
+		{ "posti" : 10, "occupato" : false},
+		{ "posti" : 14, "occupato" : false}
+	]
+}
