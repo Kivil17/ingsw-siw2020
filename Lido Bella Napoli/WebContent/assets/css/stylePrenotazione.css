@@ -45,7 +45,7 @@ h2 {
 main > h1{
 	text-align: center;
 	color: gold;
-	margin-bottom: 10px;
+	margin: 20px;
 }
 
 .button{
@@ -105,7 +105,7 @@ section#tavoli-w > div.tavolo.x14{
 }
 
 section#tavoli-w > div.tavolo.libero{
-	background-color: lightgreen;
+	background-color: lightgoldenrodyellow;
 }
 
 section#tavoli-w > div.tavolo.occupato{
