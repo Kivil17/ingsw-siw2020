@@ -19,6 +19,7 @@ function disponiTavoli(tavoli){
 
 	tavoli.forEach((tavolo,i) => {
 		let classiTavolo = 'tavolo', tavoloDOM = document.createElement('div');
+	
 		tavoloDOM.appendChild(document.createTextNode(i+1));
 		classiTavolo += tavolo.occupato ? ' occupato' : ' libero';
 		if(tavolo.posti==6)
@@ -55,7 +56,30 @@ Booking.tavoliW.addEventListener('click', (e) => {
 		Booking.messageStatus.textContent = 'Il tavolo ${selezionato} è occupato.';
 	}
 	else{
+
 		Booking.tavoloSelezionato.textContent = selezionato;
+
+		/*if(selezionato == 1)
+			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+		else if(selezionato == 2)
+			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+		else if(selezionato == 3)
+			Booking.messageStatus.textContent = 'Tavolo da 2 persone.';
+		else if(selezionato == 4)
+			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+		else if(selezionato == 5)
+			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+		else if(selezionato == 6)
+			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+		else if(selezionato == 7)
+			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+		else if(selezionato == 8)
+			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+		else if(selezionato == 9)
+			Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
+		else
+			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';*/
+		
 	}
 });
 
