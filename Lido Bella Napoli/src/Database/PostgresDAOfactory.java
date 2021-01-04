@@ -14,7 +14,7 @@ public class PostgresDAOfactory extends DAOFactory {
 			Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
 			
 			//remoto
-			dataSource = new DataSource("jdbc:postgresql://tsqupsrd:Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX@rogue.db.elephantsql.com:5432/tsqupsrd", "tsqupsrd", "Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX");
+			dataSource = new DataSource("jdbc:postgresql://rogue.db.elephantsql.com:5432/tsqupsrd", "tsqupsrd", "Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX");
 			
 		} catch (Exception e) {
 			System.err.println("PostgresDAOFactory.class: failed to load MySQL JDBC driver\n" + e);

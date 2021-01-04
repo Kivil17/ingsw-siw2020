@@ -173,7 +173,7 @@ public class UtenteDaoJDBC implements UtenteDAO {
 	}
 
 	@Override
-	public Utente findByCredential(String Email, String Password) {
+	public Utente findByCredential(String User, String Password) {
 		Connection connection = this.dataSource.getConnection();
 		Utente utente = new Utente();
 		try {
@@ -181,7 +181,7 @@ public class UtenteDaoJDBC implements UtenteDAO {
 			PreparedStatement statement;
 			String query = "select * from utente where email = ? and password = ?";
 			statement = connection.prepareStatement(query);
-			statement.setString(1, Email);
+			statement.setString(1, User);
 			statement.setString(2, Password);
 			ResultSet result = statement.executeQuery();
 			

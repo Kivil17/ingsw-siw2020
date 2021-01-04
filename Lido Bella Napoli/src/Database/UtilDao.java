@@ -23,8 +23,6 @@ public class UtilDao {
 				    + "drop table if exists pizza;"
 				    + "drop table if exists tavolo;"
 				    + "drop table if exists recensione;";
-				    /*+ "drop table if exists news;"
-				    + "drop table if exists branoAscoltato;";*/
 			PreparedStatement statement = connection.prepareStatement(delete);
 		
 			statement.executeUpdate();
@@ -61,7 +59,7 @@ public class UtilDao {
 					+ "create table utente(\"username\" varchar(255) primary key, password varchar(255),email varchar(255),registrato boolean);"
 					+ "create table tavolo(\"id\" int primary key, utentePrenotato varchar(255), email varchar(255), occupato boolean);"
 					+ "create table ombrellone(\"id\" int primary key, utentePrenotato varchar(255),email varchar(255),occupato boolean);"
-					+ "create table pizza(nome varchar(255), prezzo double);"
+					+ "create table pizza(nome varchar(255), prezzo double precision);"
 					+ "create table recensione(\"idTipo\" varchar(255) primary key, oneStar int, twoStars int, threeStars int, fourStars int, fiveStars int);";
 			PreparedStatement statement = connection.prepareStatement(create);
 		

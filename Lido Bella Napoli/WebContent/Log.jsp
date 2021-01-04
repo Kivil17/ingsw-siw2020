@@ -1,14 +1,10 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<!---*************welcome this is my simple empty strap by John Niro Yumang ******************* -->
-
 <!DOCTYPE html>
 <html lang="en">
 
-	<title>Sign up facundo farm & resort</title>
+	<title>Login</title>
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,24 +25,24 @@
 		<link rel="icon" href="images/icon.png" type="image/x-icon" />
 		<!---- Icon link local ----->
 		
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="assets/css/styleLogin.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<!---- Font awesom link local ----->
 	</head>
 	<body>
 	<div class="container-fluid">
 		<div class="container">
-			<h2 class="text-center" id="title">Facundo farm and Resort</h2>
-			 <p class="text-center">
-				<small id="passwordHelpInline" class="text-muted"> Developer: follow me on facebook <a href="https://www.facebook.com/JheanYu"> John niro yumang</a> inspired from <a href="https://p.w3layouts.com/">https://p.w3layouts.com/</a>.</small>
-			</p>
+			<h2 class="text-center" id="title">Lido Bella Napoli</h2>
  			<hr>
 			<div class="row">
 				<div class="col-md-5">
- 					<form role="form" method="post" action="register.php">
+					<!-- aggiornare l'indirizzamento del bottone-->
+ 					<form role="form" action="Registrazione" method="post">
 						<fieldset>							
-							<p class="text-uppercase pull-center"> SIGN UP.</p>	
+							<p class="text-uppercase pull-center"><b>SIGN UP</b></p>	
  							<div class="form-group">
-								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="username">
+								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username">
 							</div>
 
 							<div class="form-group">
@@ -56,7 +52,7 @@
 								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
 							</div>
 								<div class="form-group">
-								<input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Password2">
+								<input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Repeat Password">
 							</div>
 							<div class="form-check">
 								<label class="form-check-label">
@@ -65,7 +61,7 @@
 								</label>
 							  </div>
  							<div>
- 									  <input type="submit" class="btn btn-lg btn-primary   value="Register">
+ 								<input type="submit" class="btn btn-md" value="Register">
  							</div>
 						</fieldset>
 					</form>
@@ -76,12 +72,12 @@
 				</div>
 				
 				<div class="col-md-5">
- 				 		<form role="form">
+ 				 		<form role="form" action= "Login" method= "post">
 						<fieldset>							
-							<p class="text-uppercase"> Login using your account: </p>	
+							<p class="text-uppercase"><b>Login using your account:</b></p>	
  								
 							<div class="form-group">
-								<input type="email" name="username" id="username" class="form-control input-lg" placeholder="username">
+								<input type="email" name="username" id="username" class="form-control input-lg" placeholder="Username">
 							</div>
 							<div class="form-group">
 								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
@@ -95,9 +91,6 @@
 				</div>
 			</div>
 		</div>
-		<p class="text-center">
-			<small id="passwordHelpInline" class="text-muted"> Developer:<a href="http://www.psau.edu.ph/"> Pampanga state agricultural university ?</a> BS. Information and technology students @2017 Credits: <a href="https://v4-alpha.getbootstrap.com/">boostrap v4.</a></small>
-		</p>
 	</div>
 	</body>
 	 
