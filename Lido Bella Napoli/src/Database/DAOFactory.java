@@ -1,5 +1,7 @@
 package Database;
 
+import ObjectDao.TavoloDao;
+import ObjectDao.UtenteDAO;
 
 public abstract class DAOFactory {
 
@@ -21,13 +23,11 @@ public abstract class DAOFactory {
 	
 	public abstract UtenteDAO getUtenteDAO();
 	
-	public abstract BranoDAO getBranoDAO();
+	//public abstract OmbrelloneDAO getOmbrelloneDAO();
 
 	public abstract UtilDao getUtilDAO();
 
-	public abstract BranoPlaylistDAO getBranoPlaylistDAO();
-	public abstract NewsDAO getNewsDAO();
-	public abstract RicercaDAO getRicercaDAO();
-	public abstract RecensioneDAO getRecensioneDAO();
-	public abstract BranoAscoltatoDAO getBranoAscoltatoDAO();
+	public abstract TavoloDao getTavoloDAO();
+	//public abstract PizzaDAO getNewsDAO();
+	//public abstract RecensioneDAO getRecensioneDAO();
 }
