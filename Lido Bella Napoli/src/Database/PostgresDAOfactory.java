@@ -1,8 +1,5 @@
 package Database;
 
-import ObjectDao.TavoloDao;
-import ObjectDao.UtenteDAO;
-
 //@SuppressWarnings("deprecation")
 public class PostgresDAOfactory extends DAOFactory {
 	
@@ -14,7 +11,7 @@ public class PostgresDAOfactory extends DAOFactory {
 			Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
 			
 			//remoto
-			dataSource = new DataSource("jdbc:postgresql://rogue.db.elephantsql.com:5432/tsqupsrd", "tsqupsrd", "Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX");
+			dataSource = new DataSource("jdbc:postgresql://tsqupsrd:Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX@rogue.db.elephantsql.com:5432/tsqupsrd", "tsqupsrd", "Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX");
 			
 		} catch (Exception e) {
 			System.err.println("PostgresDAOFactory.class: failed to load MySQL JDBC driver\n" + e);
@@ -29,29 +26,46 @@ public class PostgresDAOfactory extends DAOFactory {
 		return factory;
 	}
 
-	@Override
+	/*@Override
 	public UtenteDAO getUtenteDAO() {
 		return new UtenteDaoJDBC(dataSource);
 	}
+
+	@Override
+	public BranoDAO getBranoDAO() {
+		return new BranoDaoJDBC(dataSource);
+	}
+
+	@Override
+	public BranoPlaylistDAO getBranoPlaylistDAO() {
+		return new BranoPlaylistDaoJDBC(dataSource);
+	}
+	
 	
 	@Override
 	public UtilDao getUtilDAO() {
 		return new UtilDao(dataSource);
 	}
-
 	@Override
-	public TavoloDao getTavoloDAO() {
-		// TODO Auto-generated method stub
-		return null;
+	public NewsDAO getNewsDAO() {
+		return new NewsDaoJDBC(dataSource);
 	}
 
-	
-	
-	/*@Override
+	@Override
+	public RicercaDAO getRicercaDAO() {
+		return new RicercaDaoJDBC(dataSource);
+	}
+
+
+	@Override
 	public RecensioneDAO getRecensioneDAO() {
 		// TODO Auto-generated method stub
-		return new RecensioneDaoJDBC(dataSource);
+	return new RecensioneDaoJDBC(dataSource);
+	}
+	public BranoAscoltatoDAO getBranoAscoltatoDAO() {
+		return new BranoAscoltatoDaoJDBC(dataSource);
+
 	}*/
+	
 
 }
-
