@@ -17,11 +17,6 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/javax.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/java-mail-1.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/gson-2.2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/postgresql-8.1-415.jdbc2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -29,5 +24,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/servlet-api (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/postgresql-8.1-415.jdbc2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/javax.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/gson-2.2.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
