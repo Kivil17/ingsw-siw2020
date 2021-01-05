@@ -26,7 +26,7 @@ public class Registrazione extends HttpServlet {
 	 	String paramEmail= req.getParameter("email");
 
 	 	if(paramEmail=="" || paramUsername=="" || paramPassword=="" ) {
-	 		resp.sendRedirect("log.jsp");
+	 		resp.sendRedirect("Log.jsp");
 	 	} 
 	 	else {
 		 	DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
@@ -42,9 +42,9 @@ public class Registrazione extends HttpServlet {
 		 		System.out.println("Registrato");
 		 		
 		 		
-		 		resp.sendRedirect("log.jsp");
+		 		resp.sendRedirect("Log.jsp");
 		 	}else {
-		 		resp.sendRedirect("log.jsp");
+		 		resp.sendRedirect("Log.jsp");
 		 	}
 		}	
 	 }

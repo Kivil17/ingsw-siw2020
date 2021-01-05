@@ -23,11 +23,12 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/servlet-api (1).jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/postgresql-8.1-415.jdbc2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/javax.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/java-mail-1.4.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ftrot/Downloads/gson-2.2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/postgresql-8.1-415.jdbc2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/javax.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/java-mail-1.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Giuseppe/Downloads/gson-2.2.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

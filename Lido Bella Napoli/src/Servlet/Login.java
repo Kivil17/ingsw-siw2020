@@ -26,7 +26,7 @@ public class Login extends HttpServlet {
 		
 		 HttpSession session = request.getSession();
 		 System.out.println("chiamata");
-		 String paramUser= request.getParameter("username");
+		 String paramEmail= request.getParameter("email");
 		 String paramPassword = request.getParameter("password");
 		 
 		 
@@ -34,10 +34,10 @@ public class Login extends HttpServlet {
 		 
 		 session.setAttribute("loggato", false);
 		 
-		 System.out.println(paramUser+" "+paramPassword);
+		 System.out.println(paramEmail+" "+paramPassword);
 		 DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
 		 UtenteDAO utenteDao = factory.getUtenteDAO();
-		 Utente utente = utenteDao.findByCredential(paramUser, paramPassword);
+		 Utente utente = utenteDao.findByCredential(paramEmail, paramPassword);
 		 
 		 if(utente!=null && utente.isRegistrato()) { 
 			 
@@ -71,7 +71,7 @@ public class Login extends HttpServlet {
 			  
 			  }else {
 			  
-				  response.sendRedirect("log.jsp");
+				  response.sendRedirect("Log.jsp");
 			  }
 		}		 
 }
