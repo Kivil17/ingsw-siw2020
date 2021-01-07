@@ -1,27 +1,48 @@
 package Object;
 
-import java.util.ArrayList;
-
 public class Carrello {
-	private ArrayList<Pizza> pizze;
+	
+	private int idProdotto;
+	private String nomeUtente;
+	private int quantita;
 	private int idOrdine;
 	
-	public Carrello(ArrayList<Pizza> pizze, int idOrdine) {
-		this.pizze = pizze;
+	public Carrello(int idProdotto, String nomeUtente, int quantita, int idOrdine) {
+		this.idProdotto = idProdotto;
+		this.nomeUtente = nomeUtente;
+		this.quantita = quantita;
 		this.idOrdine = idOrdine;
 	}
 
 	public Carrello() {
-		this.pizze = new ArrayList<Pizza>();
+		this.idProdotto = -1;
+		this.nomeUtente = "";
+		this.quantita = 0;
 		this.idOrdine = -1;
 	}
 
-	public ArrayList<Pizza> getPizze() {
-		return pizze;
+	public int getIdProdotto() {
+		return idProdotto;
 	}
 
-	public void setPizze(ArrayList<Pizza> pizze) {
-		this.pizze = pizze;
+	public void setIdProdotto(int idProdotto) {
+		this.idProdotto = idProdotto;
+	}
+
+	public String getNomeUtente() {
+		return nomeUtente;
+	}
+
+	public void setNomeUtente(String nomeUtente) {
+		this.nomeUtente = nomeUtente;
+	}
+
+	public int getQuantita() {
+		return quantita;
+	}
+
+	public void setQuantita(int quantita) {
+		this.quantita = quantita;
 	}
 
 	public int getIdOrdine() {
@@ -32,13 +53,6 @@ public class Carrello {
 		this.idOrdine = idOrdine;
 	}
 	
-	public void add(Pizza pizza) {
-		pizze.add(pizza);
-	}
-	
-	public void remove(Pizza pizza) {
-		pizze.remove(pizza);
-	}
 }
 
 

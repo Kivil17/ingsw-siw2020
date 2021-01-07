@@ -65,6 +65,7 @@ public class Login extends HttpServlet {
 			  
 			  RequestDispatcher disp;
 			  
+			  request.setAttribute("nomeUtente", utente.getUsername());
 			  
 			  disp = request.getRequestDispatcher("index.jsp");
 			  disp.forward(request, response);

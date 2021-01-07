@@ -22,7 +22,8 @@ public class UtilDao {
 				    + "drop table if exists ombrellone;"
 				    + "drop table if exists pizza;"
 				    + "drop table if exists tavolo;"
-				    + "drop table if exists recensione;";
+				    + "drop table if exists recensione;"
+				    + "drop table if exists carrello;";
 			PreparedStatement statement = connection.prepareStatement(delete);
 		
 			statement.executeUpdate();
@@ -60,7 +61,8 @@ public class UtilDao {
 					+ "create table tavolo(\"id\" int primary key, utentePrenotato varchar(255), email varchar(255), occupato boolean);"
 					+ "create table ombrellone(\"id\" int primary key, utentePrenotato varchar(255),email varchar(255),occupato boolean);"
 					+ "create table pizza(nome varchar(255), prezzo double precision);"
-					+ "create table recensione(\"idTipo\" varchar(255) primary key, oneStar int, twoStars int, threeStars int, fourStars int, fiveStars int);";
+					+ "create table recensione(\"idTipo\" varchar(255) primary key, oneStar int, twoStars int, threeStars int, fourStars int, fiveStars int);"
+					+ "create table carrello(\"idOrdine\" int primary key, nomeUtente varchar(255), quantita int, idProdotto int);";
 			PreparedStatement statement = connection.prepareStatement(create);
 		
 			statement.executeUpdate();
@@ -84,10 +86,13 @@ public class UtilDao {
 		
 		Connection connection = dataSource.getConnection();
 		try {
-			String delete = "delete FROM utente";
 			
-			PreparedStatement statement = connection.prepareStatement(delete);
-			statement.executeUpdate();
+			String delete;
+			PreparedStatement statement;
+			
+			delete = "delete FROM utente";
+			statement = connection.prepareStatement(delete);
+			
 			delete = "delete FROM tavolo";
 			statement = connection.prepareStatement(delete);
 			
@@ -98,6 +103,9 @@ public class UtilDao {
 			statement = connection.prepareStatement(delete);
 			
 			delete = "delete FROM recensione";
+			statement = connection.prepareStatement(delete);
+			
+			delete = "delete FROM carrello";
 			statement = connection.prepareStatement(delete);
 			
 			statement.executeUpdate();

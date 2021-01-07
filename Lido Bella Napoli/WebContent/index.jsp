@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -65,7 +65,7 @@
       </nav>
       
      <div class="Profilo">
-      <li>Benvenuto<a href="Profilo.jsp"> Esempio</a></li>
+      <li>Benvenuto <a href="Profilo.jsp"><c:out value="${nomeUtente}"/></a></li>
      
      </div>
       <!-- .nav-menu -->
