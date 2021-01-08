@@ -75,11 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .Profilo {
 	margin-left: 20px
-	padding: 0;
-  	list-style: none;
+	
 }
 #header .Profilo li{
 	color:white;
+}
+
+#header .Profilo a{
+   text-transform: uppercase;
 }
 
 

@@ -1,1 +1,199 @@
-@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto');
+
+body {
+  background: linear-gradient(to left, #FFFFFF 0%, #AACFEF 100%);
+}
+
+.container {
+  background: #FFFFFF;
+  width: 840px;
+  height: 620px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(#777777, .5);
+}
+
+.logo {
+  float: right;
+  margin-right: 12px;
+  margin-top: 12px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: lightskyblue;
+  font-weight: 900;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.CTA {
+  width: 80px;
+  height: 40px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  z-index: 1;
+  background: #7ED386;
+  font-size: 1em;
+  transform: rotate(-90deg);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+
+}
+
+.CTA h1 {
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+
+.CTA h1:hover {
+  background: #3FB6A8;
+  transform: scale(1.1);
+}
+
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: lightskyblue;
+  box-shadow: 3px 3px 10px rgba(#777777, .5);
+}
+
+nav img{
+  padding: 0;
+  margin-top: 0;
+  max-height: 60px;
+}
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: white;
+  font-size: 1.1em;
+  display: block;
+  transition: all .3s ease-in-out;
+  
+}
+
+nav a:hover {
+  color: #3FB6A8;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+nav a:first-child {
+  margin-top: 7px;
+}
+
+.active {
+  color: white;
+}
+
+.rightbox {
+  float: right;
+  width: 60%;
+  height: 100%;
+  
+}
+
+.profile-userpic img{
+  padding: 0;
+  margin-top: 10px;
+  max-height: 60px;
+}
+.profile-userpic button{
+  background-color: lightskyblue;
+  color: white;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.profile-userpic button:hover{
+  background: rgba(100, 100, 255, 0.2);
+  text-decoration: none;
+
+}
+
+.profile,
+.payment,
+.subscription,
+.privacy,
+.settings {
+  transition: opacity .5s ease-in;
+  position: absolute;
+  width: 70%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: lightskyblue;
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: lightsteelblue;
+  font-family: 'Roboto', sans-serif;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3FB6A8, rgba(#7ED386, .5)) 1 0%;
+  border-top: 0;
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 7px 0;
+  color: black;
+}
+
+span {
+  font-size: .5em;
+  color: #777777;
+}
+
+.btn {
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  
+  border: none;
+  background-color: lightskyblue;
+  color: white;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+input {
+  border: 1px solid lighten(#777777, 40%);
+  font-family: 'Roboto', sans-serif;
+  padding: 2px;
+  margin: 0;
+}
+
+.privacy h2 {
+  margin-top: 25px;
+}
+
+.settings h2 {
+  margin-top: 25px;
+}
+
+.noshow {
+  opacity: 0;
+}
