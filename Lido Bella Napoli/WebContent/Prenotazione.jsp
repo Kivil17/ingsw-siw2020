@@ -48,8 +48,7 @@
 
 			<div class="logo mr-auto">
 				<h1 class="text-light">
-					<a href="Menu.html"><img src="assets/img/bn.png" alt=""
-						class="img-fluid"></a>
+					<a href="Prenotazione.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>  Ristorante Pizzeria Bella Napoli</span>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -57,9 +56,9 @@
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Menu.html">Menu</a></li>
-					<li><a href="Prenotazione.html">Book a table</a></li>
+					<li><a href="Ristorante.jsp">Home Ristorante</a></li>
+					<li><a href="Menu.jsp">Menu</a></li>
+					<li><a href="Prenotazione.jsp">Book a table</a></li>
 					<li class="drop-down"><a href="">Services</a>
 						<ul>
 							<li><a href="#">Disco</a></li>
