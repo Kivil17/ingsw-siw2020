@@ -41,7 +41,7 @@ public class Login extends HttpServlet {
 		 
 		 if(utente!=null && utente.isRegistrato()) { 
 			 
-			   if(utente.getUsername().equals(admin))
+			   if(utente.getEmail().equals(admin))
 			   {
 			    
 			    session.setAttribute("password", paramPassword);
@@ -64,8 +64,6 @@ public class Login extends HttpServlet {
 			  session.setAttribute("username", utente.getUsername());
 			  
 			  RequestDispatcher disp;
-			  
-			  request.setAttribute("nomeUtente", utente.getUsername());
 			  
 			  disp = request.getRequestDispatcher("index.jsp");
 			  disp.forward(request, response);

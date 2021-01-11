@@ -44,30 +44,57 @@
       <div class="logo mr-auto">
        <!---->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="index.html"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>  Lido Bella Napoli</span></h1>
+        <h1 class="text-light"><a href="index.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>  Lido Bella Napoli</span></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="Ristorante.html">Restaurant</a></li>
-          <li class="drop-down"><a href="">Services</a>
-            <ul>
-              <li><a href="#">Beach Resort</a></li>
-              <li><a href="#">Disco</a></li>
-            </ul>
-          </li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-		   
-		  
-        </ul>
+      	<c:if test="${not loggatoAdmin}">
+	        <ul>
+	          <li class="active"><a href="index.jsp">Home</a></li>
+	          <li><a href="Ristorante.jsp">Restaurant</a></li>
+	          <li class="drop-down"><a href="">Services</a>
+	            <ul>
+	              <li><a href="#">Beach Resort</a></li>
+	              <li><a href="#">Disco</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="#team">Team</a></li>
+	          <li><a href="#contact">Contact Us</a></li>
+	        </ul>
+	    </c:if>
+	    <c:if test="${loggatoAdmin}">
+	        <ul>
+	          <li class="active"><a href="index.jsp">Home</a></li>
+	          <li><a href="Ristorante.jsp">Restaurant</a></li>
+	          <li class="drop-down"><a href="">Services</a>
+	            <ul>
+	              <li><a href="#">Beach Resort</a></li>
+	              <li><a href="#">Disco</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="review.jsp">Reviews</a></li>
+	        </ul>
+	    </c:if>
+	    
       </nav>
       
      <div class="Profilo">
-      <li>Benvenuto <a href="Profilo.jsp"><c:out value="${nomeUtente}"/></a></li>
-     
+     	<c:if test="${not loggato}">
+     	
+     	</c:if>
+     	<c:if test="${loggato && not loggatoAdmin}">
+      		<li>Benvenuto <c:out value="${username}"/></li>
+     	</c:if>
+     	<c:if test="${loggatoAdmin}">
+      		<li>Benvenuto <c:out value="${username}"/></li>
+     	</c:if>
      </div>
+     <c:if test="${loggato}">
+     	<div class="Logout-utente">
+     		<li><a href="Logout">Logout</a></li>
+     	</div>	
+     </c:if>
+     
       <!-- .nav-menu -->
 
     </div>
@@ -448,7 +475,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>Via capri 5, Rossano Scalo, C</p>
+              <p>Via capri 5, Rossano Scalo, CS</p>
             </div>
           </div>
 
@@ -456,7 +483,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>lidoBellaNapoli@outlook.it</p>
+              <p>bellanapoli1987@outlook.it</p>
             </div>
           </div>
 
@@ -473,7 +500,7 @@
         <div class="row" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3073.477084282835!2d16.635944015331138!3d39.61646057946615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13409b65ae124733%3A0xd5b0bd02f9a4220f!2sBella%20Napoli%20Rossano!5e0!3m2!1sit!2sit!4v1610381651060!5m2!1sit!2sit" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">
@@ -520,69 +547,26 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-              <h3>Scrivi la tua recensione  da  aggiustare</h3>
-              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
+              <h3>Our story</h3>
+              <p>da modificare</p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
+	
+		 <img src="assets/img/copertina.jpg">
+			
+          
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong><span>Bella Napoli</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -40,9 +40,8 @@ public class Registrazione extends HttpServlet {
 		 		Utente nuovoUtente=new Utente(paramUsername,paramPassword,paramEmail);
 		 		utenteDao.save(nuovoUtente);
 		 		System.out.println("Registrato");
-		 		
-		 		
 		 		resp.sendRedirect("Log.jsp");
+		 		
 		 	}else {
 		 		resp.sendRedirect("Log.jsp");
 		 	}

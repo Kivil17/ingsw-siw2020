@@ -77,15 +77,25 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: 20px
 	
 }
+
 #header .Profilo li{
-	color:white;
+  color:white;
+  list-style-type: none;
 }
 
 #header .Profilo a{
    text-transform: uppercase;
 }
 
+#header .Logout-utente {
+	margin-left: 20px
+	
+}
 
+#header .Logout-utente li{
+  list-style-type: none;
+
+}
 
 #header.header-transparent {
   background: transparent;
@@ -1236,7 +1246,7 @@ section {
 }
 
 .contact .php-email-form input {
-  padding: 20px 15px;
+  padding: 12px 15px;
 }
 
 .contact .php-email-form textarea {
@@ -1281,6 +1291,15 @@ section {
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+}
+
+#footer img {
+  padding: 0;
+  margin-left: 100px;
+  margin-top: 0;
+  max-height: 400px;
+  max-width: 1000px;
+  
 }
 
 #footer .footer-top {
