@@ -57,9 +57,9 @@
 
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Menu.html">Menu</a></li>
-					<li><a href="Prenotazione.html">Book a table</a></li>
+					<li><a href="index.jsp">Home</a></li>
+					<li><a href="Menu.jsp">Menu</a></li>
+					<li><a href="Prenotazione.jsp">Book a table</a></li>
 					<li><a href="#portfolio">Gallery</a></li>
 					<li class="drop-down"><a href="">Services</a>
 						<ul>
@@ -81,8 +81,8 @@
 			<h1>RISTORANTE PIZZERIA BELLA NAPOLI</h1>
 			<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
 			<div class = "bottoni" >
-				<button href="Prenotazione.html">Book a table</button> 
-				<button href="Menu.html">Book a Pizza</button>
+				<button href="Prenotazione.jsp">Book a table</button> 
+				<button href="Menu.jsp">Book a Pizza</button>
 			</div>
 		</div>
 		

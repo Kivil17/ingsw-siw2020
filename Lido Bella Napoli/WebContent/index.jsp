@@ -49,8 +49,8 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="Ristorante.html">Restaurant</a></li>
+          <li class="active"><a href="index.jsp">Home</a></li>
+          <li><a href="Ristorante.jsp">Restaurant</a></li>
           <li class="drop-down"><a href="">Services</a>
             <ul>
               <li><a href="#">Beach Resort</a></li>
