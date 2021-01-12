@@ -83,7 +83,7 @@
      	
      	</c:if>
      	<c:if test="${loggato && not loggatoAdmin}">
-      		<li>Benvenuto <c:out value="${username}"/></li>
+      		<li>Benvenuto <a href="Profilo.jsp"><c:out value="${username}"/></a></li>
      	</c:if>
      	<c:if test="${loggatoAdmin}">
       		<li>Benvenuto <c:out value="${username}"/></li>

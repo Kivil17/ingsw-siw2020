@@ -2,17 +2,62 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
-<meta charset="ISO-8859-1">
-<title>Lido Bella Napoli</title>
-<link href="assets/css/styleProfilo.css" rel="stylesheet">
+	<meta charset="ISO-8859-1">
+	<title>Lido Bella Napoli</title>
+	<link href="assets/css/styleProfilo.css" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css"
+		rel="stylesheet">
+	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css"
+		rel="stylesheet">
+	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+		rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<div id="logo">
-			<h1 class="logo">B<br>N</h1>
+
+	<header id="header" class="fixed-top header-transparent">
+    	<div class="container d-flex align-items-center">
+			<div class="logo mr-auto">
+				<h1 class="text-light">
+					<a href="index.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span> Ristorante Pizzeria Bella Napoli</span>
+				</h1>
+			</div>
+			<nav class="nav-menu d-none d-lg-block">
+				<ul>
+					<li class="active"><a href="index.jsp">Home</a></li>
+					<li><a href="Ristorante.jsp">Restaurant</a></li>
+					<li class="drop-down"><a href="">Services</a>
+						<ul>
+							<li><a href="#">Beach Resort</a></li>
+							<li><a href="#">Disco</a></li>
+						</ul></li>
+					<li><a href="review.jsp">Reviews</a></li>
+				</ul>
+			</nav>
+			<div class="Profilo">
+				<c:if test="${not loggato}">
+				</c:if>
+				<c:if test="${loggato && not loggatoAdmin}">
+					<li>Benvenuto <a href="Profilo.jsp"><c:out value="${username}" /></a></li>
+				</c:if>
+			</div>
+			<c:if test="${loggato}">
+				<div class="Logout-utente">
+					<li><a href="Logout">Logout</a></li>
+				</div>
+			</c:if>
 		</div>
+  </header>
+	
+	<div class="container-profile">
 		<div class="leftbox">
 			<nav>
 				<a id="profile" class="active"><i class="fa fa-user"><img src="assets/img/user.png"></i></a> 
@@ -23,21 +68,33 @@
 		</div>
 		<div class="rightbox">
 			
-			<div class="profile-userpic">
-				<img src="assets/img/bn.png" class="img-responsive" alt="">
-				<button type="submit" class="button-profile">update</button>
-			</div>
-			
 			<div class="profile">
+				<div class="profile-userpic">
+					<img src="assets/img/bn.png" class="img-responsive" alt="">
+					<button type="submit" class="button-profile">update</button>
+				</div>
 				<h1>Personal Info</h1>
-				
-				<h2>Username</h2>
-				<p>user<!--<c:out value="${nomeUtente}"/>--><button class="btn">update</button></p>
-				<h2>Email</h2>
-				<p>email<!--<c:out value="${email}"/>--><button class="btn">update</button></p>
-				<h2>Password</h2>
-				<!-- prevedere il ripristino della password -->
-				<p>•••••••<button class="btn">Change</button></p>
+				<h2>
+					Username
+				</h2>
+				<p>
+					nome<!--<c:out value="${nomeUtente}"/>-->
+					<button class="btn">update</button>
+				</p>
+				<h2>
+					Email
+				</h2>
+				<p>
+					email<!--<c:out value="${email}"/>-->
+					<button class="btn">update</button>
+				</p>
+				<h2>
+					Password
+				</h2>
+				<p>
+					•••••••<!-- prevedere riprisino password-->
+					<button class="btn">change</button>
+				</p>
 			</div>
 
 			<div class="payment noshow">
@@ -127,7 +184,19 @@
 		</div>
 	</div>
 
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="assets/vendor/counterup/counterup.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/venobox/venobox.min.js"></script>
+	<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+
 	<script src="assets/js/Profilo.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
