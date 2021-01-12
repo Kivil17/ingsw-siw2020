@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Lido Bella Napoli</title>
+<link href="assets/img/bn.png" rel="icon">
 </head>
 <body>
 

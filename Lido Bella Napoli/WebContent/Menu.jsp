@@ -10,7 +10,7 @@
 <meta content="" name="keywords">
 
 <!-- Favicons -->
-<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/bn.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
@@ -117,17 +117,19 @@
 						</ul>
 					</div>
 				</div>
-
-				<h2 align='center'>PIZZE</h2>
+				
+				
 
 				<div class="row portfolio-container" data-aos="fade-up">
-					<div class="col-lg-6 portfolio-item pizzeria ">
+					<div class="col-lg-12 portfolio-item pizzeria ">
 						<div id="menu">
-							<div id="col1">
+								<div class="titolo">
+									<h2>PIZZE</h2>
+								</div>
 								<dl>
 									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
 									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="price"> &euro;3,00</dd>
 									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
 								</dl>
 								<dl>
@@ -135,12 +137,6 @@
 									<dd class="price"> &euro;3,50</dd>
 									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
-								</dl>
-								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;2,50</dd>
-									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-									<dd class="ingredients">Pomodoro, Mozzarella, basilico.</dd>
 								</dl>
 								<dl>
 									<dt>Diavola</dt>
@@ -154,12 +150,6 @@
 									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
 								</dl>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 portfolio-item pizzeria ">
-						<div id="menu">
-							<div id="col2">
 								<dl>
 									<dt>Rotolo</dt>
 									<dd class="price"> &euro;8,00</dd>
@@ -190,29 +180,285 @@
 									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
 								</dl>
-							</div>
 						</div>
 					</div>
+					
+					<div class="col-lg-12 portfolio-item cucina">
+						<div id="menu">
+								<div class="titolo">
+									<h2>CUCINA</h2>
+								</div>
+								<dl>
+									<dt>Marinara</dt>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="price"> &euro;3,00</dd>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Margherita</dt>
+									<dd class="price"> &euro;3,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Marinara</dt>
+									<dd class="price"> &euro;2,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Diavola</dt>
+									<dd class="price"> &euro;4,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+								</dl>
+								<dl>
+									<dt>Rocco</dt>
+									<dd class="price"> &euro;5,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+								</dl>
+								<dl>
+									<dt>Rotolo</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+								</dl>
+								<dl>
+									<dt>Regina</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno Fritto</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+								</dl>
+								<dl>
+									<dt>Italiana</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+								</dl>
+						</div>
+					</div>
+				
+					<div class="col-lg-12 portfolio-item dessert">
+						<div id="menu">
+								<div class="titolo">
+									<h2>DESSERT</h2>
+								</div>
+								<dl>
+									<dt>Marinara</dt>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="price"> &euro;3,00</dd>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Margherita</dt>
+									<dd class="price"> &euro;3,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Marinara</dt>
+									<dd class="price"> &euro;2,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Diavola</dt>
+									<dd class="price"> &euro;4,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+								</dl>
+								<dl>
+									<dt>Rocco</dt>
+									<dd class="price"> &euro;5,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+								</dl>
+								<dl>
+									<dt>Rotolo</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+								</dl>
+								<dl>
+									<dt>Regina</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno Fritto</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+								</dl>
+								<dl>
+									<dt>Italiana</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+								</dl>
+						</div>
+					</div>
+				
+					<div class="col-lg-12 portfolio-item bevande">
+						<div id="menu">
+								<div class="titolo">
+									<h2>BEVANDE</h2>
+								</div>
+								<dl>
+									<dt>Marinara</dt>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="price"> &euro;3,00</dd>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Margherita</dt>
+									<dd class="price"> &euro;3,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Marinara</dt>
+									<dd class="price"> &euro;2,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Diavola</dt>
+									<dd class="price"> &euro;4,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+								</dl>
+								<dl>
+									<dt>Rocco</dt>
+									<dd class="price"> &euro;5,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+								</dl>
+								<dl>
+									<dt>Rotolo</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+								</dl>
+								<dl>
+									<dt>Regina</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno Fritto</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+								</dl>
+								<dl>
+									<dt>Italiana</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+								</dl>
+						</div>
+					</div>
+					
+					<div class="col-lg-12 portfolio-item vini">
+						<div id="menu">
+								<div class="titolo">
+									<h2>VINI</h2>
+								</div>
+								<dl>
+									<dt>Marinara</dt>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="price"> &euro;3,00</dd>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Margherita</dt>
+									<dd class="price"> &euro;3,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Marinara</dt>
+									<dd class="price"> &euro;2,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, basilico.</dd>
+								</dl>
+								<dl>
+									<dt>Diavola</dt>
+									<dd class="price"> &euro;4,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+								</dl>
+								<dl>
+									<dt>Rocco</dt>
+									<dd class="price"> &euro;5,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+								</dl>
+								<dl>
+									<dt>Rotolo</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+								</dl>
+								<dl>
+									<dt>Regina</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno</dt>
+									<dd class="price"> &euro;8,00</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+								</dl>
+								<dl>
+									<dt>Ripieno Fritto</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+								</dl>
+								<dl>
+									<dt>Italiana</dt>
+									<dd class="price"> &euro;8,50</dd>
+									<a href="#cart"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+								</dl>
+						</div>
+					</div>
+					
 				</div>
 				
-				<div class="col-lg-4 col-md-6 portfolio-item cucina">
-						
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item dessert">
-						
-					</div>
-					<div class="col-lg-4 col-md-6 portfolio-item bevande">
-						
-					</div>
-					
-					<div class="col-lg-4 col-md-6 portfolio-item vini">
-						
-					</div>
-					
-				</div>
-
 			</div>
-			</section>
+		</section>
 		
 			<section id="contact" class="contact section-bg">
 				<div class="container">

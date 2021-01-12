@@ -829,15 +829,6 @@ section {
 
 #menu{
 	width: 100%;
-	background: skyblue;
-}
-
-#col1, #col2{
-	margin:0;
-	padding:0;
-	
-	width:200px;
-	
 }
 
 .portfolio #portfolio-flters {
@@ -937,6 +928,7 @@ section {
 .portfolio h2{
 	font-family: "Raleway", sans-serif;
 	color: red;
+	margin-top: 10px;
 }
 
 .portfolio dl {
@@ -958,13 +950,10 @@ section {
 	color: #F60
 }
 
-.portfolio dd {
-	margin: 0
-}
-
 .portfolio dd.price {
 	float: right;
 	color: black;
+	font-weight: bold;
 }
 
 .portfolio dd.ingredients {
@@ -973,7 +962,12 @@ section {
 	padding: 3px 0;
 	font-style: italic;
 	font-family: Georgia, Times, sans-serif;
-	color: #555
+	color: #555;
+	font-weight: bold;
+}
+
+.titolo h2{
+	text-align: center;
 }
 
 #col1{

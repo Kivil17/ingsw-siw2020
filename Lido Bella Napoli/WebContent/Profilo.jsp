@@ -6,6 +6,8 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Lido Bella Napoli</title>
+	
+	<link href="assets/img/bn.png" rel="icon">
 	<link href="assets/css/styleProfilo.css" rel="stylesheet">
 	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">

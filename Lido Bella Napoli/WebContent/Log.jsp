@@ -10,6 +10,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<head>
+	
+		<link href="assets/img/bn.png" rel="icon">
+		
 		<script src="jquery/jquery.min.js"></script>
 		<!---- jquery link local dont forget to place this in first than other script or link or may not work ---->
 		
