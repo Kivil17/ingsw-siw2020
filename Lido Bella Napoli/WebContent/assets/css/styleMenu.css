@@ -934,7 +934,7 @@ section {
 .portfolio dl {
 	width: 100%;
 	overflow: hidden;
-	margin: 0 0 1em;
+	margin: 0;
 	background: url(dot.gif) repeat-x 0 1.2em
 }
 
@@ -970,22 +970,33 @@ section {
 	text-align: center;
 }
 
-#col1{
+#numeroProdotti-w p{
 	float: left;
+	margin-top: 5px;
+	color: #F60;
 }
 
-#col2{
-	float: right;
-}
 
-
-.portfolio a{
-	float: right;
-	position: absolute;
+#numeroProdotti-w a{
+	float: left;
 	margin-left: 10px;
 }
-.portfolio a:hover{
+
+#numeroProdotti-w a:hover{
 	opacity: 0.8;
+}
+
+#numeroProdotti-w .button{
+	background: none;
+    color: inherit;
+    padding: 4px 12px;
+    border: 1px solid rgba(30, 48, 56, 0.2);
+    transition: all .4s ease-in;
+}
+
+.numeroProdotti-w img{
+	float: right;
+	
 }
 
 

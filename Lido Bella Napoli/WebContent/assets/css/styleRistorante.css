@@ -75,6 +75,30 @@ h1, h2, h3, h4, h5, h6 {
 	background: rgba(103, 176, 209, 0.8);
 }
 
+#header .Profilo {
+	margin-left: 20px
+	
+}
+
+#header .Profilo li{
+  color:white;
+  list-style-type: none;
+}
+
+#header .Profilo a{
+   text-transform: uppercase;
+}
+
+#header .Logout-utente {
+	margin-left: 20px
+	
+}
+
+#header .Logout-utente li{
+  list-style-type: none;
+
+}
+
 #header.header-transparent {
 	background: transparent;
 }
@@ -1273,37 +1297,6 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
 	background: #8ec4dd;
-}
-
-@
--webkit-keyframes animate-loading { 0% {
-	transform: rotate(0deg);
-}
-
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
-}
-}
-@
-keyframes animate-loading { 0% {
-	transform: rotate(0deg);
-}
-
-100
-%
-{
-transform
-:
-rotate(
-360deg
-);
-}
 }
 
 /*--------------------------------------------------------------

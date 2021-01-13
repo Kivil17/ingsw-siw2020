@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Winery: Your Order</title>
+<title>Cart: Your Order</title>
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12,15 +12,19 @@
 
 <div id="site">
 	<header id="masthead">
-		<h1>Winery <span class="tagline">Wines for web developers since 1999</h1>
+		<div class="logo mr-auto">
+				<h1 class="text-light">
+					<img src="assets/img/bn.png" alt="" class="img-fluid"><span>  Ristorante Pizzeria Bella Napoli</span>
+				</h1>
+		</div>
 	</header>
 	<div id="content">
 		<h1>Your Order</h1>
 			<table id="checkout-cart" class="shopping-cart">
 			  <thead>
 				<tr>
-					<th scope="col">Item</th>
-					<th scope="col">Qty</th>
+					<th scope="col">Product</th>
+					<th scope="col">Quantity</th>
 					<th scope="col">Price</th>
 				</tr>
 			  </thead>
@@ -31,11 +35,11 @@
 		 <div id="pricing">
 			
 			<p id="shipping">
-				<strong>Shipping</strong>: <span id="sshipping"></span>
+				<strong>Shipping:</strong> <span id="sshipping"></span>
 			</p>
 			
 			<p id="sub-total">
-				<strong>Total</strong>: <span id="stotal"></span>
+				<strong>Total:</strong> <span id="stotal"></span>
 			</p>
 		 </div>
 		 
@@ -64,8 +68,8 @@
 </div>
 
 <footer id="site-info">
-		Copyright &copy; Winery
-	</footer>
+		
+</footer>
 
 </body>
 </html>	

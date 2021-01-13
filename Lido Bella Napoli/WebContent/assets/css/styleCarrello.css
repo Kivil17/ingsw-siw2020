@@ -35,6 +35,24 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	font-size: 100%;
+	color: goldenrod;
+}
+
+#header .logo h1 {
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: lightskyblue;
+}
+
+.logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 60px;
 }
 
 #site {
@@ -57,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 	min-height: 82px;
 	line-height: 2.3;
 	background: url(../images/logo.png) no-repeat 0 50%;
-	color: #900;
+	color: goldenrod;
 	
 }
 
@@ -193,7 +211,7 @@ body#checkout-page #site-info {
 
 .shopping-cart tr:nth-child(even) {
 	background: #fafafa;
-},
+}
 
 .shopping-cart td.pdelete {
 	text-align: center;
@@ -229,6 +247,12 @@ body#checkout-page #site-info {
 #sub-total, #shipping {
 	margin: 1.5em 0;
 	text-align: right;
+}
+
+#sub-total strong,
+#shipping strong {
+	margin-left: 1em;
+	color: goldenrod;
 }
 
 #sub-total span,
