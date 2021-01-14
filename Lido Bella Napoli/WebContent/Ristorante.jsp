@@ -56,33 +56,33 @@
 
 			<nav class="nav-menu d-none d-lg-block">
 				<c:if test="${not loggatoAdmin}">
-				<ul>
-					<li><a href="index.jsp">Home</a></li>
-					<li><a href="Menu.jsp">Menu</a></li>
-					<li><a href="Prenotazione.jsp">Book a table</a></li>
-					<li><a href="#portfolio">Gallery</a></li>
-					<li class="drop-down"><a href="">Services</a>
-						<ul>
-							<li><a href="#">Disco</a></li>
-							<li><a href="#">Beach Resort</a></li>
-						</ul></li>
-					<li><a href="#contact">Contact Us</a></li>
-
-				</ul>
+					<ul>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="Menu.jsp">Book a pizza</a></li>
+						<li><a href="Prenotazione.jsp">Book a table</a></li>
+						<li><a href="#portfolio">Gallery</a></li>
+						<li class="drop-down"><a href="">Services</a>
+							<ul>
+								<li><a href="#">Disco</a></li>
+								<li><a href="#">Beach Resort</a></li>
+							</ul></li>
+						<li><a href="#contact">Contact Us</a></li>
+	
+					</ul>
 				</c:if>
 				<c:if test="${loggatoAdmin}">
-				<ul>
-					<li><a href="index.jsp">Home</a></li>
-					<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
-					<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
-					<li><a href="#portfolio">Gallery</a></li>
-					<li class="drop-down"><a href="">Services</a>
-						<ul>
-							<li><a href="#">Disco</a></li>
-							<li><a href="#">Beach Resort</a></li>
-						</ul></li>
-					<li><a href="review.jsp">Reviews</a></li>
-				</ul>
+					<ul>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
+						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
+						<li><a href="#portfolio">Gallery</a></li>
+						<li class="drop-down"><a href="">Services</a>
+							<ul>
+								<li><a href="#">Disco</a></li>
+								<li><a href="#">Beach Resort</a></li>
+							</ul></li>
+						<li><a href="review.jsp">Reviews</a></li>
+					</ul>
 				</c:if>
 			</nav>
 
@@ -94,7 +94,7 @@
 					<li>Benvenuto <a href="Profilo.jsp"><c:out value="${username}" /></a></li>
 				</c:if>
 				<c:if test="${loggatoAdmin}">
-					<li>Benvenuto <c:out value="${username}" /></li>
+					<li>Benvenuto <a href="ProfiloAdmin.jsp"><c:out value="${username}"/></a></li>
 				</c:if>
 			</div>
 			<c:if test="${loggato}">
@@ -113,8 +113,8 @@
 			<h1>WELCOME!</h1>
 			<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
 			<div class = "bottoni" >
-				<button href="Prenotazione.jsp">Book a table</button> 
-				<button href="Menu.jsp">Book a Pizza</button>
+				<a href="Prenotazione.jsp"><button>Book a table</button></a> 
+				<a href="Menu.jsp"><button>Book a Pizza</button></a>
 			</div>
 		</div>
 		
@@ -426,6 +426,42 @@
 
 				</div>
 			</section>
+			
+			<section id="review">
+				
+				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+						<h2>Review</h2>
+				</div>
+			
+				<div class="cont">
+					<div class="title">
+						<h1>
+							Bella<span>Napoli</span>
+						</h1>
+					</div>
+					<div class="stars">
+						<form action="">
+							<input class="star star-5" id="star-5-2" type="radio" name="star" />
+							<label class="star star-5" for="star-5-2"></label> <input
+								class="star star-4" id="star-4-2" type="radio" name="star" /> <label
+								class="star star-4" for="star-4-2"></label> <input
+								class="star star-3" id="star-3-2" type="radio" name="star" /> <label
+								class="star star-3" for="star-3-2"></label> <input
+								class="star star-2" id="star-2-2" type="radio" name="star" /> <label
+								class="star star-2" for="star-2-2"></label> <input
+								class="star star-1" id="star-1-2" type="radio" name="star" /> <label
+								class="star star-1" for="star-1-2"></label>
+							<div class="rev-box">
+								<textarea class="review" col="30" name="review" placeholder="Write a review."></textarea>
+								<input type="submit" value="Send Review">
+								<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
+								<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			
 	</main>
 	<!-- End #main -->
 
@@ -434,40 +470,7 @@
 		
 		<div class="footer-top">
 			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up"
-						data-aos-delay="350">
-						<div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-							<form action="forms/contact.php" method="post" role="form"
-								class="php-email-form">
-								<h3>Write a review</h3>
-								<div class="form-group">
-									<textarea class="form-control" name="message" rows="5"
-										data-rule="required" data-msg="Please write something for us"
-										placeholder="Message"></textarea>
-									<div class="validate"></div>
-								</div>
-								<!-- <div class="mb-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent.
-										Thank you!</div>
-								</div> -->
-								<div class="footer-newsletter">
-									<input type="submit"value="Send Review">
-								</div>
-								<div class="social-links mt-3">
-									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"
-										class="facebook"><i class="bx bxl-facebook"></i></a> <a
-										href="https://www.instagram.com/_pizzeriabellanapoli/"
-										class="instagram"><i class="bx bxl-instagram"></i></a>
-								</div>
-							</form>
-						</div>
-					</div>
-
-				</div>
+				
 			</div>
 		</div>
 

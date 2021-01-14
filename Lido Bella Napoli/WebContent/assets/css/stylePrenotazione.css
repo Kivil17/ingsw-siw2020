@@ -203,6 +203,21 @@ main{
 #header .logo h1 a, #header .logo h1 a:hover {
 	color: #fff;
 	text-decoration: none;
+	list-style-type: none;
+}
+
+#header .Profilo {
+	margin-left: 20px
+	
+}
+
+#header .Profilo li{
+	list-style-type: none;
+	color: white;
+}
+
+#header .Logout-utente li{
+	list-style-type: none;
 }
 
 #header .logo img {
@@ -244,6 +259,7 @@ main{
 	font-family: "Poppins", sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
+	
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {

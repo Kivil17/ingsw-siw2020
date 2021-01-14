@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -55,19 +55,52 @@
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
-				<ul>
-					<li><a href="Ristorante.jsp">Home Ristorante</a></li>
-					<li><a href="Menu.jsp">Menu</a></li>
-					<li><a href="Prenotazione.jsp">Book a table</a></li>
-					<li class="drop-down"><a href="">Services</a>
-						<ul>
-							<li><a href="#">Disco</a></li>
-							<li><a href="#">Beach Resort</a></li>
-						</ul></li>
-					<li><a href="#contact">Contact Us</a></li>
-
-				</ul>
+				<c:if test="${not loggatoAdmin}">
+					<ul>
+						<li><a href="Ristorante.jsp">Home Ristorante</a></li>
+						<li><a href="Menu.jsp">Book a pizza</a></li>
+						<li><a href="Prenotazione.jsp">Book a table</a></li>
+						<li class="drop-down"><a href="">Services</a>
+							<ul>
+								<li><a href="#">Disco</a></li>
+								<li><a href="#">Beach Resort</a></li>
+							</ul></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</c:if>
+				<c:if test="${loggatoAdmin}">
+					<ul>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
+						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
+						<li><a href="#portfolio">Gallery</a></li>
+						<li class="drop-down"><a href="">Services</a>
+							<ul>
+								<li><a href="#">Disco</a></li>
+								<li><a href="#">Beach Resort</a></li>
+							</ul></li>
+						<li><a href="review.jsp">Reviews</a></li>
+					</ul>
+				</c:if>
 			</nav>
+			
+			<div class="Profilo">
+     			<c:if test="${not loggato}">
+     	
+     			</c:if>
+     			<c:if test="${loggato && not loggatoAdmin}">
+      				<li>Benvenuto <a href="Profilo.jsp"><c:out value="${username}"/></a></li>
+     			</c:if>
+     			<c:if test="${loggatoAdmin}">
+      				<li>Benvenuto <a href="ProfiloAdmin.jsp"><c:out value="${username}"/></a></li>
+     			</c:if>
+    		</div>
+     		<c:if test="${loggato}">
+     			<div class="Logout-utente">
+     				<li><a href="Logout">Logout</a></li>
+     			</div>	
+     		</c:if>
+     		
 			<!-- .nav-menu -->
 
 		</div>
