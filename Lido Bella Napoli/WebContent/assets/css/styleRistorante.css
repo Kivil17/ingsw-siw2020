@@ -1442,9 +1442,9 @@ section {
 }
 
 #review .rev-box input[type="submit"] {
-	
+	float: left;
 	border: 0;
-	margin-left:0;
+	margin-left: 0;
 	margin-top: 10px;
 	background: none;
 	font-size: 16px;
