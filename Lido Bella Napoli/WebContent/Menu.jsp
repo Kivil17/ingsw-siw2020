@@ -58,7 +58,7 @@
 				<c:if test="${not loggatoAdmin}">
 					<ul>
 						<li><a href="Ristorante.jsp">Home Ristorante</a></li>
-						<li><a href="#portfolio">Book a pizza</a></li>
+						<li><a href="#portfolio">Book a product</a></li>
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
@@ -72,7 +72,7 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
+						<li><a href="MenuAdmin.jsp">prodotti prenotati</a></li>
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
@@ -254,9 +254,8 @@
 									<h2>CUCINA</h2>
 								</div>
 								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Spaghetti alle vongole</dt>
+									<dd class="price"> &euro;10,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -265,9 +264,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Margherita</dt>
-									<dd class="price"> &euro;3,50</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Spaghetti allo scoglio</dt>
+									<dd class="price"> &euro;12,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -276,9 +274,9 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Diavola</dt>
-									<dd class="price"> &euro;4,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+									<dt>Calamarata</dt>
+									<dd class="price"> &euro;9,00</dd>
+									<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -287,9 +285,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rocco</dt>
-									<dd class="price"> &euro;5,50</dd>
-									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+									<dt>Paccheri con pescato del giorno</dt>
+									<dd class="price"> &euro;10,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -298,9 +295,19 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rotolo</dt>
+									<dt>Risotto alla pescatora</dt>
+									<dd class="price"> &euro;12,00</dd>
+									<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
+								</dl>
+								<div id="numeroProdotti-w">
+									<p>Quantità: <span id="numeroProdotti">1</span></p>
+									<a href="#" id="sub" class="button">-</a>
+									<a href="#" id="add" class="button">+</a>
+									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+								</div>
+								<dl>
+									<dt>Gnocchi alla sorrentina</dt>
 									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -309,9 +316,9 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Regina</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+									<dt>Penne all'arrabiata</dt>
+									<dd class="price"> &euro;5,00</dd>
+									<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -320,9 +327,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno</dt>
+									<dt>Trofie gorgonzola e noci</dt>
 									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -331,20 +337,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno Fritto</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Italiana</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+									<dt>Maccheroni fatti in casa con spek e porcini</dt>
+									<dd class="price"> &euro;8,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -361,9 +355,8 @@
 									<h2>DESSERT</h2>
 								</div>
 								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Pistacchio di bronte</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -372,9 +365,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Margherita</dt>
-									<dd class="price"> &euro;3,50</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Cioccolato</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -383,9 +375,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Diavola</dt>
-									<dd class="price"> &euro;4,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+									<dt>Nocciola</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -394,9 +385,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rocco</dt>
-									<dd class="price"> &euro;5,50</dd>
-									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+									<dt>Rocher</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -405,9 +395,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rotolo</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+									<dt>Setteveli ricoperto di cioccolato</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -416,9 +405,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Regina</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+									<dt>Setteveli alla nocciola</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -427,9 +415,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+									<dt>Setteveli al cacao</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -438,9 +425,9 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno Fritto</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+									<dt>Degustando</dt>
+									<dd class="price"> &euro;4,00</dd>
+									<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -449,15 +436,19 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Italiana</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+									<dt>Tiramisù</dt>
+									<dd class="price"> &euro;4,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
 									<a href="#" id="sub" class="button">-</a>
 									<a href="#" id="add" class="button">+</a>
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
+								</div>
+								<div class="logo mr-auto">
+									<h1 class="text-light">
+										<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
+									</h1>
 								</div>
 						</div>
 					</div>
@@ -468,9 +459,8 @@
 									<h2>BEVANDE</h2>
 								</div>
 								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Acqua Naturale 1lt</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -479,9 +469,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Margherita</dt>
-									<dd class="price"> &euro;3,50</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>Acqua Effervescente 1lt</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>

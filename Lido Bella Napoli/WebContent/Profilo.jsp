@@ -32,18 +32,6 @@
 					<a href="index.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span> Ristorante Pizzeria Bella Napoli</span>
 				</h1>
 			</div>
-			<nav class="nav-menu d-none d-lg-block">
-				<ul>
-					<li class="active"><a href="index.jsp">Home</a></li>
-					<li><a href="Ristorante.jsp">Restaurant</a></li>
-					<li class="drop-down"><a href="">Services</a>
-						<ul>
-							<li><a href="#">Beach Resort</a></li>
-							<li><a href="#">Disco</a></li>
-						</ul></li>
-					<li><a href="review.jsp">Reviews</a></li>
-				</ul>
-			</nav>
 			<div class="Profilo">
 				<c:if test="${not loggato}">
 				</c:if>

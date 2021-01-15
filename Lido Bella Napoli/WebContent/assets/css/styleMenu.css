@@ -832,6 +832,10 @@ section {
 #menu{
 	width: 100%;
 }
+#menu .logo img{
+	margin-top: 30px;
+	align-content: center;
+}
 
 .portfolio #portfolio-flters {
 	padding: 0;

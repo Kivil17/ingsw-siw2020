@@ -58,7 +58,7 @@
 				<c:if test="${not loggatoAdmin}">
 					<ul>
 						<li><a href="Ristorante.jsp">Home Ristorante</a></li>
-						<li><a href="Menu.jsp">Book a pizza</a></li>
+						<li><a href="Menu.jsp">Book a product</a></li>
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
@@ -71,7 +71,7 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
+						<li><a href="MenuAdmin.jsp">prodotti prenotati</a></li>
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>

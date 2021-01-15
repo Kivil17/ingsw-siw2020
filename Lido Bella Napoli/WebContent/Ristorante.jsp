@@ -114,8 +114,8 @@
 			<h1>WELCOME!</h1>
 			<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
 			<div class = "bottoni" >
-				<a href="Prenotazione.jsp"><button>Book a table</button></a> 
-				<a href="Menu.jsp"><button>Book a Pizza</button></a>
+				<a href="Prenotazione.jsp"><button>Book a Table</button></a> 
+				<a href="Menu.jsp"><button>Book a Product</button></a>
 			</div>
 		</div>
 		
