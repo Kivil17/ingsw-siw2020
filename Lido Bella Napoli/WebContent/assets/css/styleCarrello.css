@@ -309,6 +309,15 @@ body#checkout-page #site-info {
 	padding: 0.3em;
 }
 
+#checkout-order-form input[type="date"] {
+	width: 200px;
+	display: block;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0.3em;
+}
+
 #checkout-order-form select {
 	width: 200px;
 	display: block;

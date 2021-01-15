@@ -57,7 +57,7 @@
 		 		</div>
 		 		<div>
 		 			<label for="date">Date</label>
-		 			<input type="text" name="date" id="date" data-type="string" data-message="Not a valid date" />
+					<input type="date" value="2021-01-15" id="example-data-input">
 		 		</div>
 		 	</fieldset>
 		 	

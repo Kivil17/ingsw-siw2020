@@ -150,6 +150,10 @@
 			<div class="form-item">
 				<input type="email" name="email" class="input" placeholder="Email" required>
 			</div>
+			<label for="example-date-input" class="col-2 col-form-label">Date</label>
+			<div class="form-item">
+				<input class="input" type="date" value="2021-01-15" id="example-data-input">
+			</div>
 			<div class="form-item">
 				<input type="submit" id="prenota" class="button Prenota" value="Prenota">
 			</div>

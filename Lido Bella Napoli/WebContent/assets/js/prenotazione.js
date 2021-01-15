@@ -59,7 +59,7 @@ Booking.tavoliW.addEventListener('click', (e) => {
 
 		Booking.tavoloSelezionato.textContent = selezionato;
 
-		/*if(selezionato == 1)
+		if(selezionato == 1)
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
 		else if(selezionato == 2)
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
@@ -78,7 +78,7 @@ Booking.tavoliW.addEventListener('click', (e) => {
 		else if(selezionato == 9)
 			Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
 		else
-			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';*/
+			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';
 		
 	}
 });

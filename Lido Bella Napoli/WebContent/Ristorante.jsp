@@ -59,7 +59,7 @@
 				<c:if test="${not loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="Menu.jsp">Book a pizza</a></li>
+						<li><a href="Menu.jsp">Book a product</a></li>
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
@@ -74,7 +74,7 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="MenuAdmin.jsp">pizze prenotate</a></li>
+						<li><a href="MenuAdmin.jsp">prodotti prenotati</a></li>
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
@@ -485,7 +485,6 @@
 				<!-- You can delete the links only if you purchased the pro version. -->
 				<!-- Licensing information: https://bootstrapmade.com/license/ -->
 				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-				Designed by <a href="#">.</a>
 			</div>
 		</div>
 	</footer>
