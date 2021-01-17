@@ -49,7 +49,7 @@
 
 			<div class="logo mr-auto">
 				<h1 class="text-light">
-					<a href="Ristorante.jsp"><img src="assets/img/bn.png" alt=""class="img-fluid"></a><span>  Ristorante Pizzeria Bella Napoli</span>
+					<a href="Ristorante.jsp"><img src="assets/img/bn.png" alt=""class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -137,7 +137,7 @@
 							<li data-filter="*" class="filter-active">All</li>
 							<li data-filter=".pizze-speciali">Pizze Speciali</li>
 							<li data-filter=".piatti">Piatti</li>
-							<li data-filter=".specialita">Specialit√†</li>
+							<li data-filter=".specialita">Specialit‡†</li>
 						</ul>
 					</div>
 				</div>

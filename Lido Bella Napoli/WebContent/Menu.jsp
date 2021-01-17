@@ -14,6 +14,7 @@
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <link
 	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 	rel="stylesheet">
@@ -48,7 +49,7 @@
 
 			<div class="logo mr-auto">
 				<h1 class="text-light">
-					<a href="Menu.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>  Ristorante Pizzeria Bella Napoli</span>
+					<a href="Menu.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
 				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -128,6 +129,7 @@
 				<div class="row" data-aos="fade-in">
 					<div class="col-lg-12 d-flex justify-content-center">
 						<ul id="portfolio-flters">
+							<li data-filter="*" class="filter-active">All</li>
 							<li data-filter=".pizzeria">Pizzeria</li>
 							<li data-filter=".cucina">Cucina</li>
 							<li data-filter=".dessert">Dessert</li>
@@ -479,9 +481,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Diavola</dt>
-									<dd class="price"> &euro;4,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+									<dt>CocaCola 1lt in vetro</dt>
+									<dd class="price"> &euro;3,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -490,9 +491,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rocco</dt>
-									<dd class="price"> &euro;5,50</dd>
-									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+									<dt>CocaCola 33cl in vetro</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -501,9 +501,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rotolo</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+									<dt>CocaCola Zero 33cl in vetro</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -512,9 +511,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Regina</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+									<dt>Fanta 33cl in vetro</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -523,9 +521,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+									<dt>Sprite 33cl in vetro</dt>
+									<dd class="price"> &euro;2,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -534,9 +531,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno Fritto</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+									<dt>Menabrea 66cl</dt>
+									<dd class="price"> &euro;3,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -545,9 +541,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Italiana</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+									<dt>Ichnusa 33cl</dt>
+									<dd class="price"> &euro;3,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -564,9 +559,8 @@
 									<h2>VINI</h2>
 								</div>
 								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>TENUTA IUZZOLINI ROSATO</dt>
+									<dd class="price"> &euro;9,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -575,9 +569,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Margherita</dt>
-									<dd class="price"> &euro;3,50</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									<dt>TENUTA IUZZOLINI ROSSO</dt>
+									<dd class="price"> &euro;9,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -586,9 +579,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Diavola</dt>
-									<dd class="price"> &euro;4,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+									<dt>TENUTA IUZZOLINI BIANCO</dt>
+									<dd class="price"> &euro;9,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -597,9 +589,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rocco</dt>
-									<dd class="price"> &euro;5,50</dd>
-									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+									<dt>CRITONE</dt>
+									<dd class="price"> &euro;12,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -608,9 +599,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Rotolo</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+									<dt>TERRE LONTANE</dt>
+									<dd class="price"> &euro;12,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -619,9 +609,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Regina</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+									<dt>MADRE GOCCIA</dt>
+									<dd class="price"> &euro;12,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -630,9 +619,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+									<dt>PRIMAFILA</dt>
+									<dd class="price"> &euro;15,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -641,9 +629,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Ripieno Fritto</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+									<dt>MURANERA ROSSO</dt>
+									<dd class="price"> &euro;25,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -652,9 +639,8 @@
 									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
 								</div>
 								<dl>
-									<dt>Italiana</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+									<dt>LUMARE ROSATO</dt>
+									<dd class="price"> &euro;25,00</dd>
 								</dl>
 								<div id="numeroProdotti-w">
 									<p>Quantità: <span id="numeroProdotti">1</span></p>
@@ -750,6 +736,42 @@
 
 				</div>
 			</section>
+			
+			<section id="review">
+				
+				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+						<h2>Review</h2>
+				</div>
+			
+				<div class="cont">
+					<div class="title">
+						<h1>
+							Bella<span>Napoli</span>
+						</h1>
+					</div>
+					<div class="stars">
+						<form action="">
+							<input class="star star-5" id="star-5-2" type="radio" name="star" />
+							<label class="star star-5" for="star-5-2"></label> <input
+								class="star star-4" id="star-4-2" type="radio" name="star" /> <label
+								class="star star-4" for="star-4-2"></label> <input
+								class="star star-3" id="star-3-2" type="radio" name="star" /> <label
+								class="star star-3" for="star-3-2"></label> <input
+								class="star star-2" id="star-2-2" type="radio" name="star" /> <label
+								class="star star-2" for="star-2-2"></label> <input
+								class="star star-1" id="star-1-2" type="radio" name="star" /> <label
+								class="star star-1" for="star-1-2"></label>
+							<div class="rev-box">
+								<textarea class="review" col="30" name="review" placeholder="Write a review."></textarea>
+								<input type="submit" value="Send Review">
+								<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
+								<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			
 	</main>
 	<!-- End #main -->
 
@@ -758,40 +780,7 @@
 		
 		<div class="footer-top">
 			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up"
-						data-aos-delay="350">
-						<div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-							<form action="forms/contact.php" method="post" role="form"
-								class="php-email-form">
-								<h3>Write a review</h3>
-								<div class="form-group">
-									<textarea class="form-control" name="message" rows="5"
-										data-rule="required" data-msg="Please write something for us"
-										placeholder="Message"></textarea>
-									<div class="validate"></div>
-								</div>
-								<!-- <div class="mb-3">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent.
-										Thank you!</div>
-								</div> -->
-								<div class="footer-newsletter">
-									<input type="submit"value="Send Review">
-								</div>
-								<div class="social-links mt-3">
-									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"
-										class="facebook"><i class="bx bxl-facebook"></i></a> <a
-										href="https://www.instagram.com/_pizzeriabellanapoli/"
-										class="instagram"><i class="bx bxl-instagram"></i></a>
-								</div>
-							</form>
-						</div>
-					</div>
-
-				</div>
+				
 			</div>
 		</div>
 
@@ -799,13 +788,6 @@
 			<div class="copyright">
 				&copy; Copyright <strong><span>1991</span></strong>. All Rights
 				Reserved
-			</div>
-			<div class="credits">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-				Designed by <a href="#">.</a>
 			</div>
 		</div>
 	</footer>

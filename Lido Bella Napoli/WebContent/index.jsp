@@ -73,6 +73,9 @@
 	            </ul>
 	          </li>
 	          <li><a href="review.jsp">Reviews</a></li>
+	          <li ><a href="index.jsp">Home</a></li>
+	          <li ><a href="index.jsp">Home</a></li>
+	          <li ><a href="index.jsp">Home</a></li>
 	        </ul>
 	    </c:if>
 	    

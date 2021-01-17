@@ -23,7 +23,7 @@
 <table>
     <tr>
         <td>
-            <div id="wdr-component"></div>
+            <div id="wdr-component"></div> 
         </td>
         <td>
             <div id="lineChartContainer"></div>

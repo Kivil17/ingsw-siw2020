@@ -60,7 +60,14 @@ Booking.tavoliW.addEventListener('click', (e) => {
 		Booking.tavoloSelezionato.textContent = selezionato;
 
 		if(selezionato == 1)
-			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+		{
+			if(Booking.tavoloSelezionato.textContent == '1' && Booking.numeroPersone > 6){
+				Booking.messageStatus.textContent = 'il tavolo selezionato è al massimo da 6 persone.';
+			}
+			else{
+				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			}
+		}
 		else if(selezionato == 2)
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
 		else if(selezionato == 3)
