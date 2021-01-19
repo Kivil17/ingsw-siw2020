@@ -389,9 +389,13 @@
 						</div>
 
 						<div class="col-lg-6">
-							<form action="forms/contact.php" method="post" role="form"
+							<form action="Contact" method="GET" role="form"
 								class="php-email-form">
 								<div class="form-row">
+									<div class="col-md-6 form-group">
+										<input type="hidden" name="flag" class="form-control" id="name" value="Ristorante" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
+										<div class="validate"></div>
+									</div>
 									<div class="col-md-6 form-group">
 										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
 										<div class="validate"></div>

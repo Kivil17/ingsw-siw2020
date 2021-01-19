@@ -59,34 +59,30 @@ Booking.tavoliW.addEventListener('click', (e) => {
 
 		Booking.tavoloSelezionato.textContent = selezionato;
 
-		if(selezionato == 1)
+		if(selezionato == 1 && Booking.numeroPersone <= 6)
 		{
-			if(Booking.tavoloSelezionato.textContent == '1' && Booking.numeroPersone > 6){
-				Booking.messageStatus.textContent = 'il tavolo selezionato è al massimo da 6 persone.';
-			}
-			else{
-				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-			}
+			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';	
 		}
-		else if(selezionato == 2)
+		else if(selezionato == 2 && Booking.numeroPersone <= 4)
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 3)
+		else if(selezionato == 3 && Booking.numeroPersone <= 2)
 			Booking.messageStatus.textContent = 'Tavolo da 2 persone.';
-		else if(selezionato == 4)
+		else if(selezionato == 4 && Booking.numeroPersone <= 4)
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 5)
+		else if(selezionato == 5 && Booking.numeroPersone <= 6)
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 6)
+		else if(selezionato == 6 && Booking.numeroPersone <= 6)
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 7)
+		else if(selezionato == 7 && Booking.numeroPersone <= 6)
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 8)
+		else if(selezionato == 8 && Booking.numeroPersone <= 4)
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 9)
+		else if(selezionato == 9 && Booking.numeroPersone <= 10)
 			Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
-		else
+		else if(selezionato == 10 && Booking.numeroPersone <= 14)
 			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';
-		
+		else
+			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
 	}
 });
 
