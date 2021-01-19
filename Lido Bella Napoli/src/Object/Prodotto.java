@@ -1,15 +1,15 @@
 package Object;
 
-public class Pizza {
+public class Prodotto {
 	private String nome;
 	private double prezzo;
 	
-	public Pizza(String nome, double prezzo) {
+	public Prodotto(String nome, double prezzo) {
 		this.nome = nome;
 		this.prezzo = prezzo;
 	}
 
-	public Pizza() {
+	public Prodotto() {
 		this.nome = "";
 		this.prezzo = 0.0;
 	}

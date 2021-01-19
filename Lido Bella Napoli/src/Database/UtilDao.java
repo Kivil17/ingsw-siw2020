@@ -20,7 +20,7 @@ public class UtilDao {
 			String delete = "drop SEQUENCE if EXISTS sequenza_id;"
 					+ "drop table if exists utente;"
 				    + "drop table if exists ombrellone;"
-				    + "drop table if exists pizza;"
+				    + "drop table if exists prodotto;"
 				    + "drop table if exists tavolo;"
 				    + "drop table if exists recensione;"
 				    + "drop table if exists carrello;";
@@ -60,9 +60,9 @@ public class UtilDao {
 					+ "create table utente(\"username\" varchar(255) primary key, password varchar(255),email varchar(255),registrato boolean);"
 					+ "create table tavolo(\"id\" int primary key, utentePrenotato varchar(255), email varchar(255), occupato boolean);"
 					+ "create table ombrellone(\"id\" int primary key, utentePrenotato varchar(255),email varchar(255),occupato boolean);"
-					+ "create table pizza(nome varchar(255), prezzo double precision);"
+					+ "create table prodotto(nome varchar(255), prezzo double precision);"
 					+ "create table recensione(\"idTipo\" varchar(255) primary key, oneStar int, twoStars int, threeStars int, fourStars int, fiveStars int);"
-					+ "create table carrello(\"idOrdine\" int primary key, nomeUtente varchar(255), quantita int, idProdotto int);";
+					+ "create table carrello(\"idOrdine\" varchar(255) primary key, nomeUtente varchar(255), quantita int, idProdotto int, totaleOrdine double precision);";
 			PreparedStatement statement = connection.prepareStatement(create);
 		
 			statement.executeUpdate();
@@ -96,7 +96,7 @@ public class UtilDao {
 			delete = "delete FROM tavolo";
 			statement = connection.prepareStatement(delete);
 			
-			delete = "delete FROM pizza";
+			delete = "delete FROM prodotto";
 			statement = connection.prepareStatement(delete);
 			
 			delete = "delete FROM ombrellone";

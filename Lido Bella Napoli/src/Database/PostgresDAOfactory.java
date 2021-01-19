@@ -1,5 +1,9 @@
 package Database;
 
+import ObjectDao.CarrelloDao;
+import ObjectDao.OmbrelloneDao;
+import ObjectDao.ProdottoDao;
+import ObjectDao.RecensioneDao;
 import ObjectDao.TavoloDao;
 import ObjectDao.UtenteDAO;
 
@@ -41,17 +45,29 @@ public class PostgresDAOfactory extends DAOFactory {
 
 	@Override
 	public TavoloDao getTavoloDAO() {
-		// TODO Auto-generated method stub
-		return null;
+		return new TavoloDaoJDBC(dataSource);
 	}
 
-	
-	
-	/*@Override
-	public RecensioneDAO getRecensioneDAO() {
-		// TODO Auto-generated method stub
+	@Override
+	public RecensioneDao getRecensioneDAO() {
 		return new RecensioneDaoJDBC(dataSource);
-	}*/
+	}
+
+	@Override
+	public CarrelloDao getCarrelloDao() {
+		return new CarrelloDaoJDBC(dataSource);
+	}
+
+	@Override
+	public OmbrelloneDao getOmbrelloneDAO() {
+		return new OmbrelloneDaoJDBC(dataSource);
+	}
+
+	@Override
+	public ProdottoDao getProdottoDao() {
+		return new ProdottoDaoJDBC(dataSource);
+	}
+
 
 }
 

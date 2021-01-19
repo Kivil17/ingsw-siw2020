@@ -3,9 +3,9 @@ package Database;
 import java.sql.*;
 
 class DataSource {
-	final private String dbURI;//
-	final private String userName;// 
-	final private String password;// 
+	final private String dbURI;
+	final private String userName;
+	final private String password;
 	
 	
 

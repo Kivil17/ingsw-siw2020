@@ -393,7 +393,7 @@
 								class="php-email-form">
 								<div class="form-row">
 									<div class="col-md-6 form-group">
-										<input type="hidden" name="flag" class="form-control" id="name" value="Ristorante" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
+										<input type="hidden" name="flag" id="flag" value="Ristorante"></input>
 										<div class="validate"></div>
 									</div>
 									<div class="col-md-6 form-group">

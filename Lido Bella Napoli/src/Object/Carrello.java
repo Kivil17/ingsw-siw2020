@@ -2,30 +2,33 @@ package Object;
 
 public class Carrello {
 	
-	private int idProdotto;
+	private String idProdotto;
 	private String nomeUtente;
 	private int quantita;
 	private int idOrdine;
+	private double totaleOrdine;
 	
-	public Carrello(int idProdotto, String nomeUtente, int quantita, int idOrdine) {
+	public Carrello(String idProdotto, String nomeUtente, int quantita, int idOrdine, double totaleOrdine) {
 		this.idProdotto = idProdotto;
 		this.nomeUtente = nomeUtente;
 		this.quantita = quantita;
 		this.idOrdine = idOrdine;
+		this.totaleOrdine = totaleOrdine;
 	}
 
 	public Carrello() {
-		this.idProdotto = -1;
+		this.idProdotto = "";
 		this.nomeUtente = "";
 		this.quantita = 0;
 		this.idOrdine = -1;
+		this.totaleOrdine = 0;
 	}
 
-	public int getIdProdotto() {
+	public String getIdProdotto() {
 		return idProdotto;
 	}
 
-	public void setIdProdotto(int idProdotto) {
+	public void setIdProdotto(String idProdotto) {
 		this.idProdotto = idProdotto;
 	}
 
@@ -52,6 +55,15 @@ public class Carrello {
 	public void setIdOrdine(int idOrdine) {
 		this.idOrdine = idOrdine;
 	}
+
+	public double getTotaleOrdine() {
+		return totaleOrdine;
+	}
+
+	public void setTotaleOrdine(double totaleOrdine) {
+		this.totaleOrdine = totaleOrdine;
+	}
+	
 	
 }
 

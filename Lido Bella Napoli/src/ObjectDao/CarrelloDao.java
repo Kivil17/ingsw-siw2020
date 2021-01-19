@@ -3,7 +3,7 @@ package ObjectDao;
 import java.util.ArrayList;
 
 import Object.Carrello;
-import Object.Pizza;
+import Object.Prodotto;
 
 public interface CarrelloDao {
 

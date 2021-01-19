@@ -1,5 +1,9 @@
 package Database;
 
+import ObjectDao.CarrelloDao;
+import ObjectDao.OmbrelloneDao;
+import ObjectDao.ProdottoDao;
+import ObjectDao.RecensioneDao;
 import ObjectDao.TavoloDao;
 import ObjectDao.UtenteDAO;
 
@@ -17,13 +21,13 @@ public abstract class DAOFactory {
 		}
 	}
 	
-	public abstract UtenteDAO getUtenteDAO();
-	
-	//public abstract OmbrelloneDAO getOmbrelloneDAO();
-
 	public abstract UtilDao getUtilDAO();
-
+	
+	public abstract UtenteDAO getUtenteDAO();
+	public abstract CarrelloDao getCarrelloDao();
+	public abstract OmbrelloneDao getOmbrelloneDAO();
 	public abstract TavoloDao getTavoloDAO();
-	//public abstract PizzaDAO getNewsDAO();
-	//public abstract RecensioneDAO getRecensioneDAO();
+	public abstract ProdottoDao getProdottoDao();
+	public abstract RecensioneDao getRecensioneDAO();
+	
 }

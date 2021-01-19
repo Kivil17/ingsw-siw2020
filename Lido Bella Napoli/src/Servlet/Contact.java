@@ -36,9 +36,9 @@ public class Contact extends HttpServlet {
 	}
 	 public void sendEmail(String userEmail, String name, String subject1,String message) {
 		 try{
-			 	String host ="smtp.gmail.com" ;
+			 	String host ="smtp.outlook.it" ;
 	            String user = "bellanapoli1987@outlook.it";
-	            String pass = "Presidente2020";
+	            String pass = "Bellanapoli17";
 	            String to = "bellanapoli1987@outlook.it";
 	            String from = "bellanapoli1987@outlook.it";
 	            String subject = subject1;
@@ -53,7 +53,7 @@ public class Contact extends HttpServlet {
 	            props.put("mail.smtp.auth", "true");
 	            props.put("mail.smtp.starttls.required", "true");
 
-//	            java.security.Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+	            //java.security.Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
 	            Session mailSession = Session.getDefaultInstance(props, null);
 	            mailSession.setDebug(sessionDebug);
 	            Message msg = new MimeMessage(mailSession);
