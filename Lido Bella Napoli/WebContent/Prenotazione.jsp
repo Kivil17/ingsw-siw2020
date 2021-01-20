@@ -205,10 +205,7 @@
 							<form action="Contact" method="GET" role="form"
 								class="php-email-form">
 								<div class="form-row">
-									<div class="col-md-6 form-group">
-										<input type="hidden" name="flag" id="flag" value="Prenotazione"></input>
-										<div class="validate"></div>
-									</div>
+									
 									<div class="col-md-6 form-group">
 										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
 										<div class="validate"></div>
@@ -222,6 +219,10 @@
 									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 									<div class="validate"></div>
 								</div>
+								<div class="col-md-6 form-group">
+									<input type="hidden" name="flag" id="flag" value="Ristorante"></input>
+									<div class="validate"></div>
+			 					</div>
 								<div class="form-group">
 									<textarea class="form-control" name="message" rows="5"
 										data-rule="required" data-msg="Please write something for us"

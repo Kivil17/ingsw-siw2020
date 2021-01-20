@@ -51,8 +51,6 @@
 				<h1 class="text-light">
 					<a href="Menu.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -147,18 +145,19 @@
 								<div class="titolo">
 									<h2>PIZZE</h2>
 								</div>
-								
-								<dl>
-									<dt>Marinara</dt>
-									<dd class="price"> &euro;3,00</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Marinara</dt>
+										<dd class="price"> &euro;3,00</dd>
+										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" value="Carrello"></button>
+									</div>
+								</form>
 								<dl>
 									<dt>Margherita</dt>
 									<dd class="price"> &euro;3,50</dd>
@@ -701,10 +700,7 @@
 							<form action="Contact" method="GET" role="form"
 								class="php-email-form">
 								<div class="form-row">
-									<div class="col-md-6 form-group">
-										<input type="hidden" name="flag" id="flag" value="Menu"></input>
-										<div class="validate"></div>
-									</div>
+									
 									<div class="col-md-6 form-group">
 										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
 										<div class="validate"></div>
@@ -718,6 +714,10 @@
 									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 									<div class="validate"></div>
 								</div>
+								<div class="col-md-6 form-group">
+									<input type="hidden" name="flag" id="flag" value="Ristorante"></input>
+									<div class="validate"></div>
+			  					</div>
 								<div class="form-group">
 									<textarea class="form-control" name="message" rows="5"
 										data-rule="required" data-msg="Please write something for us"
@@ -813,7 +813,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-
+	<script src="assets/js/jquery.shop.js"></script>
 </body>
 
 </html>

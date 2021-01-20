@@ -1,4 +1,4 @@
-package Servlet;
+/*package Servlet;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
@@ -73,4 +73,4 @@ public class Contact extends HttpServlet {
 	            System.out.println(ex+"problema nell'invio la mail");
 	        }
 	 }
-}
+}*/
