@@ -61,7 +61,7 @@
 				<c:if test="${not loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="#">Book a Umbrella</a></li>
+						<li><a href="PrenotazioneOmbrellone.jsp">Book a Umbrella</a></li>
 						<li><a href="#beach">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
@@ -75,7 +75,7 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="#">Ombrelloni prenotati</a></li>
+						<li><a href="PrenotazioneOmbrellone.jsp">Ombrelloni prenotati</a></li>
 						<li><a href="#beach">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
@@ -116,14 +116,14 @@
 			<h1>WELCOME!</h1>
 			<h2>BOOK NOW YOUR UMBRELLA</h2>
 			<div class="bottoni">
-				<a href="#"><button>Book a Umbrella</button></a>
+				<a href="PrenotazioneOmbrellone.jsp"><button>Book a Umbrella</button></a>
 			</div>
 		</div>
 
 	</section>
 
 	<main id="main">
-
+	
 		<section id="beach" class="beach">
 			<div class="container">
 
@@ -131,6 +131,7 @@
 					<h2>Gallery</h2>
 					<p>La nostra raccolta di immagini.</p>
 				</div>
+				
 				<div class="row portfolio-container" data-aos="fade-up">
 
 					<div class="beach-wrap">
@@ -156,27 +157,14 @@
 					</div>
 
 					<div class="beach-wrap">
-						<img src="assets/img/beach/beach7.jpeg" class="img-fluid" alt="">
+						<img src="assets/img/beach/beach4.jpeg" class="img-fluid" alt="">
 						<div class="beach-links">
-							<a href="assets/img/beach/beach7.jpeg"
+							<a href="assets/img/beach/beach4.jpeg"
 								data-gall="portfolioGallery" class="venobox" title="App 1"><i
 								class="bx bx-plus"></i></a> <a href="portfolio-details.html"
 								title="More Details"><i class="bx bx-link"></i></a>
 						</div>
 					</div>
-
-
-					<div class="beach-wrap">
-						<img src="assets/img/beach/beach7.jpeg" class="img-fluid" alt="">
-						<div class="beach-links">
-							<a href="assets/img/beach/beach7.jpeg"
-								data-gall="portfolioGallery" class="venobox" title="App 1"><i
-								class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-								title="More Details"><i class="bx bx-link"></i></a>
-						</div>
-					</div>
-
-
 
 				</div>
 
