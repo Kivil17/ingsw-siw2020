@@ -54,7 +54,7 @@
 	          <li><a href="Ristorante.jsp">Restaurant</a></li>
 	          <li class="drop-down"><a href="">Services</a>
 	            <ul>
-	              <li><a href="#">Beach Resort</a></li>
+	              <li><a href="Lido.jsp">Beach Resort</a></li>
 	              <li><a href="#">Disco</a></li>
 	            </ul>
 	          </li>
@@ -68,7 +68,7 @@
 	          <li><a href="Ristorante.jsp">Restaurant</a></li>
 	          <li class="drop-down"><a href="">Services</a>
 	            <ul>
-	              <li><a href="#">Beach Resort</a></li>
+	              <li><a href="Lido.jsp">Beach Resort</a></li>
 	              <li><a href="#">Disco</a></li>
 	            </ul>
 	          </li>

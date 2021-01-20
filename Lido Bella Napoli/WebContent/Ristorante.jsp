@@ -65,7 +65,7 @@
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
 								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
 	
@@ -80,7 +80,7 @@
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
 								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="review.jsp">Reviews</a></li>
 					</ul>
