@@ -30,6 +30,11 @@
 	rel="stylesheet">
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+		
+		
 <!-- Template Main CSS File -->
 <link href="assets/css/styleMenu.css" rel="stylesheet">
 
@@ -116,7 +121,8 @@
 	</section>
 
 	<main id="main">
-
+	
+		
 		<section id="portfolio" class="portfolio">
 			<div class="container">
 
@@ -137,8 +143,6 @@
 					</div>
 				</div>
 				
-				
-
 				<div class="row portfolio-container" data-aos="fade-up">
 					<div class="col-lg-12 portfolio-item pizzeria ">
 						<div id="menu">
@@ -155,97 +159,113 @@
 										<p>Quantità: <span id="numeroProdotti">1</span></p>
 										<a href="#" id="sub" class="button">-</a>
 										<a href="#" id="add" class="button">+</a>
-										<button type="submit" value="Carrello"></button>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
-								<dl>
-									<dt>Margherita</dt>
-									<dd class="price"> &euro;3,50</dd>
-									<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Diavola</dt>
-									<dd class="price"> &euro;4,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Rocco</dt>
-									<dd class="price"> &euro;5,50</dd>
-									<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Rotolo</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Regina</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Ripieno</dt>
-									<dd class="price"> &euro;8,00</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Ripieno Fritto</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Italiana</dt>
-									<dd class="price"> &euro;8,50</dd>
-									<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Margherita</dt>
+										<dd class="price"> &euro;3,50</dd>
+										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Diavola</dt>
+										<dd class="price"> &euro;4,50</dd>
+										<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Rocco</dt>
+										<dd class="price"> &euro;5,50</dd>
+										<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Rotolo</dt>
+										<dd class="price"> &euro;8,00</dd>
+										<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Regina</dt>
+										<dd class="price"> &euro;8,50</dd>
+										<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Ripieno</dt>
+										<dd class="price"> &euro;8,00</dd>
+										<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Ripieno Fritto</dt>
+										<dd class="price"> &euro;8,50</dd>
+										<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Italiana</dt>
+										<dd class="price"> &euro;8,50</dd>
+										<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
 						</div>
 					</div>
 					
@@ -254,99 +274,117 @@
 								<div class="titolo">
 									<h2>CUCINA</h2>
 								</div>
-								<dl>
-									<dt>Spaghetti alle vongole</dt>
-									<dd class="price"> &euro;10,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Spaghetti allo scoglio</dt>
-									<dd class="price"> &euro;12,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Calamarata</dt>
-									<dd class="price"> &euro;9,00</dd>
-									<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Paccheri con pescato del giorno</dt>
-									<dd class="price"> &euro;10,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Risotto alla pescatora</dt>
-									<dd class="price"> &euro;12,00</dd>
-									<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Gnocchi alla sorrentina</dt>
-									<dd class="price"> &euro;8,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Penne all'arrabiata</dt>
-									<dd class="price"> &euro;5,00</dd>
-									<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Trofie gorgonzola e noci</dt>
-									<dd class="price"> &euro;8,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Maccheroni fatti in casa con spek e porcini</dt>
-									<dd class="price"> &euro;8,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Spaghetti alle vongole</dt>
+										<dd class="price"> &euro;10,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Spaghetti allo scoglio</dt>
+										<dd class="price"> &euro;12,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Calamarata</dt>
+										<dd class="price"> &euro;9,00</dd>
+										<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Paccheri con pescato del giorno</dt>
+										<dd class="price"> &euro;10,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Risotto alla pescatora</dt>
+										<dd class="price"> &euro;12,00</dd>
+										<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Gnocchi alla sorrentina</dt>
+										<dd class="price"> &euro;8,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Penne all'arrabiata</dt>
+										<dd class="price"> &euro;5,00</dd>
+										<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Trofie gorgonzola e noci</dt>
+										<dd class="price"> &euro;8,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Maccheroni fatti in casa con spek e porcini</dt>
+										<dd class="price"> &euro;8,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
 						</div>
 					</div>
 				
@@ -355,102 +393,120 @@
 								<div class="titolo">
 									<h2>DESSERT</h2>
 								</div>
-								<dl>
-									<dt>Pistacchio di bronte</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Cioccolato</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Nocciola</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Rocher</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Setteveli ricoperto di cioccolato</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Setteveli alla nocciola</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Setteveli al cacao</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Degustando</dt>
-									<dd class="price"> &euro;4,00</dd>
-									<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Tiramisù</dt>
-									<dd class="price"> &euro;4,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<div class="logo mr-auto">
-									<h1 class="text-light">
-										<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
-									</h1>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Pistacchio di bronte</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Cioccolato</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Nocciola</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Rocher</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Setteveli ricoperto di cioccolato</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Setteveli alla nocciola</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Setteveli al cacao</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Degustando</dt>
+										<dd class="price"> &euro;4,00</dd>
+										<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Tiramisù</dt>
+										<dd class="price"> &euro;4,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
+									<div class="logo mr-auto">
+										<h1 class="text-light">
+											<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
+										</h1>
+									</div>
 						</div>
 					</div>
 				
@@ -459,96 +515,114 @@
 								<div class="titolo">
 									<h2>BEVANDE</h2>
 								</div>
-								<dl>
-									<dt>Acqua Naturale 1lt</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Acqua Effervescente 1lt</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>CocaCola 1lt in vetro</dt>
-									<dd class="price"> &euro;3,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>CocaCola 33cl in vetro</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>CocaCola Zero 33cl in vetro</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Fanta 33cl in vetro</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Sprite 33cl in vetro</dt>
-									<dd class="price"> &euro;2,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Menabrea 66cl</dt>
-									<dd class="price"> &euro;3,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>Ichnusa 33cl</dt>
-									<dd class="price"> &euro;3,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Acqua Naturale 1lt</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Acqua Effervescente 1lt</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>CocaCola 1lt in vetro</dt>
+										<dd class="price"> &euro;3,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>CocaCola 33cl in vetro</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>CocaCola Zero 33cl in vetro</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Fanta 33cl in vetro</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Sprite 33cl in vetro</dt>
+										<dd class="price"> &euro;2,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Menabrea 66cl</dt>
+										<dd class="price"> &euro;3,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>Ichnusa 33cl</dt>
+										<dd class="price"> &euro;3,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+										<a href="#" id="sub" class="button">-</a>
+										<a href="#" id="add" class="button">+</a>
+										<button type="submit" >Carrello</button>
+									</div>
+								</form>
 						</div>
 					</div>
 					
@@ -557,96 +631,114 @@
 								<div class="titolo">
 									<h2>VINI</h2>
 								</div>
-								<dl>
-									<dt>TENUTA IUZZOLINI ROSATO</dt>
-									<dd class="price"> &euro;9,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>TENUTA IUZZOLINI ROSSO</dt>
-									<dd class="price"> &euro;9,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>TENUTA IUZZOLINI BIANCO</dt>
-									<dd class="price"> &euro;9,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>CRITONE</dt>
-									<dd class="price"> &euro;12,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>TERRE LONTANE</dt>
-									<dd class="price"> &euro;12,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>MADRE GOCCIA</dt>
-									<dd class="price"> &euro;12,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>PRIMAFILA</dt>
-									<dd class="price"> &euro;15,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>MURANERA ROSSO</dt>
-									<dd class="price"> &euro;25,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
-								<dl>
-									<dt>LUMARE ROSATO</dt>
-									<dd class="price"> &euro;25,00</dd>
-								</dl>
-								<div id="numeroProdotti-w">
-									<p>Quantità: <span id="numeroProdotti">1</span></p>
-									<a href="#" id="sub" class="button">-</a>
-									<a href="#" id="add" class="button">+</a>
-									<a href="cart.jsp"><img src="assets/img/5a385efc4d3fd6.3527956115136437723164.png" alt="" class="img-fluid"></a>
-								</div>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>TENUTA IUZZOLINI ROSATO</dt>
+										<dd class="price"> &euro;9,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>TENUTA IUZZOLINI ROSSO</dt>
+										<dd class="price"> &euro;9,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>TENUTA IUZZOLINI BIANCO</dt>
+										<dd class="price"> &euro;9,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>CRITONE</dt>
+										<dd class="price"> &euro;12,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>TERRE LONTANE</dt>
+										<dd class="price"> &euro;12,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>MADRE GOCCIA</dt>
+										<dd class="price"> &euro;12,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>PRIMAFILA</dt>
+										<dd class="price"> &euro;15,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>MURANERA ROSSO</dt>
+										<dd class="price"> &euro;25,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
+								<form class="form.add-to-cart" action="cart.jsp">
+									<dl>
+										<dt>LUMARE ROSATO</dt>
+										<dd class="price"> &euro;25,00</dd>
+									</dl>
+									<div id="numeroProdotti-w">
+										<p>Quantità: <span id="numeroProdotti">1</span></p>
+											<a href="#" id="sub" class="button">-</a>
+											<a href="#" id="add" class="button">+</a>
+											<button type="submit" >Carrello</button>
+									</div>
+								</form>
 						</div>
 					</div>
 					
@@ -750,19 +842,20 @@
 						</h1>
 					</div>
 					<div class="stars">
-						<form action="">
-							<input class="star star-5" id="star-5-2" type="radio" name="star" />
+						<form action="AddReview" method="get">
+							<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
 							<label class="star star-5" for="star-5-2"></label> <input
-								class="star star-4" id="star-4-2" type="radio" name="star" /> <label
+								class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
 								class="star star-4" for="star-4-2"></label> <input
-								class="star star-3" id="star-3-2" type="radio" name="star" /> <label
+								class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
 								class="star star-3" for="star-3-2"></label> <input
-								class="star star-2" id="star-2-2" type="radio" name="star" /> <label
+								class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
 								class="star star-2" for="star-2-2"></label> <input
-								class="star star-1" id="star-1-2" type="radio" name="star" /> <label
+								class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
 								class="star star-1" for="star-1-2"></label>
+								<input type="hidden" id="valore"/>
 							<div class="rev-box">
-								<textarea class="review" col="30" name="review" placeholder="Write a review."></textarea>
+								<textarea  id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
 								<input type="submit" value="Send Review">
 								<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
 								<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -809,7 +902,6 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/jquery.shop.js"></script>
 	<script src="assets/js/prodotto.js"></script>
 </body>
 

@@ -6,6 +6,8 @@
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="assets/js/jquery.shop.js"></script>
+
+
 </head>
 
 <body>

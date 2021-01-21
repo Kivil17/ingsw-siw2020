@@ -436,7 +436,7 @@
 						</h1>
 					</div>
 					<div class="stars">
-						<form action="AddReview" method="post">
+						<form action="AddReview" method="get">
 							<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
 							<label class="star star-5" for="star-5-2"></label> <input
 								class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
@@ -447,7 +447,7 @@
 								class="star star-2" for="star-2-2"></label> <input
 								class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
 								class="star star-1" for="star-1-2"></label>
-								<input type="hidden" id="valore" value=""/>
+								<input type="hidden" id="valore"/>
 							<div class="rev-box">
 								<textarea  id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
 								<input type="submit" value="Send Review">

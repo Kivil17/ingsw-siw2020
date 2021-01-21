@@ -995,13 +995,22 @@ section {
 	opacity: 0.8;
 }
 
-#numeroProdotti-w .button{
+#numeroProdotti-w button{
+	float: left;
 	background: none;
     color: inherit;
     padding: 4px 12px;
     border: 1px solid rgba(30, 48, 56, 0.2);
     transition: all .4s ease-in;
+	margin-left: 10px;
+	background-color: red;
+	color: white;
 }
+
+#numeroProdotti-w button:hover{
+	opacity: 0.8;
+}
+
 
 .numeroProdotti-w img{
 	float: right;

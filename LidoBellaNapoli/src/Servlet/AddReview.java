@@ -6,7 +6,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import Database.DatabaseManager;
 import Object.Recensione;
@@ -17,37 +16,29 @@ import ObjectDao.RecensioneDao;
  */
 @WebServlet("/AddReview")
 public class AddReview extends HttpServlet {
+	
+	/**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AddReview() {
-        super();
-    }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		HttpSession session = request.getSession();
-		RecensioneDao reviewDao = DatabaseManager.getInstance().getDaoFactory().getRecensioneDAO();
-		String idTipo="";
-		Recensione review = reviewDao.findByPrimaryKey(idTipo);
-		review.setIdTipo("Ristorante");
-		String valore =  (String) session.getAttribute("valore");
-		int newReview;
+		String paramIdTipo= "Ristorante";
+	 	String paramStella= req.getParameter("valore");
+	 	String paramMessage = req.getParameter("message");
+	 	
+	 	RecensioneDao reviewDao = DatabaseManager.getInstance().getDaoFactory().getRecensioneDAO();
+		Recensione review = reviewDao.findByPrimaryKey(paramIdTipo);
 		
-		review = new Recensione("Ristorante");			
-		switch (valore) {
+		int newReview=0;
+		if (review != null) {
+			reviewDao.delete(review);
+		} else {
+			review = new Recensione(paramIdTipo);			
+		}
+		switch (paramStella) {
 		 	case "1":
 		 		newReview = review.getOneStar() + 1;
 		 		review.setOneStar(newReview);
@@ -69,10 +60,12 @@ public class AddReview extends HttpServlet {
 		 		review.setFiveStars(newReview);
 		 		break;
 		}
-		String message = (String) session.getAttribute("message");
-		review.setMessage(message);
+		
+		review.setMessage(paramMessage);
+		
 		reviewDao.save(review);
-		doGet(request, response);
+	 	
+	 	resp.sendRedirect("Ristorante.jsp"); 
+	 	
 	}
-
 }

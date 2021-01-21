@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import Object.Recensione;
-import Object.Utente;
 import ObjectDao.RecensioneDao;
 
 public class RecensioneDaoJDBC implements RecensioneDao {
