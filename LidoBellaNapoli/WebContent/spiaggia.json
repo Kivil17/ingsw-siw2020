@@ -1,0 +1,45 @@
+{
+	"numero ombrelloni": 10,
+	"ombrelloni": [
+		{
+			"num": 1,
+			"occupato": false
+		},
+		{
+			"num": 2,
+			"occupato": false
+		},
+		{
+			"num": 3,
+			"occupato": true
+		},
+		{
+			"num": 4,
+			"occupato": false
+		},
+		{
+			"num": 5,
+			"occupato": false
+		},
+		{
+			"num": 6,
+			"occupato": true
+		},
+		{
+			"num": 7,
+			"occupato": false
+		},
+		{
+			"num": 8,
+			"occupato": false
+		},
+		{
+			"num": 9,
+			"occupato": true
+		},
+		{
+			"num": 10,
+			"occupato": false
+		}
+	]
+}
