@@ -25,7 +25,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into recensione(idTipo, oneStar, twoStars, threeStars, fourStars, fiveStars) values (?,?,?,?,?,?)";
+			String insert = "insert into recensione(idTipo, oneStar, twoStars, threeStars, fourStars, fiveStars, message) values (?,?,?,?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setString(1, recensione.getIdTipo());
 			statement.setInt(2, recensione.getOneStar());
@@ -33,7 +33,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 			statement.setInt(4, recensione.getThreeStars());
 			statement.setInt(5, recensione.getFourStars());
 			statement.setInt(6, recensione.getFiveStars());
-			
+			statement.setString(7, recensione.getMessage());
 			statement.executeUpdate();
 		} catch (SQLException e) {
 			throw new PersistenceException(e.getMessage());
@@ -67,6 +67,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 				recensione.setThreeStars(result.getInt("threeStars"));
 				recensione.setFourStars(result.getInt("fourStars"));
 				recensione.setFiveStars(result.getInt("fiveStars"));
+				recensione.setMessage(result.getString("message"));
 			}
 		} catch (SQLException e) {
 			throw new PersistenceException(e.getMessage());
@@ -98,6 +99,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 				recensione.setThreeStars(result.getInt("threeStar"));
 				recensione.setFourStars(result.getInt("fourStar"));
 				recensione.setFiveStars(result.getInt("fiveStar"));
+				recensione.setMessage(result.getString("message"));
 		        recensioni.add(recensione);
 			}
 		} catch (SQLException e) {
@@ -123,7 +125,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 		// TODO Auto-generated method stub
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String delete = "delete FROM recensione WHERE idBrano = ? ";
+			String delete = "delete FROM recensione WHERE idTipo = ? ";
 			PreparedStatement statement = connection.prepareStatement(delete);
 			statement.setString(1, recensione.getIdTipo());
 			statement.executeUpdate();

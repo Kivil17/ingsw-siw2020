@@ -810,6 +810,7 @@
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/jquery.shop.js"></script>
+	<script src="assets/js/prodotto.js"></script>
 </body>
 
 </html>

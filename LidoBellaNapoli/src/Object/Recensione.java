@@ -8,8 +8,10 @@ public class Recensione {
 	private int threeStars=0;
 	private int fourStars=0;
 	private int fiveStars=0;
+	private String message="";
 	public float rating=0;
 	public int reviewTot=0;
+	
 	
 	public Recensione() {}
 	
@@ -17,13 +19,14 @@ public class Recensione {
 		this.idTipo = idTipo;
 	}
 	
-	public Recensione(String idTipo, int oneStar, int twoStars, int threeStars, int fourStars, int fiveStars) {
+	public Recensione(String idTipo, int oneStar, int twoStars, int threeStars, int fourStars, int fiveStars, String message) {
 		this.idTipo = idTipo;
 		this.oneStar = oneStar;
 		this.twoStars = twoStars;
 		this.threeStars = threeStars;
 		this.fourStars = fourStars;
 		this.fiveStars = fiveStars;
+		this.message = message;
 		this.rating = getRating();
 		this.reviewTot = getReviewTot();
 	}
@@ -90,4 +93,13 @@ public class Recensione {
 		this.rating = getRating();
 		this.reviewTot = getReviewTot();
 	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
 }
