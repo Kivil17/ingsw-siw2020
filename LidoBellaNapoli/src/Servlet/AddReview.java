@@ -7,9 +7,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Database.DAOFactory;
 import Database.DatabaseManager;
 import Object.Recensione;
+import Object.Utente;
 import ObjectDao.RecensioneDao;
+import ObjectDao.UtenteDAO;
 
 /**
  * Servlet implementation class AddReview
@@ -26,13 +29,12 @@ public class AddReview extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		String paramIdTipo= "Ristorante";
-	 	String paramStella= req.getParameter("valore");
 	 	String paramMessage = req.getParameter("message");
 	 	
-	 	RecensioneDao reviewDao = DatabaseManager.getInstance().getDaoFactory().getRecensioneDAO();
-		Recensione review = reviewDao.findByPrimaryKey(paramIdTipo);
+	 	DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
+	 	RecensioneDao reviewDao = factory.getRecensioneDAO();
 		
-		int newReview=0;
+		/*int newReview=0;
 		if (review != null) {
 			reviewDao.delete(review);
 		} else {
@@ -59,11 +61,10 @@ public class AddReview extends HttpServlet {
 		 		newReview = review.getFiveStars() + 1;
 		 		review.setFiveStars(newReview);
 		 		break;
-		}
+		}*/
 		
-		review.setMessage(paramMessage);
-		
-		reviewDao.save(review);
+		Recensione nuovaRecensione=new Recensione(paramIdTipo,0,0,0,0,1,paramMessage);
+		reviewDao.save(nuovaRecensione);
 	 	
 	 	resp.sendRedirect("Ristorante.jsp"); 
 	 	

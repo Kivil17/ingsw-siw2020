@@ -24,7 +24,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into recensione(idTipo, oneStar, twoStars, threeStars, fourStars, fiveStars, message) values (?,?,?,?,?,?,?)";
+			String insert = "insert into recensione(idtipo, onestar, twostars, threestars, fourstars, fivestars, message) values (?,?,?,?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setString(1, recensione.getIdTipo());
 			statement.setInt(2, recensione.getOneStar());
@@ -48,24 +48,24 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 	}
 
 	@Override
-	public Recensione findByPrimaryKey(String idTipo) {
+	public Recensione findByPrimaryKey(String idtipo) {
 		// TODO Auto-generated method stub
 		Connection connection = this.dataSource.getConnection();
 		Recensione recensione = null;
 		try {
 			PreparedStatement statement;
-			String query = "select * from recensione where idTipo = ?";
+			String query = "select * from recensione where idtipo = ?";
 			statement = connection.prepareStatement(query);
-			statement.setString(1, idTipo);
+			statement.setString(1, idtipo);
 			ResultSet result = statement.executeQuery();
 			if (result.next()) {
 				recensione = new Recensione();
-				recensione.setIdTipo(result.getString("idTipo"));				
-				recensione.setOneStar(result.getInt("oneStar"));
-				recensione.setTwoStars(result.getInt("twoStars"));
-				recensione.setThreeStars(result.getInt("threeStars"));
-				recensione.setFourStars(result.getInt("fourStars"));
-				recensione.setFiveStars(result.getInt("fiveStars"));
+				recensione.setIdTipo(result.getString("idtipo"));				
+				recensione.setOneStar(result.getInt("onestar"));
+				recensione.setTwoStars(result.getInt("twostars"));
+				recensione.setThreeStars(result.getInt("threestars"));
+				recensione.setFourStars(result.getInt("fourstars"));
+				recensione.setFiveStars(result.getInt("fivestars"));
 				recensione.setMessage(result.getString("message"));
 			}
 		} catch (SQLException e) {
@@ -92,12 +92,12 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 			ResultSet result = statement.executeQuery();
 			while (result.next()) {
 				recensione = new Recensione();
-				recensione.setIdTipo(result.getString("idTipo"));				
-				recensione.setOneStar(result.getInt("oneStar"));
-				recensione.setTwoStars(result.getInt("twoStar"));
-				recensione.setThreeStars(result.getInt("threeStar"));
-				recensione.setFourStars(result.getInt("fourStar"));
-				recensione.setFiveStars(result.getInt("fiveStar"));
+				recensione.setIdTipo(result.getString("idtipo"));				
+				recensione.setOneStar(result.getInt("onestar"));
+				recensione.setTwoStars(result.getInt("twostars"));
+				recensione.setThreeStars(result.getInt("threestars"));
+				recensione.setFourStars(result.getInt("fourstars"));
+				recensione.setFiveStars(result.getInt("fivestars"));
 				recensione.setMessage(result.getString("message"));
 		        recensioni.add(recensione);
 			}
@@ -124,7 +124,7 @@ public class RecensioneDaoJDBC implements RecensioneDao {
 		// TODO Auto-generated method stub
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String delete = "delete FROM recensione WHERE idTipo = ? ";
+			String delete = "delete FROM recensione WHERE idtipo = ? ";
 			PreparedStatement statement = connection.prepareStatement(delete);
 			statement.setString(1, recensione.getIdTipo());
 			statement.executeUpdate();

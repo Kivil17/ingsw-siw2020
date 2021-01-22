@@ -7,5 +7,5 @@ public interface ProdottoDao {
 	public Prodotto findByPrimaryKey(String nome);
 	public void update(Prodotto prodotto);
 	public void delete(Prodotto prodotto);
-	public int sizeProdotto(String nomeProdotto);
+	public int sizeProdotto(String nomeprodotto);
 }

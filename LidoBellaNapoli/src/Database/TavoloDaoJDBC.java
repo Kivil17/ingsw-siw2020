@@ -22,7 +22,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into tavolo(id,utentePrenotato,email,occupato) values (?,?,?,?)";
+			String insert = "insert into tavolo(id,utenteprenotato,email,occupato) values (?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());
@@ -55,7 +55,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 			if (result.next()) {
 				tavolo = new Tavolo();
 				tavolo.setId(result.getInt("id"));				
-				tavolo.setUtentePrenotato(result.getString("utentePrenotato"));
+				tavolo.setUtentePrenotato(result.getString("utenteprenotato"));
 				tavolo.setEmail(result.getString("email"));
 				tavolo.setOccupato(result.getBoolean("occupato"));
 				
@@ -76,7 +76,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 	public void update(Tavolo tavolo) {
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String update = "update tavolo SET id = ?, utentePrenotato = ?,email = ? occupato=? WHERE id=?";
+			String update = "update tavolo SET id = ?, utenteprenotato = ?,email = ? occupato=? WHERE id=?";
 			PreparedStatement statement = connection.prepareStatement(update);
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());

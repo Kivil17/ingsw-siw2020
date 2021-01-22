@@ -8,9 +8,9 @@ import Object.Prodotto;
 public interface CarrelloDao {
 
 	public void save(Carrello carrello);
-	public Carrello findByPrimaryKey(int idOrdine);
+	public Carrello findByPrimaryKey(int idordine);
 	public void update(Carrello carrello);
 	public void delete(Carrello carrello);
-	public int sizeProdotti(int idOrdine);
+	public int sizeProdotti(int idordine);
 	
 }

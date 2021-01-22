@@ -23,7 +23,7 @@ public class OmbrelloneDaoJDBC implements OmbrelloneDao{
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into ombrellone(id,utentePrenotato,email,occupato) values (?,?,?,?)";
+			String insert = "insert into ombrellone(id,utenteprenotato,email,occupato) values (?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setInt(1, ombrellone.getId());
 			statement.setString(2, ombrellone.getUtentePrenotato());
@@ -57,7 +57,7 @@ public class OmbrelloneDaoJDBC implements OmbrelloneDao{
 			if (result.next()) {
 				ombrellone = new Ombrellone();
 				ombrellone.setId(result.getInt("id"));				
-				ombrellone.setUtentePrenotato(result.getString("utentePrenotato"));
+				ombrellone.setUtentePrenotato(result.getString("utenteprenotato"));
 				ombrellone.setEmail(result.getString("email"));
 				ombrellone.setOccupato(result.getBoolean("occupato"));
 				
@@ -78,7 +78,7 @@ public class OmbrelloneDaoJDBC implements OmbrelloneDao{
 	public void update(Ombrellone ombrellone) {
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String update = "update ombrellone SET id = ?, utentePrenotato = ?,email = ? occupato=? WHERE id=?";
+			String update = "update ombrellone SET id = ?, utenteprenotato = ?,email = ? occupato=? WHERE id=?";
 			PreparedStatement statement = connection.prepareStatement(update);
 			statement.setInt(1, ombrellone.getId());
 			statement.setString(2, ombrellone.getUtentePrenotato());

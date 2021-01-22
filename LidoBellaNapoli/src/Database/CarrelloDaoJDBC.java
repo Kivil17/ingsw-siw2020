@@ -21,7 +21,7 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into carrello(idProdotto,nomeUtente,quantita,idOrdine,totaleOrdine) values (?,?,?,?,?)";
+			String insert = "insert into carrello(idprodotto,nomeutente,quantita,idordine,totaleordine) values (?,?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setString(1, carrello.getIdProdotto());
 			statement.setString(2, carrello.getNomeUtente());
@@ -43,22 +43,22 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 	}
 
 	@Override
-	public Carrello findByPrimaryKey(int idOrdine) {
+	public Carrello findByPrimaryKey(int idordine) {
 		Connection connection = this.dataSource.getConnection();
 		Carrello carrello = null;
 		try {
 			PreparedStatement statement;
-			String query = "select * from carrello where idOrdine = ?";
+			String query = "select * from carrello where idordine = ?";
 			statement = connection.prepareStatement(query);
-			statement.setInt(1, idOrdine);
+			statement.setInt(1, idordine);
 			ResultSet result = statement.executeQuery();
 			if (result.next()) {
 				carrello = new Carrello();
-				carrello.setIdProdotto(result.getString("idProdotto"));				
-				carrello.setNomeUtente(result.getString("nomeUtente"));
+				carrello.setIdProdotto(result.getString("idprodotto"));				
+				carrello.setNomeUtente(result.getString("nomeutente"));
 				carrello.setQuantita(result.getInt("quantita"));
-				carrello.setIdOrdine(result.getInt("idOrdine"));
-				carrello.setIdOrdine(result.getInt("totaleOrdine"));
+				carrello.setIdOrdine(result.getInt("idordine"));
+				carrello.setIdOrdine(result.getInt("totaleordine"));
 			}
 		} catch (SQLException e) {
 			throw new PersistenceException(e.getMessage());
@@ -76,7 +76,7 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 	public void update(Carrello carrello) {
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String update = "update carrello SET idProdotto = ?, nomeUtente = ?, quantita = ? idOrdine=? totaleOrdine = ? WHERE idOrdine=?";
+			String update = "update carrello SET idprodotto = ?, nomeutente = ?, quantita = ? idordine=? totaleordine = ? WHERE idordine=?";
 			PreparedStatement statement = connection.prepareStatement(update);
 			statement.setString(1, carrello.getIdProdotto());
 			statement.setString(2, carrello.getNomeUtente());
@@ -100,7 +100,7 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 	public void delete(Carrello carrello) {
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String delete = "delete FROM carrello WHERE idOrdine = ? ";
+			String delete = "delete FROM carrello WHERE idordine = ? ";
 			PreparedStatement statement = connection.prepareStatement(delete);
 			statement.setInt(1, carrello.getIdOrdine());
 			statement.executeUpdate();
@@ -117,13 +117,13 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 	}
 
 	@Override
-	public int sizeProdotti(int idOrdine) {
+	public int sizeProdotti(int idordine) {
 		Connection connection = this.dataSource.getConnection();		
 		try {
 				Class.forName("org.postgresql.Driver");
-				String select = "SELECT count(*) FROM carrello where idProdotti = ?";
+				String select = "SELECT count(*) FROM carrello where idprodotti = ?";
 				PreparedStatement statement = connection.prepareStatement(select);
-				statement.setInt(1, idOrdine);
+				statement.setInt(1, idordine);
 				statement.executeUpdate();
 				
 				ResultSet rs = statement.executeQuery();

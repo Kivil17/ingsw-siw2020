@@ -2,33 +2,33 @@ package Object;
 
 public class Recensione {
 	
-	private String idTipo="";
-	private int oneStar=0;
-	private int twoStars=0;
-	private int threeStars=0;
-	private int fourStars=0;
-	private int fiveStars=0;
+	private String idtipo="";
+	private int onestar=0;
+	private int twostars=0;
+	private int threestars=0;
+	private int fourstars=0;
+	private int fivestars=0;
 	private String message="";
 	public float rating=0;
-	public int reviewTot=0;
+	public int reviewtot=0;
 	
 	
 	public Recensione() {}
 	
-	public Recensione(String idTipo) {
-		this.idTipo = idTipo;
+	public Recensione(String idtipo) {
+		this.idtipo = idtipo;
 	}
 	
-	public Recensione(String idTipo, int oneStar, int twoStars, int threeStars, int fourStars, int fiveStars, String message) {
-		this.idTipo = idTipo;
-		this.oneStar = oneStar;
-		this.twoStars = twoStars;
-		this.threeStars = threeStars;
-		this.fourStars = fourStars;
-		this.fiveStars = fiveStars;
+	public Recensione(String idtipo, int onestar, int twostars, int threestars, int fourstars, int fivestars, String message) {
+		this.idtipo = idtipo;
+		this.onestar = onestar;
+		this.twostars = twostars;
+		this.threestars = threestars;
+		this.fourstars = fourstars;
+		this.fivestars = fivestars;
 		this.message = message;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 	
 	public int getReviewTot() {
@@ -43,55 +43,55 @@ public class Recensione {
 	}
 	
 	public String getIdTipo() {
-		return idTipo;
+		return idtipo;
 	}
 	
-	public void setIdTipo(String idTipo) {
-		this.idTipo = idTipo;
+	public void setIdTipo(String idtipo) {
+		this.idtipo = idtipo;
 	}
 	
 	public int getOneStar() {
-		return oneStar;
+		return onestar;
 	}
 	
-	public void setOneStar(int oneStar) {
-		this.oneStar = oneStar;
+	public void setOneStar(int onestar) {
+		this.onestar = onestar;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 	
 	public int getTwoStars() {
-		return twoStars;
+		return twostars;
 	}
 	
-	public void setTwoStars(int twoStars) {
-		this.twoStars = twoStars;
+	public void setTwoStars(int twostars) {
+		this.twostars = twostars;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 	public int getThreeStars() {
-		return threeStars;
+		return threestars;
 	}
-	public void setThreeStars(int threeStars) {
-		this.threeStars = threeStars;
+	public void setThreeStars(int threestars) {
+		this.threestars = threestars;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 	public int getFourStars() {
-		return fourStars;
+		return fourstars;
 	}
-	public void setFourStars(int fourStars) {
-		this.fourStars = fourStars;
+	public void setFourStars(int fourstars) {
+		this.fourstars = fourstars;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 	public int getFiveStars() {
-		return fiveStars;
+		return fivestars;
 	}
-	public void setFiveStars(int fiveStars) {
-		this.fiveStars = fiveStars;
+	public void setFiveStars(int fivestars) {
+		this.fivestars = fivestars;
 		this.rating = getRating();
-		this.reviewTot = getReviewTot();
+		this.reviewtot = getReviewTot();
 	}
 
 	public String getMessage() {

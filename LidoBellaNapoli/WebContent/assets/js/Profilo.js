@@ -1,9 +1,16 @@
 function cambia() {
-    ​​var input = document.getElementsByTagName('p');
     var valore = document.getElementById("daCambiare").textContent;
-    if (input.id === "daCambiare")
-    {​​​​
-        var i = document.createElement("input");
-        i.innerHTML = valore;
-    }​​​​
+    var paragrafo= document.createElement("input");
+    var testo = document.createTextNode(valore);
+    console.log(testo);
+    $.ajax({
+        success: function () {
+	        	paragrafo.appendChild(testo);
+                document.getElementById("testo").appendChild(paragrafo);
+	        },
+	        error: function() {
+	        	alert("Errore! Riprova !");
+	        }
+        
+    });        ​​​​
 }

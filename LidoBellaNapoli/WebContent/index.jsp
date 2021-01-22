@@ -72,10 +72,8 @@
 	              <li><a href="#">Disco</a></li>
 	            </ul>
 	          </li>
-	          <li><a href="review.jsp">Reviews</a></li>
-	          <li ><a href="index.jsp">Home</a></li>
-	          <li ><a href="index.jsp">Home</a></li>
-	          <li ><a href="index.jsp">Home</a></li>
+	          <li><a href="ReviewAdmin.jsp">Reviews</a></li>
+	          
 	        </ul>
 	    </c:if>
 	    

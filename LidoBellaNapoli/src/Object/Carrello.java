@@ -2,42 +2,42 @@ package Object;
 
 public class Carrello {
 	
-	private String idProdotto;
-	private String nomeUtente;
+	private String idprodotto;
+	private String nomeutente;
 	private int quantita;
-	private int idOrdine;
-	private double totaleOrdine;
+	private int idordine;
+	private double totaleordine;
 	
-	public Carrello(String idProdotto, String nomeUtente, int quantita, int idOrdine, double totaleOrdine) {
-		this.idProdotto = idProdotto;
-		this.nomeUtente = nomeUtente;
+	public Carrello(String idprodotto, String nomeutente, int quantita, int idordine, double totaleordine) {
+		this.idprodotto = idprodotto;
+		this.nomeutente = nomeutente;
 		this.quantita = quantita;
-		this.idOrdine = idOrdine;
-		this.totaleOrdine = totaleOrdine;
+		this.idordine = idordine;
+		this.totaleordine = totaleordine;
 	}
 
 	public Carrello() {
-		this.idProdotto = "";
-		this.nomeUtente = "";
+		this.idprodotto = "";
+		this.nomeutente = "";
 		this.quantita = 0;
-		this.idOrdine = -1;
-		this.totaleOrdine = 0;
+		this.idordine = -1;
+		this.totaleordine = 0;
 	}
 
 	public String getIdProdotto() {
-		return idProdotto;
+		return idprodotto;
 	}
 
-	public void setIdProdotto(String idProdotto) {
-		this.idProdotto = idProdotto;
+	public void setIdProdotto(String idprodotto) {
+		this.idprodotto = idprodotto;
 	}
 
 	public String getNomeUtente() {
-		return nomeUtente;
+		return nomeutente;
 	}
 
 	public void setNomeUtente(String nomeUtente) {
-		this.nomeUtente = nomeUtente;
+		this.nomeutente = nomeUtente;
 	}
 
 	public int getQuantita() {
@@ -49,19 +49,19 @@ public class Carrello {
 	}
 
 	public int getIdOrdine() {
-		return idOrdine;
+		return idordine;
 	}
 
-	public void setIdOrdine(int idOrdine) {
-		this.idOrdine = idOrdine;
+	public void setIdOrdine(int idordine) {
+		this.idordine = idordine;
 	}
 
 	public double getTotaleOrdine() {
-		return totaleOrdine;
+		return totaleordine;
 	}
 
-	public void setTotaleOrdine(double totaleOrdine) {
-		this.totaleOrdine = totaleOrdine;
+	public void setTotaleOrdine(double totaleordine) {
+		this.totaleordine = totaleordine;
 	}
 	
 	

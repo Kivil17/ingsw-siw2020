@@ -82,7 +82,7 @@
 								<li><a href="#">Disco</a></li>
 								<li><a href="#">Beach Resort</a></li>
 							</ul></li>
-						<li><a href="review.jsp">Reviews</a></li>
+						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
 				</c:if>
 			</nav>
@@ -108,20 +108,15 @@
 		</div>
 	</header>
 	<!-- End Header -->
-
-	<section id="hero">
-		<div class="hero-container" data-aos="fade-up">
-			<h1>WELCOME!</h1>
-			<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
-			<div class = "bottoni" >
-				<a href="Prenotazione.jsp"><button>Book a Table</button></a> 
-				<a href="Menu.jsp"><button>Book a Product</button></a>
+	
+	<c:if test="${loggatoAdmin}">
+		<section id="hero">
+			<div class="hero-container" data-aos="fade-up">
+				<h1>WELCOME!</h1>
 			</div>
-		</div>
-		
-	</section>
-
-	<main id="main">
+			
+		</section>
+		<main id="main">
 
 		<section id="portfolio" class="portfolio">
 			<div class="container">
@@ -151,8 +146,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (1).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -163,8 +157,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (11).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -175,8 +168,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (4).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -187,8 +179,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (5).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -200,8 +191,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36.jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -212,8 +202,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (10).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -224,8 +213,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (12).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a>
 							</div>
 						</div>
 					</div>
@@ -236,8 +224,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (2).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -248,8 +235,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (31).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -260,8 +246,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (32).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -273,8 +258,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (15).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -285,8 +269,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (16).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -297,8 +280,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (17).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -309,8 +291,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (18).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -321,8 +302,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (19).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -333,8 +313,7 @@
 							<div class="portfolio-links">
 								<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (20).jpeg"
 									data-gall="portfolioGallery" class="venobox" title="App 1"><i
-									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-									title="More Details"><i class="bx bx-link"></i></a>
+									class="bx bx-plus"></i></a> 
 							</div>
 						</div>
 					</div>
@@ -346,146 +325,390 @@
 
 			</div>
 			</section>
+		</main>
 		
-			<section id="contact" class="contact section-bg">
+				<!-- ======= Footer ======= -->
+			<footer id="footer">
+				
+				<div class="footer-top">
+					<div class="container">
+						
+					</div>
+				</div>
+		
 				<div class="container">
-
+					<div class="copyright">
+						&copy; Copyright <strong><span>1991</span></strong>. All Rights
+						Reserved
+					</div>
+					
+				</div>
+			</footer>
+	<!-- End Footer -->
+	</c:if>
+	
+	<c:if test="${not loggatoAdmin}">
+		<section id="hero">
+			<div class="hero-container" data-aos="fade-up">
+				<h1>WELCOME!</h1>
+				<h2>BOOK NOW YOUR TABLE OR PIZZA</h2>
+				<div class = "bottoni" >
+					<a href="Prenotazione.jsp"><button>Book a Table</button></a> 
+					<a href="Menu.jsp"><button>Book a Product</button></a>
+				</div>
+			</div>
+			
+		</section>
+	
+		<main id="main">
+	
+			<section id="portfolio" class="portfolio">
+				<div class="container">
+	
 					<div class="section-title" data-aos="fade-in" data-aos-delay="100">
-						<h2>Contact</h2>
-						<p>for any questions conctact us here.</p>
+						<h2>Gallery</h2>
+						<p>La nostra raccolta di immagini.</p>
 					</div>
-
-					<div class="row" data-aos="fade-up" data-aos-delay="100">
-						<div class="col-lg-6">
-							<div class="info-box mb-4">
-								<i class="bx bx-map"></i>
-								<h3>Our Address</h3>
-								<p>Via corfù 7, Rossano Scalo, C</p>
-							</div>
+	
+					<div class="row" data-aos="fade-in">
+						<div class="col-lg-12 d-flex justify-content-center">
+							<ul id="portfolio-flters">
+								<li data-filter="*" class="filter-active">All</li>
+								<li data-filter=".pizze-speciali">Pizze Speciali</li>
+								<li data-filter=".piatti">Piatti</li>
+								<li data-filter=".specialita">Specialit�</li>
+							</ul>
 						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<div class="info-box  mb-4">
-								<i class="bx bx-envelope"></i>
-								<h3>Email Us</h3>
-								<p>lidoBellaNapoli@outlook.it</p>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-6">
-							<div class="info-box  mb-4">
-								<i class="bx bx-phone-call"></i>
-								<h3>Call Us</h3>
-								<p>5589 55488 55</p>
-							</div>
-						</div>
-
 					</div>
-
-					<div class="row" data-aos="fade-up" data-aos-delay="200">
-
-						<div class="col-lg-6 ">
-							<iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3073.4769013198775!2d16.635944!3d39.6164647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13409b65ae124733%3A0xd5b0bd02f9a4220f!2sBella%20Napoli%20Rossano!5e0!3m2!1sit!2sit!4v1608808366058!5m2!1sit!2sit" frameborder="0" style="border: 0; width: 100%; height: 384px;" allowfullscreen></iframe>
+	
+					<div class="row portfolio-container" data-aos="fade-up">
+	
+						<div class="col-lg-4 col-md-6 portfolio-item pizze-speciali">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (1).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (1).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
 						</div>
-
-						<div class="col-lg-6">
-							<form action="Contact" method="GET" >
-								<div class="form-row">
-									
-									<div class="col-md-6 form-group">
-										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
+						<div class="col-lg-4 col-md-6 portfolio-item pizze-speciali">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (11).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (11).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item pizze-speciali">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (4).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (4).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item pizze-speciali">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (5).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (5).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36.jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36.jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (10).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (10).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (12).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (12).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (2).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (2).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (31).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (31).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item piatti">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (32).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (32).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (15).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (15).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (16).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (16).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (17).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (17).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (18).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (18).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (19).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (19).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 portfolio-item specialita">
+							<div class="portfolio-wrap">
+								<img src="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (20).jpeg" class="img-fluid"
+									alt="">
+								<div class="portfolio-links">
+									<a href="assets/img/portfolio/WhatsApp Image 2020-12-17 at 11.36.36 (20).jpeg"
+										data-gall="portfolioGallery" class="venobox" title="App 1"><i
+										class="bx bx-plus"></i></a> 
+								</div>
+							</div>
+						</div>
+						
+	
+						
+	
+					</div>
+	
+				</div>
+				</section>
+			
+				<section id="contact" class="contact section-bg">
+					<div class="container">
+	
+						<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+							<h2>Contact</h2>
+							<p>for any questions conctact us here.</p>
+						</div>
+	
+						<div class="row" data-aos="fade-up" data-aos-delay="100">
+							<div class="col-lg-6">
+								<div class="info-box mb-4">
+									<i class="bx bx-map"></i>
+									<h3>Our Address</h3>
+									<p>Via corfù 7, Rossano Scalo, C</p>
+								</div>
+							</div>
+	
+							<div class="col-lg-3 col-md-6">
+								<div class="info-box  mb-4">
+									<i class="bx bx-envelope"></i>
+									<h3>Email Us</h3>
+									<p>lidoBellaNapoli@outlook.it</p>
+								</div>
+							</div>
+	
+							<div class="col-lg-3 col-md-6">
+								<div class="info-box  mb-4">
+									<i class="bx bx-phone-call"></i>
+									<h3>Call Us</h3>
+									<p>5589 55488 55</p>
+								</div>
+							</div>
+	
+						</div>
+	
+						<div class="row" data-aos="fade-up" data-aos-delay="200">
+	
+							<div class="col-lg-6 ">
+								<iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3073.4769013198775!2d16.635944!3d39.6164647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13409b65ae124733%3A0xd5b0bd02f9a4220f!2sBella%20Napoli%20Rossano!5e0!3m2!1sit!2sit!4v1608808366058!5m2!1sit!2sit" frameborder="0" style="border: 0; width: 100%; height: 384px;" allowfullscreen></iframe>
+							</div>
+	
+							<div class="col-lg-6">
+								<form action="Contact" method="GET" >
+									<div class="form-row">
+										
+										<div class="col-md-6 form-group">
+											<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></input>
+											
+										</div>
+										<div class="col-md-6 form-group">
+											<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"></input>
+											
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 										
 									</div>
-									<div class="col-md-6 form-group">
-										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"></input>
+									
+									<div class="form-group">
+										<textarea class="form-control" name="message" rows="5"
+											data-rule="required" data-msg="Please write something for us"
+											placeholder="Message"></textarea>
 										
 									</div>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
-									
-								</div>
-								
-								<div class="form-group">
-									<textarea class="form-control" name="message" rows="5"
-										data-rule="required" data-msg="Please write something for us"
-										placeholder="Message"></textarea>
-									
-								</div>
-								<div class="text-center">
-									<button type="submit">Send Message</button>
+									<div class="text-center">
+										<button type="submit">Send Message</button>
+									</div>
+								</form>
+							</div>
+	
+						</div>
+	
+					</div>
+				</section>
+				
+				<section id="review">
+					
+					<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+							<h2>Review</h2>
+					</div>
+				
+					<div class="cont">
+						<div class="title">
+							<h1>
+								Bella<span>Napoli</span>
+							</h1>
+						</div>
+						<div class="stars">
+							<form action="AddReview" method="get">
+								<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
+								<label class="star star-5" for="star-5-2"></label> <input
+									class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
+									class="star star-4" for="star-4-2"></label> <input
+									class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
+									class="star star-3" for="star-3-2"></label> <input
+									class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
+									class="star star-2" for="star-2-2"></label> <input
+									class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
+									class="star star-1" for="star-1-2"></label>
+									<input type="hidden" id="valore"/>
+								<div class="rev-box">
+									<textarea name="message" id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
+									<input type="submit" value="Send Review">
+									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
+									<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
 								</div>
 							</form>
 						</div>
-
 					</div>
-
-				</div>
-			</section>
-			
-			<section id="review">
+				</section>
 				
-				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
-						<h2>Review</h2>
-				</div>
+		</main>
+		<!-- End #main -->
+	
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
 			
-				<div class="cont">
-					<div class="title">
-						<h1>
-							Bella<span>Napoli</span>
-						</h1>
-					</div>
-					<div class="stars">
-						<form action="AddReview" method="get">
-							<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
-							<label class="star star-5" for="star-5-2"></label> <input
-								class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
-								class="star star-4" for="star-4-2"></label> <input
-								class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
-								class="star star-3" for="star-3-2"></label> <input
-								class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
-								class="star star-2" for="star-2-2"></label> <input
-								class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
-								class="star star-1" for="star-1-2"></label>
-								<input type="hidden" id="valore"/>
-							<div class="rev-box">
-								<textarea  id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
-								<input type="submit" value="Send Review">
-								<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
-								<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
-							</div>
-						</form>
-					</div>
+			<div class="footer-top">
+				<div class="container">
+					
 				</div>
-			</section>
-			
-	</main>
-	<!-- End #main -->
-
-	<!-- ======= Footer ======= -->
-	<footer id="footer">
-		
-		<div class="footer-top">
+			</div>
+	
 			<div class="container">
-				
+				<div class="copyright">
+					&copy; Copyright <strong><span>1991</span></strong>. All Rights
+					Reserved
+				</div>
+				<div class="credits">
+					<!-- All the links in the footer should remain intact. -->
+					<!-- You can delete the links only if you purchased the pro version. -->
+					<!-- Licensing information: https://bootstrapmade.com/license/ -->
+					<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+				</div>
 			</div>
-		</div>
-
-		<div class="container">
-			<div class="copyright">
-				&copy; Copyright <strong><span>1991</span></strong>. All Rights
-				Reserved
-			</div>
-			<div class="credits">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-			</div>
-		</div>
-	</footer>
-	<!-- End Footer -->
-
+		</footer>
+		<!-- End Footer -->
+	</c:if>
 	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
 	<!-- Vendor JS Files -->

@@ -2,13 +2,13 @@ package Object;
 
 public class Ombrellone {
 	private int id;
-	private String utentePrenotato;
+	private String utenteprenotato;
 	private String email;
 	private boolean occupato;
 	
-	public Ombrellone(int id, String utentePrenotato, String email) {
+	public Ombrellone(int id, String utenteprenotato, String email) {
 		this.id = id;
-		this.utentePrenotato = utentePrenotato;
+		this.utenteprenotato = utenteprenotato;
 		this.email = email;
 		
 		this.occupato = true;
@@ -16,7 +16,7 @@ public class Ombrellone {
 	
 	public Ombrellone() {
 		this.id = -1;
-		this.utentePrenotato = "";
+		this.utenteprenotato = "";
 		this.email = "";
 	}
 
@@ -37,11 +37,11 @@ public class Ombrellone {
 	}
 
 	public String getUtentePrenotato() {
-		return utentePrenotato;
+		return utenteprenotato;
 	}
 
-	public void setUtentePrenotato(String utentePrenotato) {
-		this.utentePrenotato = utentePrenotato;
+	public void setUtentePrenotato(String utenteprenotato) {
+		this.utenteprenotato = utenteprenotato;
 	}
 
 	public boolean isOccupato() {

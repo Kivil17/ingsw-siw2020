@@ -104,12 +104,8 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="profile-img">
-						<img
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
-							alt="" />
-						<div class="file btn btn-lg btn-primary">
-							Change Photo <input type="file" name="file" />
-						</div>
+						<img src="assets/img/user1.png"/>
+						
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -158,7 +154,7 @@
 								<div class="col-md-6">
 									<p>
 										<input type="password" value="<c:out value="${password}"/>">
-										<button onclick="cambia()" class="btn">change</button>
+										<button class="btn">change</button>
 									</p>
 								</div>
 							</div>

@@ -115,13 +115,13 @@ public class ProdottoDaoJDBC implements ProdottoDao{
 	}
 
 	@Override
-	public int sizeProdotto(String nomeProdotto) {
+	public int sizeProdotto(String nomeprodotto) {
 		Connection connection = this.dataSource.getConnection();		
 		try {
 				Class.forName("org.postgresql.Driver");
 				String select = "SELECT count(*) FROM prodotto where nome = ?";
 				PreparedStatement statement = connection.prepareStatement(select);
-				statement.setString(1, nomeProdotto);
+				statement.setString(1, nomeprodotto);
 				statement.executeUpdate();
 				
 				ResultSet rs = statement.executeQuery();
