@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
+
 <title>Your Cart</title>
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
@@ -32,7 +34,13 @@
 				</tr>
 			  </thead>
 			  <tbody>
-			  
+			  	<tr>
+			  		<td class='pname'><c:out value="${nomeProdotto}"/></td>
+			  		<td class='pqty'><input type='text' value='<c:out value="${quantitaProdotto}"/>' class='qty'/></td>
+					<td class='pprice'><c:out value="${prezzoProdotto}"/></td>
+					<td class='pdelete'><a href='' data-product='<c:out value="${nomeProdotto}"/>'>&times;</a></td>
+				</tr>
+					
 			  </tbody>
 			</table>
 			<p id="sub-total">

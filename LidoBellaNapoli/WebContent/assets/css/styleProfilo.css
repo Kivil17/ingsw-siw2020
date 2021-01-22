@@ -452,3 +452,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #0062cc;
 }
+.profile-tab h1{
+    font-size: xx-large;
+    margin: 40px 0px;
+}
+
+.profile-tab button{
+    float: right;
+    background: none;
+    color: inherit;
+    padding: 4px 12px;
+    border: 1px solid rgba(30, 48, 56, 0.2);
+    transition: all .4s ease-in;
+    background-color: lightskyblue;
+   
+    color: white;
+    justify-content: center;
+    align-content: center;
+    
+}

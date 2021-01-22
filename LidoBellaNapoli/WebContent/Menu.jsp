@@ -32,7 +32,6 @@
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.shop.js"></script>
 		
 		
 <!-- Template Main CSS File -->
@@ -149,16 +148,16 @@
 								<div class="titolo">
 									<h2>PIZZE</h2>
 								</div>
-								<form class="form.add-to-cart" action="cart.jsp">
+								<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 									<dl>
-										<dt>Marinara</dt>
-										<dd class="price"> &euro;3,00</dd>
+										<dt id="nome">Marinara</dt>
+										<dd class="price" id="prezzo"> &euro;3,00</dd>
 										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
 										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<a href="#" onclick="sub()" id="sub" class="button">-</a>
+										<a href="#" onclick="add()" id="add" class="button">+</a>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -170,8 +169,8 @@
 									</dl>
 									<div id="numeroProdotti-w">
 										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<a href="#" onclick="sub()" id="sub" class="button">-</a>
+										<a href="#" onclick="add()" id="add" class="button">+</a>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>

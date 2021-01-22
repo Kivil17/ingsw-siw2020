@@ -137,7 +137,7 @@
 							aria-labelledby="home-tab">
 							<div class="row">
 								<div class="col-md-6">
-									<label>User Id</label>
+									<label>User Id:</label>
 								</div>
 								<div class="col-md-6">
 									<p><c:out value="${username}"/></p>
@@ -145,7 +145,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<label>Email</label>
+									<label>Email:</label>
 								</div>
 								<div class="col-md-6">
 									<p><c:out value="${email}"/></p>
@@ -153,12 +153,66 @@
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<label>Password</label>
+									<label>Password:</label>
 								</div>
 								<div class="col-md-6">
-									<p><input type="password" value="<c:out value="${password}"/>"></p>
+									<p>
+										<input type="password" value="<c:out value="${password}"/>">
+										<button onclick="cambia()" class="btn">change</button>
+									</p>
 								</div>
 							</div>
+							
+							<h1>Payment Info</h1>
+							
+								<div class="row">
+									<div class="col-md-6">
+										<label>Payment Method:</label>
+									</div>
+									<div class="col-md-6">
+										<p id="daCambiare"> 
+											1111 1111 1111 1111
+											<button onclick="cambia()" class="btn">update</button>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<label>Billing Address</label>
+									</div>
+									<div class="col-md-6">
+										<p>
+											1234 Example Ave | Seattle, WA
+											<button class="btn">change</button>
+										</p>
+									</div>
+								</div>
+								
+							<h1>User Settings</h1>
+								<div class="row">
+									<div class="col-md-6">
+										<br>
+										<label>View Terms of Use</label>
+									</div>
+									<div class="col-md-6">
+										<p>
+											<br>
+											<button class="btn">view</button>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<br>
+										<label>Cancel Your Subscription</label>
+									</div>
+									<div class="col-md-6">
+										<p>
+											<br>
+											<button class="btn">cancel</button>
+										</p>
+									</div>
+								</div>
 						</div>
 						
 					</div>
@@ -166,6 +220,18 @@
 			</div>
 		</form>
 	</div>
+	
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="assets/vendor/counterup/counterup.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/venobox/venobox.min.js"></script>
+	<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	
 	
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/Profilo.js"></script>

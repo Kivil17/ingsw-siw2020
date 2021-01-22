@@ -30,7 +30,7 @@ public class Login extends HttpServlet {
 		 String paramPassword = request.getParameter("password");
 		 
 		 
-		 String admin="bellanapoli1987@outlook.it";
+		 String admin="bellanapoli198717@gmail.com";
 		 
 		 session.setAttribute("loggato", false);
 		 
