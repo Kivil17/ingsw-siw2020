@@ -2,6 +2,7 @@ package Object;
 
 public class Recensione {
 	
+	private int idrecensione=0;
 	private String idtipo="";
 	private int onestar=0;
 	private int twostars=0;
@@ -15,11 +16,12 @@ public class Recensione {
 	
 	public Recensione() {}
 	
-	public Recensione(String idtipo) {
-		this.idtipo = idtipo;
+	public Recensione(int idrecensione) {
+		this.idrecensione = idrecensione;
 	}
 	
-	public Recensione(String idtipo, int onestar, int twostars, int threestars, int fourstars, int fivestars, String message) {
+	public Recensione(int idrecensione, String idtipo, int onestar, int twostars, int threestars, int fourstars, int fivestars, String message) {
+		this.idrecensione = idrecensione;
 		this.idtipo = idtipo;
 		this.onestar = onestar;
 		this.twostars = twostars;
@@ -100,6 +102,14 @@ public class Recensione {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public int getIdrecensione() {
+		return idrecensione;
+	}
+
+	public void setIdrecensione(int idrecensione) {
+		this.idrecensione = idrecensione;
 	}
 	
 }

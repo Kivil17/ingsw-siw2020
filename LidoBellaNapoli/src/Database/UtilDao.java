@@ -61,7 +61,7 @@ public class UtilDao {
 					+ "create table tavolo(\"id\" int primary key, utenteprenotato varchar(255), email varchar(255), occupato boolean);"
 					+ "create table ombrellone(\"id\" int primary key, utenteprenotato varchar(255),email varchar(255),occupato boolean);"
 					+ "create table prodotto(nome varchar(255), prezzo double precision);"
-					+ "create table recensione(\"idtipo\" varchar(255) primary key, onestar int, twostars int, threestars int, fourstars int, fivestars int, message varchar(255));"
+					+ "create table recensione(\"idrecensione\" int primary key, idtipo varchar(255), onestar int, twostars int, threestars int, fourstars int, fivestars int, message varchar(255));"
 					+ "create table carrello(\"idordine\" varchar(255) primary key, nomeutente varchar(255), quantita int, idprodotto int, totaleordine double precision);";
 			PreparedStatement statement = connection.prepareStatement(create);
 		

@@ -5,6 +5,7 @@ Booking.numeroPersone = document.getElementById('numeroPersone');
 
 Booking.tavoliW = document.getElementById('tavoli-w');
 Booking.tavoloSelezionato = document.getElementById('tavoloSelezionato');
+idTavolo = document.getElementById('selezionato');
 
 Booking.messageStatus = document.getElementById('message-status');
 
@@ -14,6 +15,7 @@ Booking.messageStatus = document.getElementById('message-status');
 	Booking.tavoli = Booking.sala.tavoli;
 	disponiTavoli(Booking.tavoli);
 })();
+
 
 function disponiTavoli(tavoli){
 
@@ -51,47 +53,60 @@ Booking.numeroPersoneW.addEventListener('click', (e) => {
 });
 
 Booking.tavoliW.addEventListener('click', (e) => {
+	e.preventDefault();
+	
 	let selezionato = +e.target.textContent;
 	if(Booking.tavoli[selezionato-1].occupato){
-		Booking.messageStatus.textContent = 'Il tavolo ${selezionato} è occupato.';
+		Booking.messageStatus.textContent = 'Il tavolo '+selezionato+' risulta occupato.';
 	}
 	else{
-
+		
+		Booking.messageStatus.textContent = ' ';
 		Booking.tavoloSelezionato.textContent = selezionato;
-
-		if(selezionato == 1 && Booking.numeroPersone <= 6)
+		idTavolo.textContent = selezionato;
+		if(selezionato <=10 && selezionato>=1)
 		{
-			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';	
-		}
-		else if(selezionato == 2 && Booking.numeroPersone <= 4)
-			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 3 && Booking.numeroPersone <= 2)
-			Booking.messageStatus.textContent = 'Tavolo da 2 persone.';
-		else if(selezionato == 4 && Booking.numeroPersone <= 4)
-			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 5 && Booking.numeroPersone <= 6)
-			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 6 && Booking.numeroPersone <= 6)
-			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 7 && Booking.numeroPersone <= 6)
-			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
-		else if(selezionato == 8 && Booking.numeroPersone <= 4)
-			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
-		else if(selezionato == 9 && Booking.numeroPersone <= 10)
-			Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
-		else if(selezionato == 10 && Booking.numeroPersone <= 14)
-			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';
+			if(selezionato == 1 && parseInt(Booking.numeroPersone.textContent) <= 6)
+				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';	
+			else if(selezionato == 2 && Booking.numeroPersone <= 4)
+				Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			else if(selezionato == 3 && Booking.numeroPersone <= 2)
+				Booking.messageStatus.textContent = 'Tavolo da 2 persone.';
+			else if(selezionato == 4 && Booking.numeroPersone <= 4)
+				Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			else if(selezionato == 5 && Booking.numeroPersone <= 6)
+				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			else if(selezionato == 6 && Booking.numeroPersone <= 6)
+				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			else if(selezionato == 7 && Booking.numeroPersone <= 6)
+				Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			else if(selezionato == 8 && Booking.numeroPersone <= 4)
+				Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			else if(selezionato == 9 && Booking.numeroPersone <= 10)
+				Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
+			else if(selezionato == 10 && Booking.numeroPersone <= 14)
+				Booking.messageStatus.textContent = 'Tavolo da 14 persone.';
+			
+		}	
 		else
+		{
+			Booking.tavoloSelezionato.textContent = '-';
+			idTavolo.textContent= '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+		}
+		
+		
 	}
 });
 
-document.forms[0].addEventListener('submit', (e) => {
+/*document.forms[0].addEventListener('submit', (e) => {
 	e.preventDefault();
 	if(Booking.tavoloSelezionato.textContent == '-'){
-		Booking.messageStatus.textContent = 'E necessario selezionare un tavolo.';
+		Booking.messageStatus.textContent = ' necessario selezionare un tavolo.';
 		return
 	}
+	Booking.messageStatus.textContent = 'prenotazione confermata.';
+	document.forms[0].reset();
 	sendBooking();
 });
 
@@ -105,7 +120,7 @@ function sendBooking(){
 		body: bookingForm,
 		method: 'post'
 	});
-	Booking.messageStatus.textContent = 'La prenotazione è andata a buon fine.';
+	Booking.messageStatus.textContent = 'prenotazione confermata.';
 	document.forms[0].reset();
 
-}
+}*/

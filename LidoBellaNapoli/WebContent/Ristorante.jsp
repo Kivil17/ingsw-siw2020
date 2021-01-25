@@ -64,8 +64,8 @@
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
 	
@@ -79,8 +79,8 @@
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
@@ -628,7 +628,9 @@
 										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 										
 									</div>
-									
+									<div class="form-group">
+										<input type="hidden" name="pagina" id="pagina" value="Ristorante"></input>
+									</div>
 									<div class="form-group">
 										<textarea class="form-control" name="message" rows="5"
 											data-rule="required" data-msg="Please write something for us"
@@ -670,7 +672,8 @@
 									class="star star-2" for="star-2-2"></label> <input
 									class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
 									class="star star-1" for="star-1-2"></label>
-									<input type="hidden" id="valore"/>
+									<input type="hidden" name="valore" id="valore"/>
+									<input type="hidden" name="pagina" id="pagina" value="Ristorante"/>
 								<div class="rev-box">
 									<textarea name="message" id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
 									<input type="submit" value="Send Review">

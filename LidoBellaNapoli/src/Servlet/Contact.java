@@ -23,13 +23,20 @@ public class Contact extends HttpServlet {
 	 	String paramNome = req.getParameter("name");
 	 	String paramOggetto = req.getParameter("subject");
 	 	String paramMessaggio = req.getParameter("message");
-	 	
+	 	String richiesta = req.getParameter("pagina");
 	 
 	 	
 	 	sendEmail(paramEmail,paramNome,paramOggetto,paramMessaggio);
 	 	
 	 	
-	 	resp.sendRedirect("Ristorante.jsp"); 
+	 	if(richiesta.equals("Ristorante"))
+			resp.sendRedirect("Ristorante.jsp");
+		else if(richiesta.equals("Menu"))
+			resp.sendRedirect("Menu.jsp");
+		else if(richiesta.equals("Prenotazione"))
+			resp.sendRedirect("Prenotazione.jsp");
+		else if(richiesta.equals("Index"))
+			resp.sendRedirect("index.jsp");
 	 	
 	}
 	 public void sendEmail(String userEmail, String name, String subject1,String message) {

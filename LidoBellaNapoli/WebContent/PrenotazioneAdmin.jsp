@@ -64,8 +64,8 @@
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
 	
@@ -78,8 +78,8 @@
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>

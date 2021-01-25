@@ -49,8 +49,8 @@
 						<li><a href="Ristorante.jsp">Restaurant</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Beach Resort</a></li>
-								<li><a href="#">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
 							</ul></li>
 						<li><a href="#team">Team</a></li>
 						<li><a href="#contact">Contact Us</a></li>
@@ -62,8 +62,8 @@
 						<li><a href="Ristorante.jsp">Restaurant</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Beach Resort</a></li>
-								<li><a href="#">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
 							</ul></li>
 						<li><a href="review.jsp">Reviews</a></li>
 						<li><a href="index.jsp">Home</a></li>
@@ -167,7 +167,9 @@
 									</div>
 									<div class="col-md-6">
 										<p id="daCambiare"> 
+											<div id="t">
 											1111 1111 1111 1111
+											</div>
 											<button onclick="cambia()" class="btn">update</button>
 										</p>
 									</div>
@@ -229,7 +231,7 @@
 	<script src="assets/vendor/aos/aos.js"></script>
 	
 	
-	<script src="assets/js/main.js"></script>
+	
 	<script src="assets/js/Profilo.js"></script>
 	
 </body>

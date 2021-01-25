@@ -34,12 +34,6 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/styleBeach.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -65,7 +59,7 @@
 						<li><a href="#beach">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
@@ -75,11 +69,12 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="PrenotazioneOmbrellone.jsp">Ombrelloni prenotati</a></li>
+						<li><a href="PrenotazioneOmbrellone.jsp">Ombrelloni
+								prenotati</a></li>
 						<li><a href="#beach">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 							</ul></li>
 						<li><a href="review.jsp">Reviews</a></li>
@@ -115,56 +110,96 @@
 		<div class="hero-container" data-aos="fade-up">
 			<h1>WELCOME!</h1>
 			<h2>BOOK NOW YOUR UMBRELLA</h2>
-			<div class="bottoni">
-				<a href="PrenotazioneOmbrellone.jsp"><button>Book a Umbrella</button></a>
+			<div class="bottoniBeach">
+				<a href="PrenotazioneOmbrellone.jsp"><button>Book a
+						Umbrella</button></a>
 			</div>
 		</div>
 
 	</section>
 
 	<main id="main">
-	
-		<section id="beach" class="beach">
+
+		<section id="beach" class="portfolio">
 			<div class="container">
 
 				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
 					<h2>Gallery</h2>
 					<p>La nostra raccolta di immagini.</p>
 				</div>
-				
+
 				<div class="row portfolio-container" data-aos="fade-up">
 
-					<div class="beach-wrap">
-						<img src="assets/img/beach/palm-beach-resort1.jpeg"
-							class="img-fluid" alt="">
-						<div class="beach-links">
-							<a href="assets/img/beach/palm-beach-resort1.jpeg"
-								data-gall="portfolioGallery" class="venobox" title="App 1"><i
-								class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-								title="More Details"><i class="bx bx-link"></i></a>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/palm-beach-resort1.jpeg"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/palm-beach-resort1.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/beach10.jpeg" class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/beach10.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/beach7.jpeg" class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/beach7.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/beach4.jpeg" class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/beach4.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/beach5.jpeg" class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/beach5.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/beach/beach3.jpeg" class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/beach/beach3.jpeg"
+									data-gall="portfolioGallery" class="venobox" title="App 1"><i
+									class="bx bx-plus"></i></a> <a href="portfolio-details.html"
+									title="More Details"><i class="bx bx-link"></i></a>
+							</div>
 						</div>
 					</div>
 
 
-					<div class="beach-wrap">
-						<img src="assets/img/beach/beach7.jpeg" class="img-fluid" alt="">
-						<div class="beach-links">
-							<a href="assets/img/beach/beach7.jpeg"
-								data-gall="portfolioGallery" class="venobox" title="App 1"><i
-								class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-								title="More Details"><i class="bx bx-link"></i></a>
-						</div>
-					</div>
 
-					<div class="beach-wrap">
-						<img src="assets/img/beach/beach4.jpeg" class="img-fluid" alt="">
-						<div class="beach-links">
-							<a href="assets/img/beach/beach4.jpeg"
-								data-gall="portfolioGallery" class="venobox" title="App 1"><i
-								class="bx bx-plus"></i></a> <a href="portfolio-details.html"
-								title="More Details"><i class="bx bx-link"></i></a>
-						</div>
-					</div>
 
 				</div>
 

@@ -65,8 +65,8 @@
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
 	
@@ -80,8 +80,8 @@
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="review.jsp">Reviews</a></li>
 					</ul>
@@ -804,7 +804,10 @@
 									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 									
 								</div>
-								
+								<div class="form-group">
+									<input type="hidden"  name="pagina" id="pagina" value="Menu"/>
+									
+								</div>
 								<div class="form-group">
 									<textarea class="form-control" name="message" rows="5"
 										data-rule="required" data-msg="Please write something for us"
@@ -829,40 +832,41 @@
 			</section>
 			
 			<section id="review">
+					
+					<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+							<h2>Review</h2>
+					</div>
 				
-				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
-						<h2>Review</h2>
-				</div>
-			
-				<div class="cont">
-					<div class="title">
-						<h1>
-							Bella<span>Napoli</span>
-						</h1>
+					<div class="cont">
+						<div class="title">
+							<h1>
+								Bella<span>Napoli</span>
+							</h1>
+						</div>
+						<div class="stars">
+							<form action="AddReview" method="get">
+								<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
+								<label class="star star-5" for="star-5-2"></label> <input
+									class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
+									class="star star-4" for="star-4-2"></label> <input
+									class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
+									class="star star-3" for="star-3-2"></label> <input
+									class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
+									class="star star-2" for="star-2-2"></label> <input
+									class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
+									class="star star-1" for="star-1-2"></label>
+									<input type="hidden" name="valore" id="valore"/>
+									<input type="hidden" name="pagina" id="pagina" value="Menu"/>
+								<div class="rev-box">
+									<textarea name="message" id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
+									<input type="submit" value="Send Review">
+									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
+									<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="stars">
-						<form action="AddReview" method="get">
-							<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
-							<label class="star star-5" for="star-5-2"></label> <input
-								class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
-								class="star star-4" for="star-4-2"></label> <input
-								class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
-								class="star star-3" for="star-3-2"></label> <input
-								class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
-								class="star star-2" for="star-2-2"></label> <input
-								class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
-								class="star star-1" for="star-1-2"></label>
-								<input type="hidden" id="valore"/>
-							<div class="rev-box">
-								<textarea  id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
-								<input type="submit" value="Send Review">
-								<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
-								<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
+				</section>
 			
 	</main>
 	<!-- End #main -->

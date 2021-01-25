@@ -64,8 +64,8 @@
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
 	
@@ -78,8 +78,8 @@
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="#">Disco</a></li>
-								<li><a href="#">Beach Resort</a></li>
+								<li><a href="Disco.jsp">Disco</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
@@ -130,7 +130,7 @@
 			
 			
 			<div class="container">
-			   <form action="ScaricareProdotti" method="get">
+			<!--    <form action="ScaricareProdotti" method="get"> -->
 				  <div class="row">
 				    <div class="col">
 				      <table class="table">
@@ -142,19 +142,14 @@
 				          </tr>
 				        </thead>
 				        <tbody>
-				          <tr>
-				          <!-- da implementare in js -->
-				            <th scope="row">1</th>
-				            <td>Mark</td>
-				            <td>Otto</td>
-				            <!-- da implementare in js -->
-				          </tr>
 				          
 				        </tbody>
 				      </table>
-				    </div>    
+				    </div>  
+				      
 				  </div>
-				</form>
+				
+			<button onclick="caricaDati()">Aggiorna Dati</button>
 			  
 			</div> 
 		
@@ -203,6 +198,7 @@
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/recensione.js"></script>
+	<script src="assets/js/menuAdmin.js"></script>
 
 </body>
 

@@ -24,22 +24,33 @@ public class AddReview extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	private int idRecensione=0;
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
+		idRecensione++;
 		String paramIdTipo= "Ristorante";
+		String paramStella = req.getParameter("valore");
 	 	String paramMessage = req.getParameter("message");
+	 	
+	 	String richiesta = req.getParameter("pagina");
 	 	
 	 	DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
 	 	RecensioneDao reviewDao = factory.getRecensioneDAO();
+		Recensione review = reviewDao.findByPrimaryKey(idRecensione);
 		
-		/*int newReview=0;
+		int newReview=0;
+		
+				
 		if (review != null) {
 			reviewDao.delete(review);
 		} else {
-			review = new Recensione(paramIdTipo);			
+			review = new Recensione(idRecensione);			
 		}
+		
+		review.setIdTipo(paramIdTipo);
+		
 		switch (paramStella) {
 		 	case "1":
 		 		newReview = review.getOneStar() + 1;
@@ -61,12 +72,19 @@ public class AddReview extends HttpServlet {
 		 		newReview = review.getFiveStars() + 1;
 		 		review.setFiveStars(newReview);
 		 		break;
-		}*/
+		}
 		
-		Recensione nuovaRecensione=new Recensione(paramIdTipo,0,0,0,0,1,paramMessage);
-		reviewDao.save(nuovaRecensione);
+		review.setMessage(paramMessage);
+		
+		reviewDao.save(review);
 	 	
-	 	resp.sendRedirect("Ristorante.jsp"); 
+		if(richiesta.equals("Ristorante"))
+			resp.sendRedirect("Ristorante.jsp");
+		else if(richiesta.equals("Menu"))
+			resp.sendRedirect("Menu.jsp");
+		else if(richiesta.equals("Prenotazione"))
+			resp.sendRedirect("Prenotazione.jsp");
+		
 	 	
 	}
 }

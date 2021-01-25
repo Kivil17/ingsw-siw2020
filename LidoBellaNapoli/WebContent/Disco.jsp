@@ -32,7 +32,7 @@
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="assets/css/styleOmbrellone.css" rel="stylesheet">
+<link href="assets/css/styleDisco.css" rel="stylesheet">
 
 <!-- =======================================================
   * Template Name: Squadfree - v2.3.0
@@ -50,7 +50,7 @@
 
 			<div class="logo mr-auto">
 				<h1 class="text-light">
-					<a href="Prenotazione.jsp"><img src="assets/img/bn.png" alt=""
+					<a href="Ristorante.jsp"><img src="assets/img/bn.png" alt=""
 						class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
 				<!-- Uncomment below if you prefer to use an image logo -->
@@ -60,25 +60,27 @@
 			<nav class="nav-menu d-none d-lg-block">
 				<c:if test="${not loggatoAdmin}">
 					<ul>
-						<li><a href="Lido.jsp">Home Beach Resort</a></li>
-						<li><a href="PrenotazioneOmbrellone.jsp">Book a Umbrella</a></li>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="PrenotazioneDisco.jsp">Book a table</a></li>
+						<li><a href="#disco">Cocktails</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="#contact">Contact Us</a></li>
+
 					</ul>
 				</c:if>
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="#">ombrelloni prenotati</a></li>
-						<li><a href="#portfolio">Gallery</a></li>
+						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
+						<li><a href="#disco">Cocktails</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
-								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
+								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
 						<li><a href="review.jsp">Reviews</a></li>
 					</ul>
@@ -103,7 +105,6 @@
 					<li><a href="Logout">Logout</a></li>
 				</div>
 			</c:if>
-
 			<!-- .nav-menu -->
 
 		</div>
@@ -112,45 +113,120 @@
 
 	<section id="hero">
 		<div class="hero-container" data-aos="fade-up">
-			<h1>BOOK OUR UMBRELLA</h1>
-			<h2>BOOK NOW YOUR FAVOURITE UMBRELLA</h2>
+			<h1>WELCOME!</h1>
+			<h2>BOOK NOW YOUR TABLE</h2>
+			<div class="bottoni">
+				<a href="PrenotazioneDisco.jsp"><button>Book a Table</button></a>
+			</div>
 		</div>
 
 	</section>
 
 	<main id="main">
-		<h1></h1>
-		<section id="info-w">
-			<div>
-				Ombrellone selezionato <span id="ombrelloneSelezionato">-</span>
+
+		<section id="disco" class="portfolio">
+			<div class="container">
+
+				<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+					<h2>Cocktails</h2>
+					<p>La nostra raccolta di immagini.</p>
+				</div>
+
+				<div class="row portfolio-container" data-aos="fade-up">
+
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/Negroni.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/Negroni.png"><p>Negroni</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/Mojito.png" class="img-fluid"
+								alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/Mojito.png"><p>Mojito</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/JapanIce.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/JapanIce.png">
+									<p>JapanIce</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/LongIsland.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/LongIsland.png"><p>Long
+										Island</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/CampariGin.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/CampariGin.png">
+									<p>Campari-Gin</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/Caipirinha.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/Caipirinha.png"><p>Caipirinha</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/BlueLagoon.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/BlueLagoon.png"><p>Blue
+										Lagoon</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/BloodyMary.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/BloodyMary.png"><p>Bloddy
+										Mary</p></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 portfolio-item">
+						<div class="portfolio-wrap">
+							<img src="assets/img/disco/cocktail/Daiquiri.png"
+								class="img-fluid" alt="">
+							<div class="portfolio-links">
+								<a href="assets/img/disco/cocktail/Daiquiri.png"><p>Daiquiri</p></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
 			</div>
 		</section>
-
-		<section id="ombrelloni-w">
-			
-		</section>
-
-		<p id="message-status"></p>
-
-		<form action="">
-			<div class="form-item">
-				<input type="text" name="nome" class="input" placeholder="Name"
-					required>
-			</div>
-			<div class="form-item">
-				<input type="email" name="email" class="input" placeholder="Email"
-					required>
-			</div>
-			<label for="example-date-input" class="col-2 col-form-label">Date</label>
-			<div class="form-item">
-				<input class="input" type="date" value="2021-01-15"
-					id="example-data-input">
-			</div>
-			<div class="form-item">
-				<input type="submit" id="prenota" class="button Prenota"
-					value="Prenota">
-			</div>
-		</form>
 
 		<section id="contact" class="contact section-bg">
 			<div class="container">
@@ -165,7 +241,7 @@
 						<div class="info-box mb-4">
 							<i class="bx bx-map"></i>
 							<h3>Our Address</h3>
-							<p>Via corf? 7, Rossano Scalo, C</p>
+							<p>Via corfù 7, Rossano Scalo, C</p>
 						</div>
 					</div>
 
@@ -197,44 +273,34 @@
 					</div>
 
 					<div class="col-lg-6">
-						<form action="Contact" method="GET" role="form"
-							class="php-email-form">
+						<form action="Contact" method="GET">
 							<div class="form-row">
 
 								<div class="col-md-6 form-group">
 									<input type="text" name="name" class="form-control" id="name"
 										placeholder="Your Name" data-rule="minlen:4"
 										data-msg="Please enter at least 4 chars"></input>
-									<div class="validate"></div>
+
 								</div>
 								<div class="col-md-6 form-group">
 									<input type="email" class="form-control" name="email"
 										id="email" placeholder="Your Email" data-rule="email"
 										data-msg="Please enter a valid email"></input>
-									<div class="validate"></div>
+
 								</div>
 							</div>
 							<div class="form-group">
 								<input type="text" class="form-control" name="subject"
 									id="subject" placeholder="Subject" data-rule="minlen:4"
 									data-msg="Please enter at least 8 chars of subject"></input>
-								<div class="validate"></div>
+
 							</div>
-							<div class="col-md-6 form-group">
-								<input type="hidden" name="flag" id="flag" value="Ristorante"></input>
-								<div class="validate"></div>
-							</div>
+
 							<div class="form-group">
 								<textarea class="form-control" name="message" rows="5"
 									data-rule="required" data-msg="Please write something for us"
 									placeholder="Message"></textarea>
-								<div class="validate"></div>
-							</div>
-							<div class="mb-3">
-								<div class="loading">Loading...</div>
-								<div class="error-message"></div>
-								<div class="sent-message">Your message has been sent.
-									Thank you!</div>
+
 							</div>
 							<div class="text-center">
 								<button type="submit">Send Message</button>
@@ -260,19 +326,22 @@
 					</h1>
 				</div>
 				<div class="stars">
-					<form action="">
-						<input class="star star-5" id="star-5-2" type="radio" name="star" />
-						<label class="star star-5" for="star-5-2"></label> <input
-							class="star star-4" id="star-4-2" type="radio" name="star" /> <label
+					<form action="AddReview" method="post">
+						<input class="star star-5" id="star-5-2" onclick="CambiaId(5)"
+							type="radio" name="star" /> <label class="star star-5"
+							for="star-5-2"></label> <input class="star star-4" id="star-4-2"
+							onclick="CambiaId(4)" type="radio" name="star" /> <label
 							class="star star-4" for="star-4-2"></label> <input
-							class="star star-3" id="star-3-2" type="radio" name="star" /> <label
-							class="star star-3" for="star-3-2"></label> <input
-							class="star star-2" id="star-2-2" type="radio" name="star" /> <label
+							class="star star-3" id="star-3-2" onclick="CambiaId(3)"
+							type="radio" name="star" /> <label class="star star-3"
+							for="star-3-2"></label> <input class="star star-2" id="star-2-2"
+							onclick="CambiaId(2)" type="radio" name="star" /> <label
 							class="star star-2" for="star-2-2"></label> <input
-							class="star star-1" id="star-1-2" type="radio" name="star" /> <label
-							class="star star-1" for="star-1-2"></label>
+							class="star star-1" id="star-1-2" onclick="CambiaId(1)"
+							type="radio" name="star" /> <label class="star star-1"
+							for="star-1-2"></label> <input type="hidden" id="valore" value="" />
 						<div class="rev-box">
-							<textarea class="review" col="30" name="review"
+							<textarea id="message" class="review" col="30" name="review"
 								placeholder="Write a review."></textarea>
 							<input type="submit" value="Send Review"> <a
 								href="https://www.facebook.com/Bella-Napoli-441293609380412"
@@ -284,6 +353,7 @@
 				</div>
 			</div>
 		</section>
+
 	</main>
 	<!-- End #main -->
 
@@ -298,6 +368,12 @@
 			<div class="copyright">
 				&copy; Copyright <strong><span>1991</span></strong>. All Rights
 				Reserved
+			</div>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
 			</div>
 		</div>
 	</footer>
@@ -319,7 +395,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/prenotazioneOmbrellone.js"></script>
+	<script src="assets/js/recensione.js"></script>
 
 </body>
 

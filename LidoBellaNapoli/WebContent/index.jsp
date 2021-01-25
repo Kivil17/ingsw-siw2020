@@ -55,7 +55,7 @@
 	          <li class="drop-down"><a href="">Services</a>
 	            <ul>
 	              <li><a href="Lido.jsp">Beach Resort</a></li>
-	              <li><a href="#">Disco</a></li>
+	              <li><a href="Disco.jsp">Disco</a></li>
 	            </ul>
 	          </li>
 	          <li><a href="#team">Team</a></li>
@@ -69,7 +69,7 @@
 	          <li class="drop-down"><a href="">Services</a>
 	            <ul>
 	              <li><a href="Lido.jsp">Beach Resort</a></li>
-	              <li><a href="#">Disco</a></li>
+	              <li><a href="Disco.jsp">Disco</a></li>
 	            </ul>
 	          </li>
 	          <li><a href="ReviewAdmin.jsp">Reviews</a></li>
@@ -521,7 +521,10 @@
 									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"></input>
 									
 								</div>
-								
+								<div class="form-group">
+									<input type="hidden"  name="pagina" id="pagina" value="Index"/>
+									
+								</div>
 								<div class="form-group">
 									<textarea class="form-control" name="message" rows="5"
 										data-rule="required" data-msg="Please write something for us"
