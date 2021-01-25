@@ -84,6 +84,14 @@ public class AddReview extends HttpServlet {
 			resp.sendRedirect("Menu.jsp");
 		else if(richiesta.equals("Prenotazione"))
 			resp.sendRedirect("Prenotazione.jsp");
+		else if(richiesta.equals("Disco"))
+			resp.sendRedirect("Disco.jsp");
+		else if(richiesta.equals("Lido"))
+			resp.sendRedirect("Lido.jsp");
+		else if(richiesta.equals("PrenotazioneDisco"))
+			resp.sendRedirect("PrenotazioneDisco.jsp");
+		else if(richiesta.equals("PrenotazioneOmbrellone"))
+			resp.sendRedirect("PrenotazioneOmbrellone.jsp");
 		
 	 	
 	}

@@ -290,8 +290,7 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Dicono di noi</h2>
         </div>
 
         <div class="owl-carousel testimonials-carousel">
@@ -555,9 +554,9 @@
               <h3>Our story</h3>
               <p>da modificare</p>
               <div class="social-links mt-3">
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/Bella-Napoli-441293609380412" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/_pizzeriabellanapoli/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                
               </div>
             </div>
           </div>

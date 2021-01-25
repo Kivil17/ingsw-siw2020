@@ -132,7 +132,7 @@
 
 		<p id="message-status"></p>
 
-		<form action="">
+		<form action="PrenotazioneTavolo" method="get">
 			<div class="form-item">
 				<input type="text" name="nome" class="input" placeholder="Name"
 					required>
@@ -146,6 +146,10 @@
 				<input class="input" type="date" value="2021-01-15"
 					id="example-data-input">
 			</div>
+			
+			<input type="hidden" name="selezionato" id="selezionato"/>
+			<input type="hidden" name="pagina" id="pagina" value="Ombrellone"/>
+			
 			<div class="form-item">
 				<input type="submit" id="prenota" class="button Prenota"
 					value="Prenota">
@@ -248,42 +252,41 @@
 		</section>
 
 		<section id="review">
-
-			<div class="section-title" data-aos="fade-in" data-aos-delay="100">
-				<h2>Review</h2>
-			</div>
-
-			<div class="cont">
-				<div class="title">
-					<h1>
-						Bella<span>Napoli</span>
-					</h1>
-				</div>
-				<div class="stars">
-					<form action="">
-						<input class="star star-5" id="star-5-2" type="radio" name="star" />
-						<label class="star star-5" for="star-5-2"></label> <input
-							class="star star-4" id="star-4-2" type="radio" name="star" /> <label
-							class="star star-4" for="star-4-2"></label> <input
-							class="star star-3" id="star-3-2" type="radio" name="star" /> <label
-							class="star star-3" for="star-3-2"></label> <input
-							class="star star-2" id="star-2-2" type="radio" name="star" /> <label
-							class="star star-2" for="star-2-2"></label> <input
-							class="star star-1" id="star-1-2" type="radio" name="star" /> <label
-							class="star star-1" for="star-1-2"></label>
-						<div class="rev-box">
-							<textarea class="review" col="30" name="review"
-								placeholder="Write a review."></textarea>
-							<input type="submit" value="Send Review"> <a
-								href="https://www.facebook.com/Bella-Napoli-441293609380412"
-								class="facebook"><i class="bx bxl-facebook"></i></a> <a
-								href="https://www.instagram.com/_pizzeriabellanapoli/"
-								class="instagram"><i class="bx bxl-instagram"></i></a>
+					
+					<div class="section-title" data-aos="fade-in" data-aos-delay="100">
+							<h2>Review</h2>
+					</div>
+				
+					<div class="cont">
+						<div class="title">
+							<h1>
+								Bella<span>Napoli</span>
+							</h1>
 						</div>
-					</form>
-				</div>
-			</div>
-		</section>
+						<div class="stars">
+							<form action="AddReview" method="get">
+								<input class="star star-5" id="star-5-2" onclick="CambiaId(5)" type="radio" name="star" />
+								<label class="star star-5" for="star-5-2"></label> <input
+									class="star star-4" id="star-4-2" onclick="CambiaId(4)" type="radio" name="star" /> <label
+									class="star star-4" for="star-4-2"></label> <input
+									class="star star-3" id="star-3-2" onclick="CambiaId(3)" type="radio" name="star" /> <label
+									class="star star-3" for="star-3-2"></label> <input
+									class="star star-2" id="star-2-2" onclick="CambiaId(2)" type="radio" name="star" /> <label
+									class="star star-2" for="star-2-2"></label> <input
+									class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
+									class="star star-1" for="star-1-2"></label>
+									<input type="hidden" name="valore" id="valore"/>
+									<input type="hidden" name="pagina" id="pagina" value="PrenotazioneOmbrellone"/>
+								<div class="rev-box">
+									<textarea name="message" id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>
+									<input type="submit" value="Send Review">
+									<a href="https://www.facebook.com/Bella-Napoli-441293609380412"class="facebook"><i class="bx bxl-facebook"></i></a> 
+									<a href="https://www.instagram.com/_pizzeriabellanapoli/"class="instagram"><i class="bx bxl-instagram"></i></a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
 	</main>
 	<!-- End #main -->
 

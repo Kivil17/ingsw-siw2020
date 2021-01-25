@@ -23,12 +23,16 @@ public class PrenotazioneTavolo extends HttpServlet {
    
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		String paramIdTavolo= req.getParameter("selezionato");//risulta null
+		String paramIdTavolo= req.getParameter("selezionato");
 		String paramUtentePrenotato = req.getParameter("username");
 	 	String paramEmail = req.getParameter("email");
+	 	
+	 	String richiesta = req.getParameter("pagina");
+	 	
 	 	System.out.println(paramIdTavolo);
 	 	int idTavolo=0;
-		 	switch (paramIdTavolo) {
+	 	
+		switch (paramIdTavolo) {
 		 	case "1":
 		 		idTavolo=1;
 		 		break;
@@ -78,8 +82,13 @@ public class PrenotazioneTavolo extends HttpServlet {
 		
 		tavoloDao.save(tavolo);
 		
-	
-		resp.sendRedirect("Prenotazione.jsp");
+		if(richiesta.equals("Prenotazione"))
+			resp.sendRedirect("Prenotazione.jsp");
+		else if(richiesta.equals("Disco"))
+			resp.sendRedirect("PrenotazioneDisco.jsp");
+		else if(richiesta.equals("Ombrellone"))
+			resp.sendRedirect("PrenotazioneOmbrellone.jsp");
+		
 		
 	}
 

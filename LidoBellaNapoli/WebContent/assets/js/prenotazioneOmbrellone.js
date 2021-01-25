@@ -32,7 +32,7 @@ Booking.ombrelloneW.addEventListener('click', (e) => {
 		Booking.messageStatus.textContent = 'Ombrellone '+selezionato+' è occupato.';
 	}
 	else{
-		Booking.ombrelloneSelezionato.textContent += selezionato+',';
+		Booking.ombrelloneSelezionato.textContent = selezionato;
 	}
 });
 

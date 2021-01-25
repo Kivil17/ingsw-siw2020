@@ -126,7 +126,7 @@
 			</div>
 			<div>
 				Tavolo selezionato <span id="tavoloSelezionato">-</span>
-				<input type="hidden" name="selezionato" id="selezionato"/>
+				
 			</div>
 		</section>
 
@@ -156,6 +156,10 @@
 			<div class="form-item">
 				<input class="input" type="date" value="2021-01-15" name="example-data-input" id="example-data-input">
 			</div>
+			
+			<input type="hidden" name="selezionato" id="selezionato"/>
+			<input type="hidden" name="pagina" id="pagina" value="Prenotazione"/>
+			
 			<div class="form-item">
 				<input type="submit" id="prenota" class="button Prenota" value="Prenota">
 			</div>
