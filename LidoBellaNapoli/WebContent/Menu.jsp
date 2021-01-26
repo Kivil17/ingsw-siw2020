@@ -37,12 +37,6 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/styleMenu.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -142,519 +136,573 @@
 					</div>
 				</div>
 				
-				<div class="row portfolio-container" data-aos="fade-up">
-					<div class="col-lg-12 portfolio-item pizzeria ">
-						<div id="menu">
-								<div class="titolo">
-									<h2>PIZZE</h2>
-								</div>
-								<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
-									<dl>
-										<dt id="nome">Marinara</dt>
-										<dd class="price" id="prezzo"> &euro;3,00</dd>
-										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-									<input type="hidden" name="nome" value="Marinara"/>
-									<input type="hidden" name="prezzo" value="3,00"/>
-								</form>
-								<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
-									<dl>
-										<dt>Margherita</dt>
-										<dd class="price"> &euro;3,50</dd>
-										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Diavola</dt>
-										<dd class="price"> &euro;4,50</dd>
-										<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Rocco</dt>
-										<dd class="price"> &euro;5,50</dd>
-										<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Rotolo</dt>
-										<dd class="price"> &euro;8,00</dd>
-										<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Regina</dt>
-										<dd class="price"> &euro;8,50</dd>
-										<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Ripieno</dt>
-										<dd class="price"> &euro;8,00</dd>
-										<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Ripieno Fritto</dt>
-										<dd class="price"> &euro;8,50</dd>
-										<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Italiana</dt>
-										<dd class="price"> &euro;8,50</dd>
-										<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-						</div>
-					</div>
-					
-					<div class="col-lg-12 portfolio-item cucina">
-						<div id="menu">
-								<div class="titolo">
-									<h2>CUCINA</h2>
-								</div>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Spaghetti alle vongole</dt>
-										<dd class="price"> &euro;10,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Spaghetti allo scoglio</dt>
-										<dd class="price"> &euro;12,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Calamarata</dt>
-										<dd class="price"> &euro;9,00</dd>
-										<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Paccheri con pescato del giorno</dt>
-										<dd class="price"> &euro;10,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Risotto alla pescatora</dt>
-										<dd class="price"> &euro;12,00</dd>
-										<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Gnocchi alla sorrentina</dt>
-										<dd class="price"> &euro;8,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Penne all'arrabiata</dt>
-										<dd class="price"> &euro;5,00</dd>
-										<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Trofie gorgonzola e noci</dt>
-										<dd class="price"> &euro;8,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Maccheroni fatti in casa con spek e porcini</dt>
-										<dd class="price"> &euro;8,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-						</div>
-					</div>
+				<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 				
-					<div class="col-lg-12 portfolio-item dessert">
-						<div id="menu">
-								<div class="titolo">
-									<h2>DESSERT</h2>
-								</div>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Pistacchio di bronte</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
+					<div class="row portfolio-container" data-aos="fade-up">
+						<div class="col-lg-12 portfolio-item pizzeria ">
+							<div id="menu">
+									<div class="titolo">
+										<h2>PIZZE</h2>
 									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Cioccolato</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Nocciola</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Rocher</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Setteveli ricoperto di cioccolato</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Setteveli alla nocciola</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Setteveli al cacao</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Degustando</dt>
-										<dd class="price"> &euro;4,00</dd>
-										<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Tiramisù</dt>
-										<dd class="price"> &euro;4,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-									<div class="logo mr-auto">
-										<h1 class="text-light">
-											<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
-										</h1>
-									</div>
+									
+										<dl>
+											<dt id="nome">Marinara</dt>
+											<dd class="price" id="prezzo"> &euro;3,00</dd>
+											<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Marinara"/>
+										<input type="hidden" name="prezzo" value="3.00"/>
+									
+									
+										<dl>
+											<dt>Margherita</dt>
+											<dd class="price"> &euro;3,50</dd>
+											<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Margerita"/>
+										<input type="hidden" name="prezzo" value="3.50"/>
+									
+									
+										<dl>
+											<dt>Diavola</dt>
+											<dd class="price"> &euro;4,50</dd>
+											<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Diavola"/>
+										<input type="hidden" name="prezzo" value="4.50"/>
+									
+									
+										<dl>
+											<dt>Rocco</dt>
+											<dd class="price"> &euro;5,50</dd>
+											<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Rocco"/>
+										<input type="hidden" name="prezzo" value="5.50"/>
+									
+									
+										<dl>
+											<dt>Rotolo</dt>
+											<dd class="price"> &euro;8,00</dd>
+											<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Rotolo"/>
+										<input type="hidden" name="prezzo" value="8.00"/>
+									
+										<dl>
+											<dt>Regina</dt>
+											<dd class="price"> &euro;8,50</dd>
+											<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Regina"/>
+										<input type="hidden" name="prezzo" value="8.50"/>
+									
+										<dl>
+											<dt>Ripieno</dt>
+											<dd class="price"> &euro;8,00</dd>
+											<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Ripieno"/>
+										<input type="hidden" name="prezzo" value="8.00"/>
+									
+										<dl>
+											<dt>Ripieno Fritto</dt>
+											<dd class="price"> &euro;8,50</dd>
+											<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Ripieno Fritto"/>
+										<input type="hidden" name="prezzo" value="8.50"/>
+									
+										<dl>
+											<dt>Italiana</dt>
+											<dd class="price"> &euro;8,50</dd>
+											<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Italiana"/>
+										<input type="hidden" name="prezzo" value="8.50"/>
+									
+							</div>
 						</div>
-					</div>
-				
-					<div class="col-lg-12 portfolio-item bevande">
-						<div id="menu">
-								<div class="titolo">
-									<h2>BEVANDE</h2>
-								</div>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Acqua Naturale 1lt</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
+						
+						<div class="col-lg-12 portfolio-item cucina">
+							<div id="menu">
+									<div class="titolo">
+										<h2>CUCINA</h2>
 									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Acqua Effervescente 1lt</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>CocaCola 1lt in vetro</dt>
-										<dd class="price"> &euro;3,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>CocaCola 33cl in vetro</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>CocaCola Zero 33cl in vetro</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Fanta 33cl in vetro</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Sprite 33cl in vetro</dt>
-										<dd class="price"> &euro;2,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Menabrea 66cl</dt>
-										<dd class="price"> &euro;3,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>Ichnusa 33cl</dt>
-										<dd class="price"> &euro;3,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
+									
+										<dl>
+											<dt>Spaghetti alle vongole</dt>
+											<dd class="price"> &euro;10,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Spaghetti alle vongole"/>
+										<input type="hidden" name="prezzo" value="10.00"/>
+									
+										<dl>
+											<dt>Spaghetti allo scoglio</dt>
+											<dd class="price"> &euro;12,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Spaghetti allo scoglio"/>
+										<input type="hidden" name="prezzo" value="12.00"/>
+									
+										<dl>
+											<dt>Calamarata</dt>
+											<dd class="price"> &euro;9,00</dd>
+											<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Calamarata"/>
+										<input type="hidden" name="prezzo" value="9.00"/>
+									
+										<dl>
+											<dt>Paccheri con pescato del giorno</dt>
+											<dd class="price"> &euro;10,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Paccheri con pescato del giorno"/>
+										<input type="hidden" name="prezzo" value="10.00"/>
+									
+										<dl>
+											<dt>Risotto alla pescatora</dt>
+											<dd class="price"> &euro;12,00</dd>
+											<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Risotto alla pescatora"/>
+										<input type="hidden" name="prezzo" value="12.00"/>
+									
+										<dl>
+											<dt>Gnocchi alla sorrentina</dt>
+											<dd class="price"> &euro;8,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Gnocchi alla sorrentina"/>
+										<input type="hidden" name="prezzo" value="8.00"/>
+									
+										<dl>
+											<dt>Penne all'arrabiata</dt>
+											<dd class="price"> &euro;5,00</dd>
+											<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Penne all'arrabiata"/>
+										<input type="hidden" name="prezzo" value="5.00"/>
+									
+										<dl>
+											<dt>Trofie gorgonzola e noci</dt>
+											<dd class="price"> &euro;8,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Trofie gorgonzola e noci"/>
+										<input type="hidden" name="prezzo" value="8.00"/>
+									
+										<dl>
+											<dt>Maccheroni fatti in casa con spek e porcini</dt>
+											<dd class="price"> &euro;8,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Maccheroni fatti in casa con spek e porcini"/>
+										<input type="hidden" name="prezzo" value="8.00"/>
+									
+							</div>
 						</div>
-					</div>
 					
-					<div class="col-lg-12 portfolio-item vini">
-						<div id="menu">
-								<div class="titolo">
-									<h2>VINI</h2>
-								</div>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>TENUTA IUZZOLINI ROSATO</dt>
-										<dd class="price"> &euro;9,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
+						<div class="col-lg-12 portfolio-item dessert">
+							<div id="menu">
+									<div class="titolo">
+										<h2>DESSERT</h2>
 									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>TENUTA IUZZOLINI ROSSO</dt>
-										<dd class="price"> &euro;9,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>TENUTA IUZZOLINI BIANCO</dt>
-										<dd class="price"> &euro;9,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>CRITONE</dt>
-										<dd class="price"> &euro;12,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>TERRE LONTANE</dt>
-										<dd class="price"> &euro;12,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>MADRE GOCCIA</dt>
-										<dd class="price"> &euro;12,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>PRIMAFILA</dt>
-										<dd class="price"> &euro;15,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>MURANERA ROSSO</dt>
-										<dd class="price"> &euro;25,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
-									<dl>
-										<dt>LUMARE ROSATO</dt>
-										<dd class="price"> &euro;25,00</dd>
-									</dl>
-									<div id="numeroProdotti-w">
-										<p>Quantità:<input type="number" min="1" max="100"></p>
-										<button type="submit" >Carrello</button>
-									</div>
-								</form>
+									
+										<dl>
+											<dt>Pistacchio di bronte</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Pistacchio di bronte"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Cioccolato</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Cioccolato"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Nocciola</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Nocciola"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Rocher</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Rocher"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Setteveli ricoperto di cioccolato</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Setteveli ricoperto di cioccolato"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Setteveli alla nocciola</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Setteveli alla nocciola"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Setteveli al cacao</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Setteveli al cacao"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Degustando</dt>
+											<dd class="price"> &euro;4,00</dd>
+											<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Degustando"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<dl>
+											<dt>Tiramisù</dt>
+											<dd class="price"> &euro;4,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Tiramisù"/>
+										<input type="hidden" name="prezzo" value="4.00"/>
+									
+										<div class="logo mr-auto">
+											<h1 class="text-light">
+												<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
+											</h1>
+										</div>
+							</div>
 						</div>
-					</div>
 					
-				</div>
-				
+						<div class="col-lg-12 portfolio-item bevande">
+							<div id="menu">
+									<div class="titolo">
+										<h2>BEVANDE</h2>
+									</div>
+									
+										<dl>
+											<dt>Acqua Naturale 1lt</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Acqua Naturale 1lt"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>Acqua Effervescente 1lt</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Acqua Effervescente 1lt"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>CocaCola 1lt in vetro</dt>
+											<dd class="price"> &euro;3,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="CocaCola 1lt in vetro"/>
+										<input type="hidden" name="prezzo" value="3.00"/>
+									
+										<dl>
+											<dt>CocaCola 33cl in vetro</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="CocaCola 33cl in vetro"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>CocaCola Zero 33cl in vetro</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="CocaCola Zero 33cl in vetro"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>Fanta 33cl in vetro</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Fanta 33cl in vetro"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>Sprite 33cl in vetro</dt>
+											<dd class="price"> &euro;2,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Sprite 33cl in vetro"/>
+										<input type="hidden" name="prezzo" value="2.00"/>
+									
+										<dl>
+											<dt>Menabrea 66cl</dt>
+											<dd class="price"> &euro;3,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Menabrea 66cl"/>
+										<input type="hidden" name="prezzo" value="3.00"/>
+									
+										<dl>
+											<dt>Ichnusa 33cl</dt>
+											<dd class="price"> &euro;3,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="Ichnusa 33cl"/>
+										<input type="hidden" name="prezzo" value="3.00"/>
+									
+							</div>
+						</div>
+						
+						<div class="col-lg-12 portfolio-item vini">
+							<div id="menu">
+									<div class="titolo">
+										<h2>VINI</h2>
+									</div>
+									
+										<dl>
+											<dt>TENUTA IUZZOLINI ROSATO</dt>
+											<dd class="price"> &euro;9,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="TENUTA IUZZOLINI ROSATO"/>
+										<input type="hidden" name="prezzo" value="9.00"/>
+									
+										<dl>
+											<dt>TENUTA IUZZOLINI ROSSO</dt>
+											<dd class="price"> &euro;9,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="TENUTA IUZZOLINI ROSSO"/>
+										<input type="hidden" name="prezzo" value="9.00"/>
+									
+										<dl>
+											<dt>TENUTA IUZZOLINI BIANCO</dt>
+											<dd class="price"> &euro;9,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="TENUTA IUZZOLINI BIANCO"/>
+										<input type="hidden" name="prezzo" value="9.00"/>
+									
+										<dl>
+											<dt>CRITONE</dt>
+											<dd class="price"> &euro;12,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="CRITONE"/>
+										<input type="hidden" name="prezzo" value="12.00"/>
+									
+										<dl>
+											<dt>TERRE LONTANE</dt>
+											<dd class="price"> &euro;12,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="TERRE LONTANE"/>
+										<input type="hidden" name="prezzo" value="12.00"/>
+									
+										<dl>
+											<dt>MADRE GOCCIA</dt>
+											<dd class="price"> &euro;12,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="MADRE GOCCIA"/>
+										<input type="hidden" name="prezzo" value="12.00"/>
+									
+										<dl>
+											<dt>PRIMAFILA</dt>
+											<dd class="price"> &euro;15,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="PRIMAFILA"/>
+										<input type="hidden" name="prezzo" value="15.00"/>
+									
+										<dl>
+											<dt>MURANERA ROSSO</dt>
+											<dd class="price"> &euro;25,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="MURANERA ROSSO"/>
+										<input type="hidden" name="prezzo" value="25.00"/>
+									
+										<dl>
+											<dt>LUMARE ROSATO</dt>
+											<dd class="price"> &euro;25,00</dd>
+										</dl>
+										<div id="numeroProdotti-w">
+											<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
+											<button type="submit" >Carrello</button>
+										</div>
+										<input type="hidden" name="nome" value="LUMARE ROSATO"/>
+										<input type="hidden" name="prezzo" value="25.00"/>
+									
+							</div>
+						</div>
+						
+					</div>
+				</form>
 			</div>
 		</section>
 		

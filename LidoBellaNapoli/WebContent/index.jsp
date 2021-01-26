@@ -27,12 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -106,7 +101,6 @@
     <div class="hero-container" data-aos="fade-up">
       <h1>WELCOME ON BOARD</h1>
       <h2>BOOK YOUR SWEET VACATIONS OR A TABLE IN OUR RESTAURANT</h2>
-      <!-- <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a> -->
     </div>
   </section><!-- End Hero -->
 
@@ -126,13 +120,7 @@
             </div>
           </div>
 
-         <!-- <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div> -->
+        
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
@@ -155,135 +143,7 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <!-- ======= Cta Section ======= 
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= 
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
+    
 
     <!-- ======= Testimonials Section =======  da aggiustare per recensioni -->
     <section id="testimonials" class="testimonials section-bg">
@@ -298,56 +158,51 @@
           <div class="testimonial-item" data-aos="fade-up">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              Struttura ben organizzata, tutte le varie aree si presentano molto invitanti. lo staff molto gentile e sempre disponibile, ideale per una vacanza cosi come per una cena, ristorante delizioso.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
+            <h3>mario Rossi</h3>
           </div>
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              Ottimo stabilimento, una settimana di vacanza ideale nello stabilimento bella napoli. tra spiaggia e discoteca, dove divertimento e organizziamo sono al top e un ristorante delizioso con cibo di prima qualita.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
+            <h3>Sara Tivoli</h3>
           </div>
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              Ristorante veramente buono! una serata all'insegna del buon cibo con uno staff veramente organizzato e sempre disponibile. e un dopo cena veramente divertente con una discoteca organizzata fino a tarda sera.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
+            <h3>francesco Trento</h3>
           </div>
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              Stabilimento molto organizzato, non solo per le vacanze estive ma anche per serate piacevoli e divertenti tutto l'anno. con un ristorante veramente ottimo e una discoteca sempre piena di serate.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
+            <h3>Matteo Rende</h3>
           </div>
 
           <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              Divertimento assicurato per una vacanza veramente da fare nello stabilimento bella napoli. ristorante ottimo, discoteca ricca di serate, spiaggia organizzatissima e molto attrezzata.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
             <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
+            <h3>Giovanni Taranto</h3>
           </div>
 
         </div>
@@ -542,7 +397,7 @@
 			</section>
 
   </main><!-- End #main -->
-<!-- da chiamare servlet recensione -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -552,7 +407,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
               <h3>Our story</h3>
-              <p>da modificare</p>
+              <p>lo stabilimento bella napoli nasce nel 1987. nacque la pizzeria da li, passo dopo passo siamo riusciti a creare tutto questo! E stato un progetto nato cosi come un sogno, nessuno di noi si sarebbe aspettato di riuscire a creare uno stabilimento cosi forte. Ma e nato soprattutto con l'idea di dare a tutti i nostri clienti il meglio, per far splendere la nostra citta e vedere un sorriso sui vostri visi. Ad oggi siamo gli unici ad offrire un servizio cosi ampio con ristorante/pizzeria, discoteca, spiaggia con la speranza di poterci ingrandire ogni giorno per offrire sempre il meglio a noi ma soprattuto a voi. Venite a trovarci non ve ne pentirete. STABILIMENTOBELLANAPOLI!</p>
               <div class="social-links mt-3">
                 <a href="https://www.facebook.com/Bella-Napoli-441293609380412" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="https://www.instagram.com/_pizzeriabellanapoli/" class="instagram"><i class="bx bxl-instagram"></i></a>

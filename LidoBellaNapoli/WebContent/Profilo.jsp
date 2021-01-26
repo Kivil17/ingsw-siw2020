@@ -34,8 +34,7 @@
 		<div class="container d-flex align-items-center">
 
 			<div class="logo mr-auto">
-				<!---->
-				<!-- Uncomment below if you prefer to use an image logo -->
+				
 				<h1 class="text-light">
 					<a href="index.jsp"><img src="assets/img/bn.png" alt=""
 						class="img-fluid"></a><span> Lido Bella Napoli</span>

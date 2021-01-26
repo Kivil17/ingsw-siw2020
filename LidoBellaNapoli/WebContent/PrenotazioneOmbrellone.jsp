@@ -33,13 +33,10 @@
 
 <!-- Template Main CSS File -->
 <link href="assets/css/styleOmbrellone.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="assets/js/jquery.shop.js"></script>
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -53,8 +50,7 @@
 					<a href="Prenotazione.jsp"><img src="assets/img/bn.png" alt=""
 						class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+			
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -73,14 +69,14 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="#">ombrelloni prenotati</a></li>
+						<li><a href="PrenotazioneAdmin.jsp">ombrelloni prenotati</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
 							<ul>
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 							</ul></li>
-						<li><a href="review.jsp">Reviews</a></li>
+						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
 				</c:if>
 			</nav>
@@ -151,9 +147,16 @@
 			<input type="hidden" name="pagina" id="pagina" value="Ombrellone"/>
 			
 			<div class="form-item">
-				<input type="submit" id="prenota" class="button Prenota"
-					value="Prenota">
+				<input type="submit" id="prenota" class="button Prenota" value="Prenota e paga presso il locale">
 			</div>
+		</form>
+		<form id="paypal-form" action="" method="post">
+			<input type="hidden" name="cmd" value="_cart" />
+			<input type="hidden" name="upload" value="1" />
+			<input type="hidden" name="business" value="" />
+				        
+			<input type="hidden" name="currency_code" value="" />
+			<input type="submit" id="paypal-btn" class="btn" value="Prenota e paga con PayPal" />
 		</form>
 
 		<section id="contact" class="contact section-bg">

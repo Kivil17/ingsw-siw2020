@@ -4,6 +4,7 @@
 <title>Cart: Your Order</title>
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
+<link href="assets/img/bn.png" rel="icon">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="assets/js/jquery.shop.js"></script>
 </head>
@@ -68,7 +69,18 @@
 </div>
 
 <footer id="site-info">
-		
+		<div class="footer-top">
+			<div class="container">
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong><span>1991</span></strong>. All Rights
+				Reserved
+			</div>
+		</div>
 </footer>
 
 </body>

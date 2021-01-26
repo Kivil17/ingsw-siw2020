@@ -27,6 +27,8 @@ public class PrenotazioneTavolo extends HttpServlet {
 		String paramUtentePrenotato = req.getParameter("username");
 	 	String paramEmail = req.getParameter("email");
 	 	
+	 	String richiestaPagamento= req.getParameter("prenota");
+	 	
 	 	String richiesta = req.getParameter("pagina");
 	 	
 	 	System.out.println(paramIdTavolo);
@@ -84,7 +86,7 @@ public class PrenotazioneTavolo extends HttpServlet {
 		
 		if(richiesta.equals("Prenotazione"))
 			resp.sendRedirect("Prenotazione.jsp");
-		else if(richiesta.equals("Disco"))
+		else if(richiesta.equals("Disco") )
 			resp.sendRedirect("PrenotazioneDisco.jsp");
 		else if(richiesta.equals("Ombrellone"))
 			resp.sendRedirect("PrenotazioneOmbrellone.jsp");

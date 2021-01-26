@@ -27,12 +27,15 @@ function disponiOmbrelloni(ombrelloni){
 }
 
 Booking.ombrelloneW.addEventListener('click', (e) => {
+	e.preventDefault();
 	let selezionato = +e.target.textContent;
 	if(Booking.ombrelloni[selezionato-1].occupato){
-		Booking.messageStatus.textContent = 'Ombrellone '+selezionato+' è occupato.';
+		Booking.messageStatus.textContent = 'Ombrellone '+selezionato+' occupato.';
 	}
 	else{
+		Booking.messageStatus.textContent = ' ';
 		Booking.ombrelloneSelezionato.textContent = selezionato;
+		idOmbrellone.textContent = selezionato;
 	}
 });
 

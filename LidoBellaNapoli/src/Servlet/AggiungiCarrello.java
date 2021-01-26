@@ -38,8 +38,11 @@ public class AggiungiCarrello extends HttpServlet {
 		 String paramQuantita = request.getParameter("quantita");
 		 String username= request.getParameter("username");
 		 
+		 int q= Integer.parseInt(paramQuantita);
+		 double p= Double.parseDouble(paramPrezzo);
+		 
 		 int idOrdine= ++cont;
-		 int totaleOrdine=0;
+		 double totalePrezzo=0.0;
 		 
 		 CarrelloDao carrelloDao = DatabaseManager.getInstance().getDaoFactory().getCarrelloDao();
 		 
@@ -51,9 +54,13 @@ public class AggiungiCarrello extends HttpServlet {
 				carrello= new Carrello();			
 			}
 		 
+		 totalePrezzo=q*p;
+		 
+		 //String totPrezzo= Double.toString(totalePrezzo);
+		 
 		 session.setAttribute("nomeProdotto", paramNome);
 		 session.setAttribute("quantitaProdotto", paramQuantita);
-		 session.setAttribute("prezzoProdotto", paramPrezzo);
+		 session.setAttribute("prezzoProdotto", totalePrezzo);
 		 
 		 System.out.println(paramNome+" "+paramPrezzo);
 		 
@@ -62,11 +69,8 @@ public class AggiungiCarrello extends HttpServlet {
 		 carrello.setIdOrdine(idOrdine);
 		 carrello.setIdProdotto(paramNome);
 		 carrello.setNomeUtente(username);
-		 carrello.setQuantita(10);
-		 
-		 totaleOrdine=10*2;
-		 
-		 carrello.setTotaleOrdine(totaleOrdine);
+		 carrello.setQuantita(q);
+		 carrello.setTotaleOrdine(totalePrezzo);
 		 
 		 carrelloDao.save(carrello);
 			    

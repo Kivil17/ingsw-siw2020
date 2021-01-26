@@ -4,7 +4,9 @@
 <title>Cart: Checkout</title>
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
+<link href="assets/img/bn.png" rel="icon">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="assets/js/carrello.js"></script>
 <script src="assets/js/jquery.shop.js"></script>
 </head>
 
@@ -35,15 +37,15 @@
 		 <div id="pricing">
 			
 			<p id="shipping">
-				<strong>Shipping:</strong> <span id="sshipping"></span>
+				<strong>Shipping:</strong> <span id="sshipping">&euro;5</span>
 			</p>
 			
 			<p id="sub-total">
-				<strong>Total:</strong> <span id="stotal"></span>
+				<strong>Total:</strong> <span id="stotal"><input onload="totale()" type="text" name="stotal" id="stotal" readonly="readonly"/></span>
 			</p>
 		 </div>
 		 
-		 <form action="order.jsp" method="post" id="checkout-order-form">
+		 <form action="" method="post" id="paypal-form">
 		 	<h2>Your Details</h2>
 		 	
 		 	<fieldset id="fieldset-billing">
@@ -61,9 +63,14 @@
 		 		</div>
 		 	</fieldset>
 		 	
-		 	<p><input type="submit" id="submit-order" value="Confirm Order" class="btn" /></p>
-		 
-		 </form>
+		 	
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="upload" value="1" />
+				<input type="hidden" name="business" value="" />
+			        
+				<input type="hidden" name="currency_code" value="" />
+				<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+			</form>
 	</div>
 	
 	
@@ -71,7 +78,18 @@
 </div>
 
 <footer id="site-info">
-		
+		<div class="footer-top">
+			<div class="container">
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong><span>1991</span></strong>. All Rights
+				Reserved
+			</div>
+		</div>
 </footer>
 
 </body>

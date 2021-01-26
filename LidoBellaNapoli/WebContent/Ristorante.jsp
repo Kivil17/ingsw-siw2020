@@ -33,12 +33,7 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/styleRistorante.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -51,8 +46,7 @@
 				<h1 class="text-light">
 					<a href="Ristorante.jsp"><img src="assets/img/bn.png" alt=""class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+				
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -702,12 +696,7 @@
 					&copy; Copyright <strong><span>1991</span></strong>. All Rights
 					Reserved
 				</div>
-				<div class="credits">
-					<!-- All the links in the footer should remain intact. -->
-					<!-- You can delete the links only if you purchased the pro version. -->
-					<!-- Licensing information: https://bootstrapmade.com/license/ -->
-					<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-				</div>
+				
 			</div>
 		</footer>
 		<!-- End Footer -->

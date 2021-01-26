@@ -33,12 +33,7 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/stylePrenotazione.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -51,8 +46,7 @@
 				<h1 class="text-light">
 					<a href="Prenotazione.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+				
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -131,16 +125,7 @@
 		</section>
 
 		<section id="tavoli-w">
-			<!--<div class="tavolo x6 libero">1</div>
-			<div class="tavolo x4 libero">2</div>
-			<div class="tavolo x2 libero">3</div>
-			<div class="tavolo x4 libero">4</div>
-			<div class="tavolo x6 libero">5</div>
-			<div class="tavolo x6 libero">6</div>
-			<div class="tavolo x6 libero">7</div>
-			<div class="tavolo x4 libero">8</div>
-			<div class="tavolo x10 libero">9</div>
-			<div class="tavolo x14 libero">10</div>-->
+			
 		</section>
 
 		<p id="message-status"></p>

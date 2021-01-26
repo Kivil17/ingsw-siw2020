@@ -32,13 +32,10 @@
 
 <!-- Template Main CSS File -->
 <link href="assets/css/stylePrenotazioneDisco.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="assets/js/jquery.shop.js"></script>
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -51,8 +48,7 @@
 				<h1 class="text-light">
 					<a href="PrenotazioneDisco.jsp"><img src="assets/img/bn.png" alt="" class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+				
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -79,7 +75,7 @@
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>
 							</ul></li>
-						<li><a href="review.jsp">Reviews</a></li>
+						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
 				</c:if>
 			</nav>
@@ -129,16 +125,7 @@
 		</section>
 
 		<section id="tavoli-w">
-			<!--<div class="tavolo x6 libero">1</div>
-			<div class="tavolo x4 libero">2</div>
-			<div class="tavolo x2 libero">3</div>
-			<div class="tavolo x4 libero">4</div>
-			<div class="tavolo x6 libero">5</div>
-			<div class="tavolo x6 libero">6</div>
-			<div class="tavolo x6 libero">7</div>
-			<div class="tavolo x4 libero">8</div>
-			<div class="tavolo x10 libero">9</div>
-			<div class="tavolo x14 libero">10</div>-->
+			
 		</section>
 
 		<p id="message-status"></p>
@@ -159,8 +146,17 @@
 			<input type="hidden" name="pagina" id="pagina" value="Disco"/>
 			
 			<div class="form-item">
-				<input type="submit" id="prenota" class="button Prenota" value="Prenota">
+				<input type="submit" name="prenota" id="prenota" class="button Prenota" value="Prenota e paga presso il locale">
+				
 			</div>
+		</form>
+		<form id="paypal-form" action="" method="post">
+			<input type="hidden" name="cmd" value="_cart" />
+			<input type="hidden" name="upload" value="1" />
+			<input type="hidden" name="business" value="" />
+				        
+			<input type="hidden" name="currency_code" value="" />
+			<input type="submit" id="paypal-btn" class="btn" value="Prenota e paga con PayPal" />
 		</form>
 
 			<section id="contact" class="contact section-bg">

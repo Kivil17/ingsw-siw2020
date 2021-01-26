@@ -262,7 +262,7 @@ body#checkout-page #site-info {
 }
 
 #content > h1,
-#checkout-order-form h2 {
+.paypal-form h2 {
 	font-size: 2em;
 	text-align: center;
 }
@@ -272,28 +272,28 @@ body#checkout-page #site-info {
 	margin: 1em 0;
 }
 
-#checkout-order-form {
+.paypal-form {
 	margin: 1.5em 0;
 }
 
-#checkout-order-form fieldset {
+.paypal-form fieldset {
 	border: 1px solid #ddd;
 	border-radius: 6px;
 	padding: 1em;
 	margin-bottom: 1.3em;
 }
 
-#checkout-order-form legend {
+.paypal-form legend {
 	padding: 0.3em;
 	background: #fafafa;
 	font-weight: bold;
 }
 
-#checkout-order-form div {
+.paypal-form div {
 	margin-bottom: 1em;
 }
 
-#checkout-order-form label {
+.paypal-form label {
 	display: block;
 	font-weight: bold;
 	margin-bottom: 0.3em;
@@ -301,7 +301,7 @@ body#checkout-page #site-info {
 	color: goldenrod;
 }
 
-#checkout-order-form input[type="text"] {
+.paypal-form input[type="text"] {
 	width: 200px;
 	display: block;
 	background: #fff;
@@ -310,7 +310,7 @@ body#checkout-page #site-info {
 	padding: 0.3em;
 }
 
-#checkout-order-form input[type="date"] {
+.paypal-form input[type="date"] {
 	width: 200px;
 	display: block;
 	background: #fff;
@@ -319,7 +319,7 @@ body#checkout-page #site-info {
 	padding: 0.3em;
 }
 
-#checkout-order-form select {
+.paypal-form select {
 	width: 200px;
 	display: block;
 }

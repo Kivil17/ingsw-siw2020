@@ -7,8 +7,8 @@
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
+<script src="assets/js/carrello.js"></script>
+<link href="assets/img/bn.png" rel="icon">
 
 </head>
 
@@ -25,7 +25,12 @@
 	<div id="content">
 		<h1>Your Shopping Cart</h1>
 		<form id="shopping-cart" action="cart.jsp" method="post">
-			<table class="shopping-cart">
+			 
+			 <input type="hidden" id="nome" value='<c:out value="${nomeProdotto}"/>' />
+			 <input type="hidden" id="quantita" value='<c:out value="${quantitaProdotto}"/>' />
+			 <input type="hidden" id="prezzo" value='<c:out value="${prezzoProdotto}"/>' />
+			
+			<table id="id_table" class="shopping-cart">
 			  <thead>
 				<tr>
 					<th scope="col">Product</th>
@@ -34,17 +39,11 @@
 				</tr>
 			  </thead>
 			  <tbody>
-			  	<tr>
-			  		<td class='pname'><input id="nome" type="text" value='<c:out value="${nomeProdotto}"/>' readonly="readonly"/></td>
-			  		<td class='pqty'><input id="quantita" type='number'  min="1" max="100" value='<c:out value="${quantitaProdotto}"/>' class='qty'/></td>
-					<td class='pprice'><input id="prezzo" type="text" value='<c:out value="${prezzoProdotto}"/>' readonly="readonly"/></td>
-					<td class='pdelete'></td>
-				</tr>
 					
 			  </tbody>
 			</table>
 			<p id="sub-total">
-				<strong>Sub Total:</strong> <span id="stotal"></span>
+				<strong>Sub Total:</strong> <span id="stotal"><input  type="text" name="stotal" id="stotal" readonly="readonly"/></span>
 			</p>
 			<ul id="shopping-cart-actions">
 				<li>
@@ -66,6 +65,18 @@
 
 <footer id="site-info">
 		
+		<div class="footer-top">
+			<div class="container">
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong><span>1991</span></strong>. All Rights
+				Reserved
+			</div>
+		</div>
 </footer>
 
 </body>

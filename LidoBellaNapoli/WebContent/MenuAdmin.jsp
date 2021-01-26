@@ -33,12 +33,7 @@
 <!-- Template Main CSS File -->
 <link href="assets/css/styleMenuAdmin.css" rel="stylesheet">
 
-<!-- =======================================================
-  * Template Name: Squadfree - v2.3.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -130,7 +125,7 @@
 			
 			
 			<div class="container">
-			<!--    <form action="ScaricareProdotti" method="get"> -->
+			
 				  <div class="row">
 				    <div class="col">
 				    <table id='my_table' class='table'>
@@ -175,12 +170,6 @@
 			<div class="copyright">
 				&copy; Copyright <strong><span>1991</span></strong>. All Rights
 				Reserved
-			</div>
-			<div class="credits">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
 			</div>
 		</div>
 	</footer>

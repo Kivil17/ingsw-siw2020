@@ -47,8 +47,6 @@
 					<a href="Ristorante.jsp"><img src="assets/img/bn.png" alt=""
 						class="img-fluid"></a><span>Bella Napoli</span>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -69,7 +67,7 @@
 				<c:if test="${loggatoAdmin}">
 					<ul>
 						<li><a href="index.jsp">Home</a></li>
-						<li><a href="PrenotazioneOmbrellone.jsp">Ombrelloni
+						<li><a href="PrenotazioneAdmin.jsp">Ombrelloni
 								prenotati</a></li>
 						<li><a href="#beach">Gallery</a></li>
 						<li class="drop-down"><a href="">Services</a>
@@ -77,7 +75,7 @@
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 							</ul></li>
-						<li><a href="review.jsp">Reviews</a></li>
+						<li><a href="ReviewAdmin.jsp">Reviews</a></li>
 					</ul>
 				</c:if>
 			</nav>
@@ -353,12 +351,7 @@
 				&copy; Copyright <strong><span>1991</span></strong>. All Rights
 				Reserved
 			</div>
-			<div class="credits">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-			</div>
+			
 		</div>
 	</footer>
 	<!-- End Footer -->

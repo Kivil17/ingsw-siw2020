@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # tabella
 --------------------------------------------------------------*/
-.container input[type="button"]{
+input[type="button"]{
 	border: 0;
 	position: relative; 
 	left: 500px;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 4;
 }
 
-.container input[type="button"]:hover{
+input[type="button"]:hover{
 	opacity: 0.8;
 }
 

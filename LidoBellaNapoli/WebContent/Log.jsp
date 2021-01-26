@@ -1,8 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!DOCTYPE html>
-<html lang="en">
 
 	<title>Login</title>
 
@@ -14,25 +14,19 @@
 		<link href="assets/img/bn.png" rel="icon">
 		
 		<script src="jquery/jquery.min.js"></script>
-		<!---- jquery link local dont forget to place this in first than other script or link or may not work ---->
 		
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!---- boostrap.min link local ----->
 		
 		<link rel="stylesheet" href="css/style.css">
-		<!---- boostrap.min link local ----->
 
 		<script src="js/bootstrap.min.js"></script>
-		<!---- Boostrap js link local ----->
 		
 		<link rel="icon" href="images/icon.png" type="image/x-icon" />
-		<!---- Icon link local ----->
 		
 		<link href="assets/css/styleLogin.css" rel="stylesheet">
 
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<!---- Font awesom link local ----->
-	</head>
+</head>
 	<body>
 	<div class="container-fluid">
 		<div class="container">
@@ -40,7 +34,7 @@
  			<hr>
 			<div class="row">
 				<div class="col-md-5">
-					<!-- aggiornare l'indirizzamento del bottone-->
+				
  					<form role="form" action="Registrazione" method="post">
 						<fieldset>							
 							<p class="text-uppercase pull-center"><b>SIGN UP</b></p>	
@@ -71,7 +65,7 @@
 				</div>
 				
 				<div class="col-md-2">
-					<!-------null------>
+					
 				</div>
 				
 				<div class="col-md-5">
