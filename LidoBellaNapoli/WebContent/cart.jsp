@@ -7,12 +7,12 @@
 <meta charset="utf-8" />
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="assets/js/jquery.shop.js"></script>
+
 
 
 </head>
 
-<body>
+<body onload="aggiorna()">
 
 <div id="site">
 	<header id="masthead">
@@ -35,10 +35,10 @@
 			  </thead>
 			  <tbody>
 			  	<tr>
-			  		<td class='pname'><c:out value="${nomeProdotto}"/></td>
-			  		<td class='pqty'><input type='text' value='<c:out value="${quantitaProdotto}"/>' class='qty'/></td>
-					<td class='pprice'><c:out value="${prezzoProdotto}"/></td>
-					<td class='pdelete'><a href='' data-product='<c:out value="${nomeProdotto}"/>'>&times;</a></td>
+			  		<td class='pname'><input id="nome" type="text" value='<c:out value="${nomeProdotto}"/>' readonly="readonly"/></td>
+			  		<td class='pqty'><input id="quantita" type='number'  min="1" max="100" value='<c:out value="${quantitaProdotto}"/>' class='qty'/></td>
+					<td class='pprice'><input id="prezzo" type="text" value='<c:out value="${prezzoProdotto}"/>' readonly="readonly"/></td>
+					<td class='pdelete'></td>
 				</tr>
 					
 			  </tbody>

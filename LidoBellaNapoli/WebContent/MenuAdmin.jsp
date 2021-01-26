@@ -133,23 +133,28 @@
 			<!--    <form action="ScaricareProdotti" method="get"> -->
 				  <div class="row">
 				    <div class="col">
-				      <table class="table">
-				        <thead>
-				          <tr>
-				            <th scope="col">IdOrdine</th>
-				            <th scope="col">Nome Utente</th>
-				            <th scope="col">Prezzo</th>
-				          </tr>
-				        </thead>
-				        <tbody>
-				          
-				        </tbody>
-				      </table>
+				    <table id='my_table' class='table'>
+
+   							<thead>
+					          <tr>
+					            <th scope="col">IdOrdine</th>
+					            <th scope="col">Nome Utente</th>
+					            <th scope="col">Prezzo</th>
+					          </tr>
+				       		</thead>
+
+    						<tbody>
+
+    						</tbody>
+
+					</table><br/>
+
+					<input type='button' value='Carica Dati' onClick="caricaDati('my_table')" />
+				    
+				   
 				    </div>  
 				      
 				  </div>
-				
-			<button onclick="caricaDati()">Aggiorna Dati</button>
 			  
 			</div> 
 		
@@ -197,7 +202,6 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/recensione.js"></script>
 	<script src="assets/js/menuAdmin.js"></script>
 
 </body>

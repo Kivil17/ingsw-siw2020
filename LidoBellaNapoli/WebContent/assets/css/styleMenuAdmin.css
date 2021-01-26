@@ -28,6 +28,27 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/*--------------------------------------------------------------
+# tabella
+--------------------------------------------------------------*/
+input[type="button"]{
+	border: 0;
+	position: relative; 
+	left: 500px;
+	margin-top: 10px;
+	background: none;
+	font-size: 16px;
+	padding: 4px 4px;
+	background: lightskyblue;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 4;
+}
+
+input[type="button"]:hover{
+	opacity: 0.8;
+}
+
 
 
 /*--------------------------------------------------------------

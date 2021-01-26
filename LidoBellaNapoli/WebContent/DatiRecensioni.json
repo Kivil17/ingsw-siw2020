@@ -1,0 +1,44 @@
+[
+	{
+		"tipo": "Ristorante",
+		"nameUtente": "francesco",
+		"valutazione": 5,
+		"messaggio": "ciao, ottimo servizio! mangiare ottimo e persone deliziose, consiglio a tutti di provare le specialita della bella napoli!"
+	},
+	{
+		"tipo": "Ristorante",
+		"nameUtente": "cristina",
+		"valutazione": 3,
+		"messaggio": "mi aspettavo un servizio migliore ed anche un qualità di cibo piu alta!"
+	},
+	{
+		"tipo": "lido",
+		"nameUtente": "mario",
+		"valutazione": 4,
+		"messaggio": "disposizioni degli ombrelloni molto ordinata e spaziosa con molta attrezzatura, tornerò a tovarvi!"
+	},
+	{
+		"tipo": "discoteca",
+		"nameUtente": "giuseppe",
+		"valutazione": 3,
+		"messaggio": "niente di spettacolare ma nemmeno brutta, serate simpatiche e ottimo bar!"
+	},
+	{
+		"tipo": "lido",
+		"nameUtente": "maria",
+		"valutazione": 5,
+		"messaggio": "mi sono trovata benissimo, obrelloni, spazio, ordine e molto divertimento, a presto!"
+	},
+	{
+		"tipo": "Ristorante",
+		"nameUtente": "cataldo",
+		"valutazione": 5,
+		"messaggio": "pizza ottima, fragrante e di alta qualità, venite a provarla!"
+	},
+	{
+		"tipo": "discoteca",
+		"nameUtente": "artem",
+		"valutazione": 4,
+		"messaggio": "bar di ottima qualita e serate divertenti!"
+	}
+]

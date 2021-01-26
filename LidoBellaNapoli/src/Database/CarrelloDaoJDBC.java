@@ -27,7 +27,7 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 			statement.setString(2, carrello.getNomeUtente());
 			statement.setInt(3, carrello.getQuantita());
 			statement.setInt(4, carrello.getIdOrdine());
-			statement.setDouble(4, carrello.getIdOrdine());
+			statement.setDouble(5, carrello.getTotaleOrdine());
 			
 			statement.executeUpdate();
 		} catch (SQLException e) {
@@ -58,7 +58,7 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 				carrello.setNomeUtente(result.getString("nomeutente"));
 				carrello.setQuantita(result.getInt("quantita"));
 				carrello.setIdOrdine(result.getInt("idordine"));
-				carrello.setIdOrdine(result.getInt("totaleordine"));
+				carrello.setTotaleOrdine(result.getDouble("totaleordine"));
 			}
 		} catch (SQLException e) {
 			throw new PersistenceException(e.getMessage());

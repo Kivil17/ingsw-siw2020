@@ -155,22 +155,20 @@
 										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" onclick="sub()" id="sub" class="button">-</a>
-										<a href="#" onclick="add()" id="add" class="button">+</a>
+										<p>Quantità:<input name="quantita" id="quantita" type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
+									<input type="hidden" name="nome" value="Marinara"/>
+									<input type="hidden" name="prezzo" value="3,00"/>
 								</form>
-								<form class="form.add-to-cart" action="cart.jsp">
+								<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 									<dl>
 										<dt>Margherita</dt>
 										<dd class="price"> &euro;3,50</dd>
 										<dd class="ingredients">Solo Pomodoro, aglio, olio, origano, basilico.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" onclick="sub()" id="sub" class="button">-</a>
-										<a href="#" onclick="add()" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -181,9 +179,7 @@
 										<dd class="ingredients">Pomodoro, Mozzarella, salamino.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -194,10 +190,8 @@
 										<dd class="ingredients">Mozzarella, wurstel, patatine.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -207,10 +201,8 @@
 										<dd class="ingredients">Mozzarella, spek, rucola, grana.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -220,10 +212,8 @@
 										<dd class="ingredients">Pomodoro, Mozzarella, crudo, mozzarella a fette in uscita.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -233,10 +223,8 @@
 										<dd class="ingredients">Pomodoro, Mozzarella, ricotta, salame, cotto.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -246,10 +234,8 @@
 										<dd class="ingredients">Pomodoro, Mozzarella, Ricotta, Salame.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -259,10 +245,8 @@
 										<dd class="ingredients">Mozzarella, Pomodoro fresco, rucola, crudo, grana.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 						</div>
@@ -279,10 +263,8 @@
 										<dd class="price"> &euro;10,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -291,10 +273,8 @@
 										<dd class="price"> &euro;12,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -304,10 +284,8 @@
 										<dd class="ingredients">Calamari, pomodorini, basilico.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -316,10 +294,8 @@
 										<dd class="price"> &euro;10,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -329,10 +305,8 @@
 										<dd class="ingredients">Frutti di mare freschi con seppie e gamberetti.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -341,10 +315,8 @@
 										<dd class="price"> &euro;8,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -354,10 +326,8 @@
 										<dd class="ingredients">Crudo, pomodorini, basilico, piccante.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -366,10 +336,8 @@
 										<dd class="price"> &euro;8,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -378,9 +346,7 @@
 										<dd class="price"> &euro;8,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -398,9 +364,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -410,9 +374,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -422,9 +384,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -434,9 +394,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -446,9 +404,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -458,9 +414,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -470,9 +424,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -483,9 +435,7 @@
 										<dd class="ingredients">Nocciola, nutella e cioccolato fondente.</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -495,9 +445,7 @@
 										<dd class="price"> &euro;4,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -520,10 +468,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -532,10 +478,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -544,10 +488,8 @@
 										<dd class="price"> &euro;3,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -556,10 +498,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -568,10 +508,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -580,10 +518,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -592,10 +528,8 @@
 										<dd class="price"> &euro;2,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -604,10 +538,8 @@
 										<dd class="price"> &euro;3,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -616,9 +548,7 @@
 										<dd class="price"> &euro;3,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-										<a href="#" id="sub" class="button">-</a>
-										<a href="#" id="add" class="button">+</a>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
 										<button type="submit" >Carrello</button>
 									</div>
 								</form>
@@ -636,10 +566,8 @@
 										<dd class="price"> &euro;9,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -648,10 +576,8 @@
 										<dd class="price"> &euro;9,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -660,10 +586,8 @@
 										<dd class="price"> &euro;9,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -672,10 +596,8 @@
 										<dd class="price"> &euro;12,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -684,10 +606,8 @@
 										<dd class="price"> &euro;12,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -696,10 +616,8 @@
 										<dd class="price"> &euro;12,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -708,10 +626,8 @@
 										<dd class="price"> &euro;15,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -720,10 +636,8 @@
 										<dd class="price"> &euro;25,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 								<form class="form.add-to-cart" action="cart.jsp">
@@ -732,10 +646,8 @@
 										<dd class="price"> &euro;25,00</dd>
 									</dl>
 									<div id="numeroProdotti-w">
-										<p>Quantità: <span id="numeroProdotti">1</span></p>
-											<a href="#" id="sub" class="button">-</a>
-											<a href="#" id="add" class="button">+</a>
-											<button type="submit" >Carrello</button>
+										<p>Quantità:<input type="number" min="1" max="100"></p>
+										<button type="submit" >Carrello</button>
 									</div>
 								</form>
 						</div>

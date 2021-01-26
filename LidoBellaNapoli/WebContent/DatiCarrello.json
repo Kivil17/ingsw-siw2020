@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"nameUtente": "francesco",
+		"prezzo": "12,00"
+	},
+	{
+		"id": 2,
+		"nameUtente": "nicola",
+		"prezzo": "15,00"
+	},
+	{
+		"id": 3,
+		"nameUtente": "giovanni",
+		"prezzo": "20,00"
+	},
+	{
+		"id": 4,
+		"nameUtente": "gennaro",
+		"prezzo": "2,00"
+	},
+	{
+		"id": 5,
+		"nameUtente": "mario",
+		"prezzo": "115,00"
+	},
+	{
+		"id": 6,
+		"nameUtente": "grazia",
+		"prezzo": "21,00"
+	}
+]

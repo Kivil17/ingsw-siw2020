@@ -132,27 +132,26 @@
 			   <form action="ScaricareTavoli" method="get">
 				  <div class="row">
 				    <div class="col">
-				      <table class="table">
-				        <thead>
-				          <tr>
-				            <th scope="col">Numero Tavolo</th>
-				            <th scope="col">Nome Utente</th>
-				            <th scope="col">Numero Posti</th>
-				            <th scope="col">Data Prenotazione</th>
-				          </tr>
+				    <table  id='my_table' class='table' >
+
+   						<thead>
+					          <tr>
+					            <th scope="col">Numero Tavolo</th>
+					            <th scope="col">Nome Utente</th>
+					            <th scope="col">Numero Posti</th>
+					            <th scope="col">Data Prenotazione</th>
+					          </tr>
 				        </thead>
-				        <tbody>
-				          <tr>
-				          <!-- da implementare in js -->
-				            <th scope="row">1</th>
-				            <td>Mark</td>
-				            <td>4</td>
-				            <td>Otto</td>
-				            <!-- da implementare in js -->
-				          </tr>
-				          
-				        </tbody>
-				      </table>
+
+    						<tbody>
+
+    						</tbody>
+
+					</table><br/>
+
+					<input type='button' value='Carica Dati' onClick="caricaDati('my_table')" />
+				    
+				      
 				    </div>    
 				  </div>
 				</form>
@@ -203,7 +202,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/recensione.js"></script>
+	<script src="assets/js/prenotazioneAdmin.js"></script>
 
 </body>
 

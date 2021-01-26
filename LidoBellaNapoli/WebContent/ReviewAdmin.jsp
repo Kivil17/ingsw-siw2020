@@ -31,7 +31,7 @@
 <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="assets/css/styleRistorante.css" rel="stylesheet">
+<link href="assets/css/styleReviewAdmin.css" rel="stylesheet">
 
 <!-- =======================================================
   * Template Name: Squadfree - v2.3.0
@@ -133,7 +133,7 @@
 			  <form action="ScaricareRecensioni" method="get">
 				  <div class="row">
 				    <div class="col">
-				      <table class="table">
+				    <table id='my_table' class='table' >
 				        <thead>
 				          <tr>
 				            <th scope="col">Tipo recensione</th>
@@ -142,24 +142,30 @@
 				            <th scope="col">messaggio</th>
 				          </tr>
 				        </thead>
+
+    						<tbody>
+
+    						</tbody>
+
+					</table><br/>
+
+					<input type='button' value='Carica Dati' onClick="caricaDati('my_table')" />
+				    <!--   
 				        <tbody>
 				          <tr>
-				          <!-- da implementare in js -->
+				          
 				            <th scope="row">1</th>
 				            <td>Mark</td>
 				            <td>3</td>
 				            <td>ssgsvxgsxhjsxhshxbs</td>
-				           <!-- da implementare in js -->
+				           
 				          </tr>
 				          
 				        </tbody>
-				      </table>
+				      </table> -->
 				    </div>    
 				  </div>
-				<!-- oppure on loading sul file javascript di questa pagina che chaima la servlet per scaricare i dati necessari  -->
-				<div class="bottone">
-					<input type="submit" id="button">
-				</div>
+				
 			  </form>
 			</div> 
 			
@@ -206,7 +212,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/recensione.js"></script>
+	<script src="assets/js/recensioniAdmin.js"></script>
 
 </body>
 

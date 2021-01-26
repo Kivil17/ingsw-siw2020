@@ -1,0 +1,62 @@
+[
+	{
+		"numeroTavolo": 1,
+		"nameUtente": "francesco",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 2,
+		"nameUtente": "nicola",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 3,
+		"nameUtente": "giuseppe",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 4,
+		"nameUtente": "giovanni",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 5,
+		"nameUtente": "zarola",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 6,
+		"nameUtente": "mimmo",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 7,
+		"nameUtente": "maria",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 8,
+		"nameUtente": "armando",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 9,
+		"nameUtente": "caputo",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	},
+	{
+		"numeroTavolo": 10,
+		"nameUtente": "ciccio",
+		"numeroPosti": 5,
+		"dataPrenotazione": "15/05/20"
+	}
+]

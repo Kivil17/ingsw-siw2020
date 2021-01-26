@@ -3,18 +3,24 @@ numeroProdottiW = document.getElementById('numeroProdotti-w');
 numeroProdotti = document.getElementById('numeroProdotti');
 
 
-function add(){
+/*Booking.numeroProdottiW.addEventListener('click', (e) => {
+	e.preventDefault();
+	let num = +Booking.numeroProdotti.textContent;
+	if(e.target.id === 'add'){
+		Booking.numeroProdotti.textContent = num + 1;
+	}
+	else if(e.target.id === 'sub'){
+		Booking.numeroProdotti.textContent = num - 1;
+	}
+});*/
 
-	let numeroProdotti = +numeroProdotti.textContent;
-	if(target.id === 'add' && numeroProdotti <=19)
-		numeroProdotti.textContent = numeroProdotti + 1;
-	
+
+function add(){
+	let num = numeroProdotti.textContent;
+	numeroProdotti.textContent = num + 1;
 }
 
 function sub(){
-
-	let numeroProdotti = +numeroProdotti.textContent;
-	if(target.id === 'sub' && numeroProdotti >=1)
-		numeroProdotti.textContent = numeroProdotti - 1;
-	
+	let num = numeroProdotti.textContent;
+	numeroProdotti.textContent = num - 1;
 }

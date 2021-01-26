@@ -2,7 +2,7 @@
 function caricaDati(id_table) {
 
 	$.getJSON( //carica il JSON utilizzando una richiesta HTTP di tipo GET
-		'./DatiCarrello.json',
+		'./DatiRecensioni.json',
 		function(data) { //data contiene il JSON ottenuto dalla richiesta
 			console.log(data);
 			for (i = 0; i < data.length; i++) {
@@ -18,7 +18,7 @@ function caricaDati(id_table) {
 
 				var td = document.createElement('td');
 
-				var tx = document.createTextNode(data[i].id);
+				var tx = document.createTextNode(data[i].tipo);
 
 				td.appendChild(tx);
 
@@ -34,7 +34,15 @@ function caricaDati(id_table) {
 
 				var td = document.createElement('td');
 
-				var tx = document.createTextNode(data[i].prezzo);
+				var tx = document.createTextNode(data[i].valutazione);
+
+				td.appendChild(tx);
+
+				tr.appendChild(td);
+				
+				var td = document.createElement('td');
+
+				var tx = document.createTextNode(data[i].messaggio);
 
 				td.appendChild(tx);
 
