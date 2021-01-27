@@ -1,9 +1,9 @@
-
+/*
 numeroProdottiW = document.getElementById('numeroProdotti-w');
 numeroProdotti = document.getElementById('numeroProdotti');
 
 
-/*Booking.numeroProdottiW.addEventListener('click', (e) => {
+Booking.numeroProdottiW.addEventListener('click', (e) => {
 	e.preventDefault();
 	let num = +Booking.numeroProdotti.textContent;
 	if(e.target.id === 'add'){
@@ -12,7 +12,7 @@ numeroProdotti = document.getElementById('numeroProdotti');
 	else if(e.target.id === 'sub'){
 		Booking.numeroProdotti.textContent = num - 1;
 	}
-});*/
+});
 
 
 function add(){
@@ -24,3 +24,4 @@ function sub(){
 	let num = numeroProdotti.textContent;
 	numeroProdotti.textContent = num - 1;
 }
+*/

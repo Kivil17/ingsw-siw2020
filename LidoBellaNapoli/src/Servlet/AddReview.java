@@ -49,7 +49,12 @@ public class AddReview extends HttpServlet {
 			review = new Recensione(idRecensione);			
 		}
 		
-		review.setIdTipo(paramIdTipo);
+		if(richiesta.equals("Lido") || richiesta.equals("PrenotazioneOmbrellone"))
+			review.setIdTipo("Lido");
+		else if(richiesta.equals("Disco") || richiesta.equals("PrenotazioneDisco"))
+			review.setIdTipo("Disco");
+		else		
+			review.setIdTipo(paramIdTipo);
 		
 		switch (paramStella) {
 		 	case "1":

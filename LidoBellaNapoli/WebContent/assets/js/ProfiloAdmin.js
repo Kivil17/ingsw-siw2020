@@ -1,4 +1,4 @@
-var pivot = new WebDataRocks({
+/*var pivot = new WebDataRocks({
     container: "#wdr-component",
     toolbar: true,
     width: 800,
@@ -250,4 +250,4 @@ function getJSONData() {
         },
         
     ]
-}
+}*/

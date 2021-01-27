@@ -136,7 +136,7 @@
 					</div>
 				</div>
 				
-				<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
+				
 				
 					<div class="row portfolio-container" data-aos="fade-up">
 						<div class="col-lg-12 portfolio-item pizzeria ">
@@ -144,7 +144,7 @@
 									<div class="titolo">
 										<h2>PIZZE</h2>
 									</div>
-									
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt id="nome">Marinara</dt>
 											<dd class="price" id="prezzo"> &euro;3,00</dd>
@@ -156,8 +156,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Marinara"/>
 										<input type="hidden" name="prezzo" value="3.00"/>
-									
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Margherita</dt>
 											<dd class="price"> &euro;3,50</dd>
@@ -169,8 +169,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Margerita"/>
 										<input type="hidden" name="prezzo" value="3.50"/>
-									
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Diavola</dt>
 											<dd class="price"> &euro;4,50</dd>
@@ -182,7 +182,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Diavola"/>
 										<input type="hidden" name="prezzo" value="4.50"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 									
 										<dl>
 											<dt>Rocco</dt>
@@ -195,8 +196,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Rocco"/>
 										<input type="hidden" name="prezzo" value="5.50"/>
-									
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Rotolo</dt>
 											<dd class="price"> &euro;8,00</dd>
@@ -208,7 +209,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Rotolo"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Regina</dt>
 											<dd class="price"> &euro;8,50</dd>
@@ -220,7 +222,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Regina"/>
 										<input type="hidden" name="prezzo" value="8.50"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Ripieno</dt>
 											<dd class="price"> &euro;8,00</dd>
@@ -232,7 +235,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Ripieno"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Ripieno Fritto</dt>
 											<dd class="price"> &euro;8,50</dd>
@@ -244,7 +248,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Ripieno Fritto"/>
 										<input type="hidden" name="prezzo" value="8.50"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Italiana</dt>
 											<dd class="price"> &euro;8,50</dd>
@@ -256,7 +261,7 @@
 										</div>
 										<input type="hidden" name="nome" value="Italiana"/>
 										<input type="hidden" name="prezzo" value="8.50"/>
-									
+									</form>
 							</div>
 						</div>
 						
@@ -265,7 +270,7 @@
 									<div class="titolo">
 										<h2>CUCINA</h2>
 									</div>
-									
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Spaghetti alle vongole</dt>
 											<dd class="price"> &euro;10,00</dd>
@@ -276,7 +281,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Spaghetti alle vongole"/>
 										<input type="hidden" name="prezzo" value="10.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Spaghetti allo scoglio</dt>
 											<dd class="price"> &euro;12,00</dd>
@@ -287,7 +293,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Spaghetti allo scoglio"/>
 										<input type="hidden" name="prezzo" value="12.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Calamarata</dt>
 											<dd class="price"> &euro;9,00</dd>
@@ -299,7 +306,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Calamarata"/>
 										<input type="hidden" name="prezzo" value="9.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Paccheri con pescato del giorno</dt>
 											<dd class="price"> &euro;10,00</dd>
@@ -310,7 +318,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Paccheri con pescato del giorno"/>
 										<input type="hidden" name="prezzo" value="10.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Risotto alla pescatora</dt>
 											<dd class="price"> &euro;12,00</dd>
@@ -322,7 +331,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Risotto alla pescatora"/>
 										<input type="hidden" name="prezzo" value="12.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Gnocchi alla sorrentina</dt>
 											<dd class="price"> &euro;8,00</dd>
@@ -333,7 +343,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Gnocchi alla sorrentina"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Penne all'arrabiata</dt>
 											<dd class="price"> &euro;5,00</dd>
@@ -345,7 +356,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Penne all'arrabiata"/>
 										<input type="hidden" name="prezzo" value="5.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Trofie gorgonzola e noci</dt>
 											<dd class="price"> &euro;8,00</dd>
@@ -356,7 +368,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Trofie gorgonzola e noci"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Maccheroni fatti in casa con spek e porcini</dt>
 											<dd class="price"> &euro;8,00</dd>
@@ -367,7 +380,7 @@
 										</div>
 										<input type="hidden" name="nome" value="Maccheroni fatti in casa con spek e porcini"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
-									
+									</form>
 							</div>
 						</div>
 					
@@ -376,7 +389,7 @@
 									<div class="titolo">
 										<h2>DESSERT</h2>
 									</div>
-									
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Pistacchio di bronte</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -387,7 +400,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Pistacchio di bronte"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Cioccolato</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -398,7 +412,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Cioccolato"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Nocciola</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -409,7 +424,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Nocciola"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Rocher</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -420,7 +436,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Rocher"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Setteveli ricoperto di cioccolato</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -431,7 +448,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Setteveli ricoperto di cioccolato"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Setteveli alla nocciola</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -442,7 +460,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Setteveli alla nocciola"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Setteveli al cacao</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -453,7 +472,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Setteveli al cacao"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Degustando</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -465,7 +485,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Degustando"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Tiramisù</dt>
 											<dd class="price"> &euro;4,00</dd>
@@ -476,6 +497,7 @@
 										</div>
 										<input type="hidden" name="nome" value="Tiramisù"/>
 										<input type="hidden" name="prezzo" value="4.00"/>
+									</form>
 									
 										<div class="logo mr-auto">
 											<h1 class="text-light">
@@ -490,7 +512,7 @@
 									<div class="titolo">
 										<h2>BEVANDE</h2>
 									</div>
-									
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Acqua Naturale 1lt</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -501,7 +523,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Acqua Naturale 1lt"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Acqua Effervescente 1lt</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -512,7 +535,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Acqua Effervescente 1lt"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>CocaCola 1lt in vetro</dt>
 											<dd class="price"> &euro;3,00</dd>
@@ -523,7 +547,8 @@
 										</div>
 										<input type="hidden" name="nome" value="CocaCola 1lt in vetro"/>
 										<input type="hidden" name="prezzo" value="3.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>CocaCola 33cl in vetro</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -534,7 +559,8 @@
 										</div>
 										<input type="hidden" name="nome" value="CocaCola 33cl in vetro"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>CocaCola Zero 33cl in vetro</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -545,7 +571,8 @@
 										</div>
 										<input type="hidden" name="nome" value="CocaCola Zero 33cl in vetro"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Fanta 33cl in vetro</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -556,7 +583,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Fanta 33cl in vetro"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Sprite 33cl in vetro</dt>
 											<dd class="price"> &euro;2,00</dd>
@@ -567,7 +595,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Sprite 33cl in vetro"/>
 										<input type="hidden" name="prezzo" value="2.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Menabrea 66cl</dt>
 											<dd class="price"> &euro;3,00</dd>
@@ -578,7 +607,8 @@
 										</div>
 										<input type="hidden" name="nome" value="Menabrea 66cl"/>
 										<input type="hidden" name="prezzo" value="3.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>Ichnusa 33cl</dt>
 											<dd class="price"> &euro;3,00</dd>
@@ -589,7 +619,7 @@
 										</div>
 										<input type="hidden" name="nome" value="Ichnusa 33cl"/>
 										<input type="hidden" name="prezzo" value="3.00"/>
-									
+									</form>
 							</div>
 						</div>
 						
@@ -598,7 +628,7 @@
 									<div class="titolo">
 										<h2>VINI</h2>
 									</div>
-									
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>TENUTA IUZZOLINI ROSATO</dt>
 											<dd class="price"> &euro;9,00</dd>
@@ -609,7 +639,8 @@
 										</div>
 										<input type="hidden" name="nome" value="TENUTA IUZZOLINI ROSATO"/>
 										<input type="hidden" name="prezzo" value="9.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>TENUTA IUZZOLINI ROSSO</dt>
 											<dd class="price"> &euro;9,00</dd>
@@ -620,7 +651,8 @@
 										</div>
 										<input type="hidden" name="nome" value="TENUTA IUZZOLINI ROSSO"/>
 										<input type="hidden" name="prezzo" value="9.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>TENUTA IUZZOLINI BIANCO</dt>
 											<dd class="price"> &euro;9,00</dd>
@@ -631,7 +663,8 @@
 										</div>
 										<input type="hidden" name="nome" value="TENUTA IUZZOLINI BIANCO"/>
 										<input type="hidden" name="prezzo" value="9.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>CRITONE</dt>
 											<dd class="price"> &euro;12,00</dd>
@@ -642,7 +675,8 @@
 										</div>
 										<input type="hidden" name="nome" value="CRITONE"/>
 										<input type="hidden" name="prezzo" value="12.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>TERRE LONTANE</dt>
 											<dd class="price"> &euro;12,00</dd>
@@ -653,7 +687,8 @@
 										</div>
 										<input type="hidden" name="nome" value="TERRE LONTANE"/>
 										<input type="hidden" name="prezzo" value="12.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>MADRE GOCCIA</dt>
 											<dd class="price"> &euro;12,00</dd>
@@ -664,7 +699,8 @@
 										</div>
 										<input type="hidden" name="nome" value="MADRE GOCCIA"/>
 										<input type="hidden" name="prezzo" value="12.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>PRIMAFILA</dt>
 											<dd class="price"> &euro;15,00</dd>
@@ -675,7 +711,8 @@
 										</div>
 										<input type="hidden" name="nome" value="PRIMAFILA"/>
 										<input type="hidden" name="prezzo" value="15.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>MURANERA ROSSO</dt>
 											<dd class="price"> &euro;25,00</dd>
@@ -686,7 +723,8 @@
 										</div>
 										<input type="hidden" name="nome" value="MURANERA ROSSO"/>
 										<input type="hidden" name="prezzo" value="25.00"/>
-									
+									</form>
+									<form class="form.add-to-cart" action="AggiungiCarrello" method="post">
 										<dl>
 											<dt>LUMARE ROSATO</dt>
 											<dd class="price"> &euro;25,00</dd>
@@ -697,7 +735,7 @@
 										</div>
 										<input type="hidden" name="nome" value="LUMARE ROSATO"/>
 										<input type="hidden" name="prezzo" value="25.00"/>
-									
+									</form>
 							</div>
 						</div>
 						
