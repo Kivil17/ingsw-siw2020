@@ -37,6 +37,14 @@ public class Contact extends HttpServlet {
 			resp.sendRedirect("Prenotazione.jsp");
 		else if(richiesta.equals("Index"))
 			resp.sendRedirect("index.jsp");
+		else if(richiesta.equals("Disco"))
+			resp.sendRedirect("Disco.jsp");
+		else if(richiesta.equals("Lido"))
+			resp.sendRedirect("Lido.jsp");
+		else if(richiesta.equals("PrenotazioneDisco"))
+			resp.sendRedirect("PrenotazioneDisco.jsp");
+		else if(richiesta.equals("PrenotazioneOmbrellone"))
+			resp.sendRedirect("PrenotazioneOmbrellone.jsp");
 	 	
 	}
 	 public void sendEmail(String userEmail, String name, String subject1,String message) {

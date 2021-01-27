@@ -146,17 +146,16 @@
 			<input type="hidden" name="pagina" id="pagina" value="Disco"/>
 			
 			<div class="form-item">
-				<input type="submit" name="prenota" id="prenota" class="button Prenota" value="Prenota e paga presso il locale">
-				
+				<input type="submit" id="prenota" class="button Prenota"
+					value="Prenota e paga presso il locale"> <input
+					type="submit" id="prenota" class="button Prenota"
+					value="Prenota e paga online">
 			</div>
 		</form>
-		<form id="paypal-form" action="" method="post">
-			<input type="hidden" name="cmd" value="_cart" />
-			<input type="hidden" name="upload" value="1" />
-			<input type="hidden" name="business" value="" />
-				        
-			<input type="hidden" name="currency_code" value="" />
-			<input type="submit" id="paypal-btn" class="btn" value="Prenota e paga con PayPal" />
+		<form action="assets/img/fake-paypal.jpg" method="post"
+			target="_blank">
+			<input type="submit" id="prenota" class="button Prenota"
+				value="Inserisci dati Paypal">
 		</form>
 
 			<section id="contact" class="contact section-bg">
@@ -234,6 +233,9 @@
 									<div class="sent-message">Your message has been sent.
 										Thank you!</div>
 								</div>
+								<div class="form-group">
+										<input type="hidden" name="pagina" id="pagina" value="PrenotazioneDisco"></input>
+									</div>
 								<div class="text-center">
 									<button type="submit">Send Message</button>
 								</div>

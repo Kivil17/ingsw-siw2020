@@ -288,6 +288,9 @@
 								<div class="sent-message">Your message has been sent.
 									Thank you!</div>
 							</div>
+							<div class="form-group">
+										<input type="hidden" name="pagina" id="pagina" value="Lido"></input>
+									</div>
 							<div class="text-center">
 								<button type="submit">Send Message</button>
 							</div>
