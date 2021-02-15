@@ -1,16 +1,19 @@
 package Object;
 
+import java.util.Date;
+
 public class Tavolo {
 	private int id;
 	private String utenteprenotato;
 	private String email;
+	private Date data;
 	private boolean occupato;
 	
-	public Tavolo(int id, String utenteprenotato, String email) {
+	public Tavolo(int id, String utenteprenotato, String email, Date data) {
 		this.id = id;
 		this.utenteprenotato = utenteprenotato;
 		this.email = email;
-		
+		this.data= data;
 		this.occupato = true;
 	}
 	
@@ -18,6 +21,16 @@ public class Tavolo {
 		this.id = -1;
 		this.utenteprenotato = "";
 		this.email = "";
+		this.data= null;
+	}
+
+	
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
 	}
 
 	public String getEmail() {

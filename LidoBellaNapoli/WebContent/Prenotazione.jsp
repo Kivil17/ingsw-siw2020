@@ -55,7 +55,7 @@
 						<li><a href="Ristorante.jsp">Home Ristorante</a></li>
 						<li><a href="Menu.jsp">Book a product</a></li>
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
-						<li class="drop-down"><a href="">Services</a>
+						<li class="drop-down"><a href="#">Services</a>
 							<ul>
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>
@@ -69,7 +69,7 @@
 						<li><a href="MenuAdmin.jsp">prodotti prenotati</a></li>
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
-						<li class="drop-down"><a href="">Services</a>
+						<li class="drop-down"><a href="#">Services</a>
 							<ul>
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>
@@ -139,7 +139,7 @@
 			</div>
 			<label for="example-date-input" class="col-2 col-form-label">Date</label>
 			<div class="form-item">
-				<input class="input" type="date" value="2021-01-15" name="example-data-input" id="example-data-input">
+				<input class="input" type="date" value="2021-02-26" name="example-data-input" id="example-data-input">
 			</div>
 			
 			<input type="hidden" name="selezionato" id="selezionato"/>

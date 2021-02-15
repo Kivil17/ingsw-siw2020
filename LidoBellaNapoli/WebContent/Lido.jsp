@@ -70,7 +70,7 @@
 						<li><a href="PrenotazioneAdmin.jsp">Ombrelloni
 								prenotati</a></li>
 						<li><a href="#beach">Gallery</a></li>
-						<li class="drop-down"><a href="">Services</a>
+						<li class="drop-down"><a href="#">Services</a>
 							<ul>
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>

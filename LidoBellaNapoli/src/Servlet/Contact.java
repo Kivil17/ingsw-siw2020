@@ -67,7 +67,6 @@ public class Contact extends HttpServlet {
 	            props.put("mail.smtp.auth", "true");
 	            props.put("mail.smtp.starttls.required", "true");
 
-	            //java.security.Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
 	            Session mailSession = Session.getDefaultInstance(props, null);
 	            mailSession.setDebug(sessionDebug);
 	            Message msg = new MimeMessage(mailSession);

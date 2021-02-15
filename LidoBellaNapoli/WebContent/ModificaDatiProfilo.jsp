@@ -97,6 +97,7 @@
 	<!-- End Header -->
 
 	<div class="container emp-profile">
+		<form action="SalvaDatiProfilo" method="post">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="profile-img">
@@ -115,7 +116,8 @@
 								aria-controls="home" aria-selected="true">About</a></li>
 							
 						</ul>
-						<input type="button" onclick="location.href='ModificaDatiProfilo.jsp'" value="Modifica Dati">
+						<input name="usernameProfiloOld" id="usernameProfiloOld" type="hidden" value="<c:out value="${username}" />"/>
+						<input type="submit" value="SalvaDati">
 						
 					</div>
 				</div>
@@ -123,6 +125,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4">
+					
 				</div>
 				<div class="col-md-8">
 					<div class="tab-content profile-tab" id="myTabContent">
@@ -133,7 +136,9 @@
 									<label>User Id:</label>
 								</div>
 								<div class="col-md-6">
-									<p><c:out value="${username}"/></p>
+									<p>
+										<input name="usernameProfilo" id="usernameProfilo" value="<c:out value="${username}"/>"/>
+									</p>
 								</div>
 							</div>
 							<div class="row">
@@ -141,7 +146,9 @@
 									<label>Email:</label>
 								</div>
 								<div class="col-md-6">
-									<p><c:out value="${email}"/></p>
+									<p>
+										<input name="emailProfilo" id="emailProfilo" value="<c:out value="${email}"/>"/>
+									</p>
 								</div>
 							</div>
 							<div class="row">
@@ -149,7 +156,9 @@
 									<label>Password:</label>
 								</div>
 								<div class="col-md-6">
-									<p><c:out value="${password}"/></p>
+									<p>
+										<input name="passwordProfilo" id="passwordProfilo" value="<c:out value="${password}"/>"/>
+									</p>
 								</div>
 							</div>
 							
@@ -181,25 +190,24 @@
 									<div class="col-md-6">
 										<p>
 											<br>
-											<input id="bottoneVisualizza" type="button" onclick="location.href='visualizzaDocumento.jsp'" value="view"/>
+											<input type="button" onclick="location.href='visualizzaDocumento.jsp'" value="view"/>
 										</p>
 									</div>
 								</div>
-								<form action="EliminaUtente" method="post">
-									<div class="row">
+								<div class="row">
+									<form action="EliminaUtente" method="GET">
 											<div class="col-md-6">
 												<br>
 												<label>Cancel Your Subscription</label>
 											</div>
 											<div class="col-md-6">
-													<input name="usernameProfilo" id="usernameProfilo" type="hidden" value="<c:out value="${username}" />"/>
 													<p>
 														<br>
-														<input id="bottoneCancella" type="submit" value="cancel"/>
+														<input type="submit" value="cancel"/>
 													</p>
 											</div>
-									</div>
-								</form>
+									</form>
+								</div>
 						</div>
 						
 					</div>

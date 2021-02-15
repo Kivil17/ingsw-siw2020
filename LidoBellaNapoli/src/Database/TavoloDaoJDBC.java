@@ -1,6 +1,7 @@
 package Database;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,12 +23,13 @@ public class TavoloDaoJDBC implements TavoloDao{
 		Connection connection = this.dataSource.getConnection();
 		try {
 			
-			String insert = "insert into tavolo(id,utenteprenotato,email,occupato) values (?,?,?,?)";
+			String insert = "insert into tavolo(id,utenteprenotato,email,data,occupato) values (?,?,?,?,?)";
 			PreparedStatement statement = connection.prepareStatement(insert);
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());
 			statement.setString(3, tavolo.getEmail());
-			statement.setBoolean(4, tavolo.isOccupato());
+			statement.setDate(4, (Date) tavolo.getData());
+			statement.setBoolean(5, tavolo.isOccupato());
 			
 			statement.executeUpdate();
 		} catch (SQLException e) {
@@ -57,6 +59,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 				tavolo.setId(result.getInt("id"));				
 				tavolo.setUtentePrenotato(result.getString("utenteprenotato"));
 				tavolo.setEmail(result.getString("email"));
+				tavolo.setData(result.getDate("data"));
 				tavolo.setOccupato(result.getBoolean("occupato"));
 				
 			}
@@ -76,12 +79,13 @@ public class TavoloDaoJDBC implements TavoloDao{
 	public void update(Tavolo tavolo) {
 		Connection connection = this.dataSource.getConnection();
 		try {
-			String update = "update tavolo SET id = ?, utenteprenotato = ?,email = ? occupato=? WHERE id=?";
+			String update = "update tavolo SET id = ?, utenteprenotato = ?,email = ?, data = ? ,occupato = ? WHERE id = ?";
 			PreparedStatement statement = connection.prepareStatement(update);
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());
 			statement.setString(3, tavolo.getEmail());
-			statement.setBoolean(4, tavolo.isOccupato());
+			statement.setDate(4, (Date) tavolo.getData());
+			statement.setBoolean(5, tavolo.isOccupato());
 			System.out.println("aggiorno");
 			statement.executeUpdate();
 		} catch (SQLException e) {

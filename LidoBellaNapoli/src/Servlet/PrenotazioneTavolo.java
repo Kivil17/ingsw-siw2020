@@ -1,6 +1,10 @@
 package Servlet;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,7 +30,8 @@ public class PrenotazioneTavolo extends HttpServlet {
 		String paramIdTavolo= req.getParameter("selezionato");
 		String paramUtentePrenotato = req.getParameter("username");
 	 	String paramEmail = req.getParameter("email");
-	 	
+	 	String paramData = req.getParameter("example-data-input");
+	 		
 	 	String richiestaPagamento= req.getParameter("prenota");
 	 	
 	 	String richiesta = req.getParameter("pagina");
@@ -77,10 +82,21 @@ public class PrenotazioneTavolo extends HttpServlet {
 			tavolo = new Tavolo();			
 		}
 		
+		Date dataTavolo=null;
+		try {
+			dataTavolo = new SimpleDateFormat("yyyy/MM/dd").parse(paramData);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		tavolo.setId(idTavolo);
 		tavolo.setEmail(paramEmail);
 		tavolo.setOccupato(true);
 		tavolo.setUtentePrenotato(paramUtentePrenotato);
+		tavolo.setData(dataTavolo);
+		
+		System.out.println(paramData+""+paramIdTavolo);
 		
 		tavoloDao.save(tavolo);
 		

@@ -8,11 +8,11 @@ body {
 }
 
 a {
-  color: #67b0d1;
+  color: goldenrod;
 }
 
 a:hover {
-  color: #8ec4dd;
+  color: gold;
   text-decoration: none;
 }
 
@@ -395,6 +395,16 @@ h1, h2, h3, h4, h5, h6 {
 .profile-head h6{
     color: #0062cc;
 }
+
+.profile-head input{
+	float: right;
+	color: white;
+	background-color: lightskyblue;
+	padding: 4px 12px;
+    border: 1px solid rgba(30, 48, 56, 0.2);
+    transition: all .4s ease-in;
+}
+
 .profile-edit-btn{
     border: none;
     border-radius: 1.5rem;
@@ -471,3 +481,17 @@ h1, h2, h3, h4, h5, h6 {
     align-content: center;
     
 }
+
+.col-md-6 input{
+	float: right;
+    background: none;
+    color: inherit;
+    padding: 4px 12px;
+    border: 1px solid rgba(30, 48, 56, 0.2);
+    transition: all .4s ease-in;
+    background-color: lightskyblue;
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+

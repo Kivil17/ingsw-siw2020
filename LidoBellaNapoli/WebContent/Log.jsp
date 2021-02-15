@@ -39,21 +39,21 @@
 						<fieldset>							
 							<p class="text-uppercase pull-center"><b>SIGN UP</b></p>	
  							<div class="form-group">
-								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username">
+								<input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username" required>
 							</div>
 
 							<div class="form-group">
-								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
+								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" required>
 							</div>
 							<div class="form-group">
-								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
 							</div>
 								<div class="form-group">
-								<input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Repeat Password">
+								<input type="password" name="password2" id="password2" class="form-control input-lg" placeholder="Repeat Password" required>
 							</div>
 							<div class="form-check">
 								<label class="form-check-label">
-								  <input type="checkbox" class="form-check-input">
+								  <input type="checkbox" class="form-check-input" required>
 								  By Clicking register you're agree to our policy & terms
 								</label>
 							  </div>
@@ -74,10 +74,10 @@
 							<p class="text-uppercase"><b>Login using your account:</b></p>	
  								
 							<div class="form-group">
-								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email">
+								<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
+								<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" required>
 							</div>
 							<div>
 								<input type="submit" class="btn btn-md" value="Sign In">

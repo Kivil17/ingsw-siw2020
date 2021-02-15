@@ -11,5 +11,6 @@
 		{ "posti" : 4, "occupato" : true},
 		{ "posti" : 10, "occupato" : false},
 		{ "posti" : 14, "occupato" : false}
+		
 	]
 }

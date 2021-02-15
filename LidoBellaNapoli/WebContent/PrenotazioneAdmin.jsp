@@ -56,7 +56,7 @@
 						<li><a href="Menu.jsp">Book a product</a></li>
 						<li><a href="Prenotazione.jsp">Book a table</a></li>
 						<li><a href="#portfolio">Gallery</a></li>
-						<li class="drop-down"><a href="">Services</a>
+						<li class="drop-down"><a href="#">Services</a>
 							<ul>
 								<li><a href="Disco.jsp">Disco</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>

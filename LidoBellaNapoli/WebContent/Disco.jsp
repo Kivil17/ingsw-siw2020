@@ -57,7 +57,7 @@
 						<li><a href="index.jsp">Home</a></li>
 						<li><a href="PrenotazioneDisco.jsp">Book a table</a></li>
 						<li><a href="#disco">Cocktails</a></li>
-						<li class="drop-down"><a href="">Services</a>
+						<li class="drop-down"><a href="#">Services</a>
 							<ul>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>

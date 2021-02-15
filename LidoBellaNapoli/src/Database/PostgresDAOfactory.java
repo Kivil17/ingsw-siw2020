@@ -17,7 +17,7 @@ public class PostgresDAOfactory extends DAOFactory {
 		try {
 			Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
 			
-			//remoto
+			
 			dataSource = new DataSource("jdbc:postgresql://rogue.db.elephantsql.com:5432/tsqupsrd", "tsqupsrd", "Pe9L5sV2M3qiSfYwr-117QLIgPyzsYZX");
 			
 		} catch (Exception e) {

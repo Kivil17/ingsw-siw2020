@@ -61,7 +61,7 @@
 	        <ul>
 	          <li class="active"><a href="index.jsp">Home</a></li>
 	          <li><a href="Ristorante.jsp">Restaurant</a></li>
-	          <li class="drop-down"><a href="">Services</a>
+	          <li class="drop-down"><a href="#">Services</a>
 	            <ul>
 	              <li><a href="Lido.jsp">Beach Resort</a></li>
 	              <li><a href="Disco.jsp">Disco</a></li>
