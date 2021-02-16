@@ -28,7 +28,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());
 			statement.setString(3, tavolo.getEmail());
-			statement.setDate(4, (Date) tavolo.getData());
+			statement.setString(4, tavolo.getData());
 			statement.setBoolean(5, tavolo.isOccupato());
 			
 			statement.executeUpdate();
@@ -59,7 +59,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 				tavolo.setId(result.getInt("id"));				
 				tavolo.setUtentePrenotato(result.getString("utenteprenotato"));
 				tavolo.setEmail(result.getString("email"));
-				tavolo.setData(result.getDate("data"));
+				tavolo.setData(result.getString("data"));
 				tavolo.setOccupato(result.getBoolean("occupato"));
 				
 			}
@@ -84,7 +84,7 @@ public class TavoloDaoJDBC implements TavoloDao{
 			statement.setInt(1, tavolo.getId());
 			statement.setString(2, tavolo.getUtentePrenotato());
 			statement.setString(3, tavolo.getEmail());
-			statement.setDate(4, (Date) tavolo.getData());
+			statement.setString(4, tavolo.getData());
 			statement.setBoolean(5, tavolo.isOccupato());
 			System.out.println("aggiorno");
 			statement.executeUpdate();

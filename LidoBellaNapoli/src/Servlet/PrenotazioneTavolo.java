@@ -82,19 +82,12 @@ public class PrenotazioneTavolo extends HttpServlet {
 			tavolo = new Tavolo();			
 		}
 		
-		Date dataTavolo=null;
-		try {
-			dataTavolo = new SimpleDateFormat("yyyy/MM/dd").parse(paramData);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		tavolo.setId(idTavolo);
 		tavolo.setEmail(paramEmail);
 		tavolo.setOccupato(true);
 		tavolo.setUtentePrenotato(paramUtentePrenotato);
-		tavolo.setData(dataTavolo);
+		tavolo.setData(paramData);
 		
 		System.out.println(paramData+""+paramIdTavolo);
 		

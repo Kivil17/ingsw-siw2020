@@ -58,7 +58,7 @@ public class UtilDao {
 		
 			String create = "create SEQUENCE sequenza_id;"
 					+ "create table utente(\"username\" varchar(255) primary key, password varchar(255),email varchar(255),registrato boolean);"
-					+ "create table tavolo(\"id\" int primary key, utenteprenotato varchar(255), email varchar(255), data date,occupato boolean);"
+					+ "create table tavolo(\"id\" int primary key, utenteprenotato varchar(255), email varchar(255), data varchar(255), occupato boolean);"
 					+ "create table ombrellone(\"id\" int primary key, utenteprenotato varchar(255),email varchar(255),occupato boolean);"
 					+ "create table prodotto(nome varchar(255), prezzo double precision);"
 					+ "create table recensione(\"idrecensione\" int primary key, idtipo varchar(255), onestar int, twostars int, threestars int, fourstars int, fivestars int, message varchar(255));"

@@ -6,10 +6,10 @@ public class Tavolo {
 	private int id;
 	private String utenteprenotato;
 	private String email;
-	private Date data;
+	private String data;
 	private boolean occupato;
 	
-	public Tavolo(int id, String utenteprenotato, String email, Date data) {
+	public Tavolo(int id, String utenteprenotato, String email, String data) {
 		this.id = id;
 		this.utenteprenotato = utenteprenotato;
 		this.email = email;
@@ -25,11 +25,11 @@ public class Tavolo {
 	}
 
 	
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 

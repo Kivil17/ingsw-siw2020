@@ -262,6 +262,12 @@
 										<input type="hidden" name="nome" value="Italiana"/>
 										<input type="hidden" name="prezzo" value="8.50"/>
 									</form>
+									
+									<div class="logo mr-auto">
+											<h1 class="text-light">
+												<img src="assets/img/pizza.jpg" alt="" class="img-fluid">
+											</h1>
+									</div>
 							</div>
 						</div>
 						
@@ -381,6 +387,13 @@
 										<input type="hidden" name="nome" value="Maccheroni fatti in casa con spek e porcini"/>
 										<input type="hidden" name="prezzo" value="8.00"/>
 									</form>
+									
+									<div class="logo mr-auto">
+											<h1 class="text-light">
+												<img src="assets/img/cucina.jpg" alt="" class="img-fluid">
+											</h1>
+									</div>
+									
 							</div>
 						</div>
 					
@@ -499,11 +512,11 @@
 										<input type="hidden" name="prezzo" value="4.00"/>
 									</form>
 									
-										<div class="logo mr-auto">
-											<h1 class="text-light">
-												<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
-											</h1>
-										</div>
+									<div class="logo mr-auto">
+										<h1 class="text-light">
+											<img src="assets/img/domenicopenna.png" alt="" class="img-fluid">
+										</h1>
+									</div>
 							</div>
 						</div>
 					
@@ -620,6 +633,13 @@
 										<input type="hidden" name="nome" value="Ichnusa 33cl"/>
 										<input type="hidden" name="prezzo" value="3.00"/>
 									</form>
+									
+									<div class="logo mr-auto">
+											<h1 class="text-light">
+												<img src="assets/img/bevande.jpg" alt="" class="img-fluid">
+											</h1>
+									</div>
+									
 							</div>
 						</div>
 						
@@ -736,6 +756,13 @@
 										<input type="hidden" name="nome" value="LUMARE ROSATO"/>
 										<input type="hidden" name="prezzo" value="25.00"/>
 									</form>
+									
+									<div class="logo mr-auto">
+											<h1 class="text-light">
+												<img src="assets/img/vini.jpg" alt="" class="img-fluid">
+											</h1>
+									</div>
+									
 							</div>
 						</div>
 						

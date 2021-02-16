@@ -251,3 +251,58 @@ function getJSONData() {
         
     ]
 }*/
+
+
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart2);
+
+var r1 = Math.random() * (10 - 1) + 1;
+var r2 = Math.random() * (10 - 1) + 1;
+var r3 = Math.random() * (10 - 1) + 1;
+var r4 = Math.random() * (10 - 1) + 1;
+var r5 = Math.random() * (10 - 1) + 1;
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Product', 'quantity by price'],
+  ['Pizza', r1],
+  ['Bevande', r2],
+  ['Cucina', r3],
+  ['Vini', r4],
+  ['Dessert', r5]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Prodotti venduti', 'width':800, 'height':500};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+
+var r6 = Math.random() * (10 - 1) + 1;
+var r7 = Math.random() * (10 - 1) + 1;
+var r8 = Math.random() * (10 - 1) + 1;
+var r9 = Math.random() * (10 - 1) + 1;
+var r10 = Math.random() * (10 - 1) + 1;
+
+function drawChart2() {
+  var data = google.visualization.arrayToDataTable([
+  ['User', 'time by operation'],
+  ['Francesco', r6],
+  ['Giuseppe', r7],
+  ['Nicola', r8],
+  ['Giovanni', r9],
+  ['Gino', r10]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Utenti Frequenti', 'width':800, 'height':500};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
