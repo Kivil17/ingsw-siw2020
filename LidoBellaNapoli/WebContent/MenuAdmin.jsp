@@ -125,7 +125,7 @@
 			
 			
 			<div class="container">
-			
+				<!-- <form action="MenuAdmin" method="post"> -->
 				  <div class="row">
 				    <div class="col">
 				    <table id='my_table' class='table'>
@@ -139,18 +139,26 @@
 				       		</thead>
 
     						<tbody>
+								<tr>
+									<!--  
+									<td><c:out value="${listIdOrdine}" /></td>
 
+									<td><c:out value="${listNomeUtente}" /></td>
+
+									<td><c:out value="${listPrezzo}" /></td>
+									-->
+								</tr>
     						</tbody>
 
 					</table><br/>
 
-					<input type='button' value='Carica Dati' onClick="caricaDati('my_table')" />
+					<input type='submit' value='Ultimi Prodotti Prenotati' onClick="caricaDati('my_table')"/>
 				    
 				   
 				    </div>  
 				      
 				  </div>
-			  
+			  <!-- </form> -->
 			</div> 
 		
 		

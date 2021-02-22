@@ -42,7 +42,7 @@ Booking.ombrelloneW.addEventListener('click', (e) => {
 document.forms[0].addEventListener('submit', (e) => {
 	e.preventDefault();
 	if(Booking.ombrelloneSelezionato.textContent == '-'){
-		Booking.messageStatus.textContent = 'E necessario selezionare un ombrellone.';
+		Booking.messageStatus.textContent = 'Selezionare almeno un ombrellone.';
 		return
 	}
 	sendBooking();
@@ -57,7 +57,7 @@ function sendBooking(){
 		body: bookingForm,
 		method: 'post'
 	});
-	Booking.messageStatus.textContent = 'La prenotazione è andata a buon fine.';
+	Booking.messageStatus.textContent = 'Prenotazione andata a buon fine.';
 	document.forms[0].reset();
 
 }

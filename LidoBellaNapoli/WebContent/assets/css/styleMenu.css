@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 {
-  font-size: 20px;
+  font-size: 12px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a {
   padding: 12px 20px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   text-transform: none;
   color: #25607a;

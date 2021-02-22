@@ -10,7 +10,7 @@
 <script src="assets/js/jquery.shop.js"></script>
 </head>
 
-<body id="checkout-page">
+<body id="checkout-page" onload="aggiorna()">
 
 <div id="site">
 	<header id="masthead">
@@ -59,7 +59,7 @@
 		 		</div>
 		 		<div>
 		 			<label for="date">Date</label>
-					<input type="date" value="2021-01-15" id="example-data-input">
+					<input type="date" value="2021-02-26" id="example-data-input">
 		 		</div>
 		 	</fieldset>
 		 	

@@ -1,6 +1,7 @@
 package Servlet;
 
 import java.io.IOException;
+import java.sql.Array;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -13,34 +14,30 @@ import javax.servlet.http.HttpSession;
 
 import Database.DAOFactory;
 import Object.Recensione;
-import Object.Utente;
 import ObjectDao.RecensioneDao;
-import ObjectDao.UtenteDAO;
 
 /**
- * Servlet implementation class ScaricareRecensoni
+ * Servlet implementation class RecensioniAdmin
  */
-@WebServlet("/ScaricareRecensoni")
-public class ScaricareRecensioni extends HttpServlet {
+@WebServlet("/RecensioniAdmin")
+public class RecensioniAdmin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    
+	private String tipoRecensione = null;
+	private Float valutazione = null;
+	private String messaggio = null;
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		
+		System.out.println("entra recensoni admin");
 		DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
 		RecensioneDao recensioneDao = factory.getRecensioneDAO();
 		List<Recensione> recensione = recensioneDao.findAll();
 		
-		List<String> tipoRecensione = null;
-		List<Integer> valutazione = null;
-		List<String> messaggio = null;
+		tipoRecensione = recensione.get(recensione.size()-1).getIdTipo();
+		valutazione = recensione.get(recensione.size()-1).getRating();
+		messaggio = recensione.get(recensione.size()-1).getMessage();
 		
-		for (int i = 0; i < recensione.size(); i++) {
-			tipoRecensione.add(recensione.get(i).getIdTipo());
-			valutazione.add(recensione.get(i).getReviewTot());
-			messaggio.add(recensione.get(i).getMessage());
-		}
 		
 		session.setAttribute("listTipoReview", tipoRecensione);
 		session.setAttribute("listValutazioneReview", valutazione);

@@ -6,6 +6,8 @@ Booking.numeroPersone = document.getElementById('numeroPersone');
 Booking.tavoliW = document.getElementById('tavoli-w');
 Booking.tavoloSelezionato = document.getElementById('tavoloSelezionato');
 idTavolo = document.getElementById('selezionato');
+selServlet = document.getElementById('selezionatoServlet');
+
 
 Booking.messageStatus = document.getElementById('message-status');
 
@@ -54,7 +56,6 @@ Booking.numeroPersoneW.addEventListener('click', (e) => {
 
 Booking.tavoliW.addEventListener('click', (e) => {
 	e.preventDefault();
-
 	let selezionato = +e.target.textContent;
 	if (Booking.tavoli[selezionato - 1].occupato) {
 		Booking.messageStatus.textContent = 'Il tavolo ' + selezionato + ' risulta occupato.';
@@ -64,77 +65,119 @@ Booking.tavoliW.addEventListener('click', (e) => {
 		Booking.messageStatus.textContent = ' ';
 		Booking.tavoloSelezionato.textContent = selezionato;
 		idTavolo.textContent = selezionato;
-
+		
+		
 		if (selezionato == 1 && parseInt(Booking.numeroPersone.textContent) <= 6)
+		{
+			selServlet.value = 1;
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			
+		}
 		else if(selezionato == 1 && parseInt(Booking.numeroPersone.textContent) > 6)
 		{
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 2 && parseInt(Booking.numeroPersone.textContent) <= 4)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			selServlet.value = 2;
+		}
 		else if (selezionato == 2 && parseInt(Booking.numeroPersone.textContent) > 4){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 3 && parseInt(Booking.numeroPersone.textContent) <= 2)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 2 persone.';
+			selServlet.value = 3;			
+		}
 		else if (selezionato == 3 && parseInt(Booking.numeroPersone.textContent) > 2){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 4 && parseInt(Booking.numeroPersone.textContent) <= 4)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			selServlet.value = 4;			
+		}
 		else if (selezionato == 4 && parseInt(Booking.numeroPersone.textContent) > 4){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 5 && parseInt(Booking.numeroPersone.textContent) <= 6)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			selServlet.value = 5;			
+		}
 		else if (selezionato == 5 && parseInt(Booking.numeroPersone.textContent) > 6){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 6 && parseInt(Booking.numeroPersone.textContent) <= 6)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			selServlet.value = 6;			
+		}
 		else if (selezionato == 6 && parseInt(Booking.numeroPersone.textContent) > 6){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 7 && parseInt(Booking.numeroPersone.textContent) <= 6)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 6 persone.';
+			selServlet.value = 7;			
+		}
 		else if (selezionato == 7 && parseInt(Booking.numeroPersone.textContent) > 6){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 8 && parseInt(Booking.numeroPersone.textContent) <= 4)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 4 persone.';
+			selServlet.value = 8;			
+		}
 		else if (selezionato == 8 && parseInt(Booking.numeroPersone.textContent) > 4){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 9 && parseInt(Booking.numeroPersone.textContent) <= 10)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 10 persone.';
+			selServlet.value = 9;			
+		}
 		else if (selezionato == 9 && parseInt(Booking.numeroPersone.textContent) > 10){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 		if (selezionato == 10 && parseInt(Booking.numeroPersone.textContent) <= 14)
+		{
 			Booking.messageStatus.textContent = 'Tavolo da 14 persone.';
+			selServlet.value = 10;			
+		}
 		else if (selezionato == 10 && parseInt(Booking.numeroPersone.textContent) > 14){
 			Booking.tavoloSelezionato.textContent = '-';
 			idTavolo.textContent = '-';
 			Booking.messageStatus.textContent = 'Tavolo non disponibile troppe persone.';
+			selServlet.value = 0;
 		}
 
 }

@@ -99,13 +99,13 @@ Booking.tavoliW.addEventListener('click', (e) => {
 	}
 });
 
-/*document.forms[0].addEventListener('submit', (e) => {
+document.forms[0].addEventListener('submit', (e) => {
 	e.preventDefault();
 	if(Booking.tavoloSelezionato.textContent == '-'){
-		Booking.messageStatus.textContent = ' necessario selezionare un tavolo.';
+		Booking.messageStatus.textContent = ' Necessario selezionare un tavolo.';
 		return
 	}
-	Booking.messageStatus.textContent = 'prenotazione confermata.';
+	Booking.messageStatus.textContent = 'Prenotazione andata a buon fine.';
 	document.forms[0].reset();
 	sendBooking();
 });
@@ -120,7 +120,7 @@ function sendBooking(){
 		body: bookingForm,
 		method: 'post'
 	});
-	Booking.messageStatus.textContent = 'prenotazione confermata.';
+	Booking.messageStatus.textContent = 'Prenotazione andata a buon fine.';
 	document.forms[0].reset();
 
-}*/
+}

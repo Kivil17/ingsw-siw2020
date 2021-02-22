@@ -8,6 +8,8 @@
 <link href="assets/css/styleCarrello.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="assets/js/carrello.js"></script>
+<script src="assets/js/jquery.shop.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 <link href="assets/img/bn.png" rel="icon">
 
 </head>
@@ -30,33 +32,65 @@
 			 <input type="hidden" id="quantita" value='<c:out value="${quantitaProdotto}"/>' />
 			 <input type="hidden" id="prezzo" value='<c:out value="${prezzoProdotto}"/>' />
 			
-			<table id="id_table" class="shopping-cart">
-			  <thead>
-				<tr>
-					<th scope="col">Product</th>
-					<th scope="col">Quantity</th>
-					<th scope="col" colspan="2">Price</th>
-				</tr>
-			  </thead>
-			  <tbody>
-					
-			  </tbody>
-			</table>
+			
+			<div id="myDynamicTable">
+				<table id="id_table" class="shopping-cart">
+				  <thead>
+					<tr>
+						<th scope="col">Product</th>
+						<th scope="col">Quantity</th>
+						<th scope="col">Price</th>
+					</tr>
+				  </thead>
+				  <tbody id="id_body">
+						
+				  </tbody>
+				</table>
+			
+			
+			</div>
 			<p id="sub-total">
-				<strong>Sub Total:</strong> <span id="stotal"><input  type="text" name="stotal" id="stotal" readonly="readonly"/></span>
+				
+				<strong>Total: </strong> <span id="stotal2">&euro;<c:out value="${totaleOrdine}"/> </span>
+				<input type="hidden" id="stotal" value="1"/>
 			</p>
 			<ul id="shopping-cart-actions">
-				<li>
-					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-				</li>
+				<!--<li>
+					<input type="submit" name="delete" id="empty-cart" onload="svuotaCarrello()" class="btn" value="Empty Cart" />
+				</li> -->
 				<li>
 					<a href="Menu.jsp" class="btn">Continue Shopping</a>
 				</li>
-				<li>
-					<a href="checkout.jsp" class="btn">Go To Checkout</a>
-				</li>
 			</ul>
 		</form>
+		
+		<form action="" method="post" id="paypal-form">
+		 	<h2>Your Details</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<div>
+		 			<label for="name">Name</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" required/>
+		 		</div>
+		 		<div>
+		 			<label for="email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" required/>
+		 		</div>
+		 		<div>
+		 			<label for="date">Date</label>
+					<input type="date" value="2021-02-26" id="example-data-input" required/>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	
+				<input type="hidden" name="cmd" value="_cart" />
+				<input type="hidden" name="upload" value="1" />
+				<input type="hidden" name="business" value="" />
+			        
+				<input type="hidden" name="currency_code" value="" />
+				
+				<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+			</form>
 	</div>
 	
 	

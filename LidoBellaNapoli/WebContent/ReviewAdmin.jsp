@@ -124,37 +124,38 @@
 			
 			
 			<div class="container">
-			  <form action="ScaricareRecensioni" method="post">
+			 <!-- <form action="RecensioniAdmin" method="post"> -->
 				  <div class="row">
 				    <div class="col">
 				    <table id='my_table' class='table' >
 				        <thead>
 				          <tr>
 				            <th scope="col">Tipo recensione</th>
-				            <th scope="col">valutazione</th>
-				            <th scope="col">messaggio</th>
+				            <th scope="col">Nome Utente</th>
+				            <th scope="col">Valutazione</th>
+				            <th scope="col">Messaggio</th>
 				          </tr>
 				        </thead>
     						<tbody>
 								<tr>
-									<c:forEach var="item" items="${listTipoReview}">
-									    <td>
-									       <c:out value="${item}" />
-									    </td>
-									</c:forEach>
-								    <td></td>
-								    <td></td>
-  								</tr>
+
+									<!-- <td><c:out value="${listTipoReview}" /></td>
+
+									<td><c:out value="${listValutazioneReview}" /></td>
+
+									<td><c:out value="${listMessaggioReview}" /></td>-->
+
+								</tr>
     						</tbody>
 
 					</table><br/>
 
-					<input type='submit' value='Carica Dati'/> <!--  onClick="caricaDati('my_table')"--> 
+					<input type='submit' value='Ultime Recensioni' onClick="caricaDati('my_table')"/>  
 				    
 				    </div>    
 				  </div>
 				
-			  </form>
+			 <!-- </form> -->
 			</div> 
 			
 	</main>
@@ -195,7 +196,7 @@
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
-	<!--  <script src="assets/js/recensioniAdmin.js"></script> -->
+	<script src="assets/js/recensioniAdmin.js"></script>
 
 </body>
 

@@ -70,7 +70,7 @@
 						<li><a href="index.jsp">Home</a></li>
 						<li><a href="PrenotazioneAdmin.jsp">tavoli prenotati</a></li>
 						<li><a href="#disco">Cocktail</a></li>
-						<li class="drop-down"><a href="#">Services</a>
+						<li class="drop-down"><a href="">Services</a>
 							<ul>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>
@@ -148,14 +148,9 @@
 			<div class="form-item">
 				<input type="submit" id="prenota" class="button Prenota"
 					value="Prenota e paga presso il locale"> <input
-					type="submit" id="prenota" class="button Prenota"
+					type="submit" onclick="window.open('http://www.paypal.com/it/signin')" id="prenota" class="button Prenota"
 					value="Prenota e paga online">
 			</div>
-		</form>
-		<form action="assets/img/fake-paypal.jpg" method="post"
-			target="_blank">
-			<input type="submit" id="prenota" class="button Prenota"
-				value="Inserisci dati Paypal">
 		</form>
 
 			<section id="contact" class="contact section-bg">
@@ -171,7 +166,7 @@
 							<div class="info-box mb-4">
 								<i class="bx bx-map"></i>
 								<h3>Our Address</h3>
-								<p>Via corf? 7, Rossano Scalo, C</p>
+								<p>Via Corfù 7, Rossano Scalo, C</p>
 							</div>
 						</div>
 

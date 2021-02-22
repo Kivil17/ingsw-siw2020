@@ -56,6 +56,8 @@ public class AddReview extends HttpServlet {
 		else		
 			review.setIdTipo(paramIdTipo);
 		
+		System.out.println(paramStella);
+		
 		switch (paramStella) {
 		 	case "1":
 		 		newReview = review.getOneStar() + 1;
@@ -79,6 +81,7 @@ public class AddReview extends HttpServlet {
 		 		break;
 		}
 		
+		System.out.println(review.getRating());
 		review.setMessage(paramMessage);
 		
 		reviewDao.save(review);

@@ -148,14 +148,10 @@
 			<div class="form-item">
 				<input type="submit" id="prenota" class="button Prenota"
 					value="Prenota e paga presso il locale"> <input
-					type="submit" id="prenota" class="button Prenota"
+					type="submit" onclick="window.open('http://www.paypal.com/it/signin')" id="prenota" class="button Prenota"
 					value="Prenota e paga online">
+				
 			</div>
-		</form>
-		<form action="assets/img/fake-paypal.jpg" method="post"
-			target="_blank">
-			<input type="submit" id="prenota" class="button Prenota"
-				value="Inserisci dati Paypal">
 		</form>
 
 		<section id="contact" class="contact section-bg">
@@ -171,7 +167,7 @@
 						<div class="info-box mb-4">
 							<i class="bx bx-map"></i>
 							<h3>Our Address</h3>
-							<p>Via corf? 7, Rossano Scalo, C</p>
+							<p>Via Corfù 7, Rossano Scalo, C</p>
 						</div>
 					</div>
 
@@ -243,8 +239,9 @@
 									Thank you!</div>
 							</div>
 							<div class="form-group">
-										<input type="hidden" name="pagina" id="pagina" value="PrenotazioneOmbrellone"></input>
-									</div>
+								<input type="hidden" name="pagina" id="pagina"
+									value="PrenotazioneOmbrellone"></input>
+							</div>
 							<div class="text-center">
 								<button type="submit">Send Message</button>
 							</div>

@@ -666,7 +666,7 @@
 									class="star star-2" for="star-2-2"></label> <input
 									class="star star-1" id="star-1-2" onclick="CambiaId(1)" type="radio" name="star" /> <label
 									class="star star-1" for="star-1-2"></label>
-									<input type="hidden" name="valore" id="valore"/>
+									<input type="hidden" name="valore" id="valore" />
 									<input type="hidden" name="pagina" id="pagina" value="Ristorante"/>
 								<div class="rev-box">
 									<textarea name="message" id="message" class="review" col="30" name="review" placeholder="Write a review."></textarea>

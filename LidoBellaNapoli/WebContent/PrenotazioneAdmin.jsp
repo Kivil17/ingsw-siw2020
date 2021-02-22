@@ -123,7 +123,7 @@
 			
 			
 			<div class="container">
-			   <form action="ScaricareTavoli" method="get">
+			   <!-- <form action="TavoloAdmin" method="post"> -->
 				  <div class="row">
 				    <div class="col">
 				    <table  id='my_table' class='table' >
@@ -138,17 +138,27 @@
 				        </thead>
 
     						<tbody>
+								<tr>
+								
+									<!--  
+									<td><c:out value="${listNumeroTavolo}" /></td>
 
+									<td><c:out value="${listNomeUtente}" /></td>
+									
+									<td><c:out value="${listData}" /></td>
+									-->
+
+								</tr>
     						</tbody>
 
 					</table><br/>
 
-					<input type='button' value='Carica Dati' onClick="caricaDati('my_table')" />
+					<input type='submit' value='Tavoli Prenotati' onClick="caricaDati('my_table')"/>
 				    
 				      
 				    </div>    
 				  </div>
-				</form>
+				<!--  </form> -->
 			  
 			</div> 
 		

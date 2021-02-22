@@ -1,13 +1,12 @@
 package Database;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+import java.util.LinkedList;
+import java.util.List;
 import Object.Tavolo;
-import Object.Utente;
 import ObjectDao.TavoloDao;
 
 public class TavoloDaoJDBC implements TavoloDao{
@@ -149,6 +148,37 @@ public class TavoloDaoJDBC implements TavoloDao{
 				}
 			}
 		return 0;
+	}
+
+	@Override
+	public List<Tavolo> findAll() {
+		Connection connection = this.dataSource.getConnection();
+		List<Tavolo> tavoli = new LinkedList<>();
+		try {
+			Tavolo tavolo;
+			PreparedStatement statement;
+			String query = "select * from tavolo";
+			statement = connection.prepareStatement(query);
+			ResultSet result = statement.executeQuery();
+			while (result.next()) {
+				tavolo = new Tavolo();
+				tavolo.setId(result.getInt("id"));
+				tavolo.setUtentePrenotato(result.getString("utenteprenotato"));				
+				tavolo.setEmail(result.getString("email"));
+				tavolo.setData(result.getString("data"));
+				tavolo.setOccupato(result.getBoolean("occupato"));
+		        tavoli.add(tavolo);
+			}
+		} catch (SQLException e) {
+			throw new PersistenceException(e.getMessage());
+		}	 finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				throw new PersistenceException(e.getMessage());
+			}
+		}
+		return tavoli;
 	}
 
 }

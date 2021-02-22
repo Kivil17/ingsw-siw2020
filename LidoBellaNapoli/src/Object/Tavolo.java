@@ -1,7 +1,5 @@
 package Object;
 
-import java.util.Date;
-
 public class Tavolo {
 	private int id;
 	private String utenteprenotato;

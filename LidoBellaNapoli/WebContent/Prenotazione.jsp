@@ -139,10 +139,10 @@
 			</div>
 			<label for="example-date-input" class="col-2 col-form-label">Date</label>
 			<div class="form-item">
-				<input class="input" type="date" value="2021-02-26" name="example-data-input" id="example-data-input">
+				<input class="input" type="date" value="2021-02-26" name="example-data-input" id="example-data-input" >
 			</div>
 			
-			<input type="hidden" name="selezionato" id="selezionato"/>
+			<input type="hidden" name="selezionatoServlet" id="selezionatoServlet" value="0"/>
 			<input type="hidden" name="pagina" id="pagina" value="Prenotazione"/>
 			
 			<div class="form-item">

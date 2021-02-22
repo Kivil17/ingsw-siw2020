@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # tabella
 --------------------------------------------------------------*/
-input[type="button"]{
+input[type="submit"]{
 	border: 0;
 	position: relative; 
-	left: 500px;
+	left: 480px;
 	margin-top: 10px;
 	background: none;
 	font-size: 16px;
@@ -45,9 +45,14 @@ input[type="button"]{
 	border-radius: 4;
 }
 
-input[type="button"]:hover{
+input[type="submit"]:hover{
 	opacity: 0.8;
 }
+
+th,td{
+	text-align: center;
+}
+
 
 
 /*--------------------------------------------------------------

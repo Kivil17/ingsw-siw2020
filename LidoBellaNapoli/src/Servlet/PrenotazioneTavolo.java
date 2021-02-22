@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,24 +28,27 @@ public class PrenotazioneTavolo extends HttpServlet {
    
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		String paramIdTavolo= req.getParameter("selezionato");
+		
+		Random rand= new Random();
+		String paramIdTavolo= req.getParameter("selezionatoServlet");
 		String paramUtentePrenotato = req.getParameter("username");
 	 	String paramEmail = req.getParameter("email");
 	 	String paramData = req.getParameter("example-data-input");
-	 		
+	 	
 	 	String richiestaPagamento= req.getParameter("prenota");
 	 	
 	 	String richiesta = req.getParameter("pagina");
 	 	
-	 	System.out.println(paramIdTavolo);
 	 	int idTavolo=0;
 	 	
 		switch (paramIdTavolo) {
+			case "0":
+				idTavolo= 1 + rand.nextInt(9);
 		 	case "1":
-		 		idTavolo=1;
+		 		idTavolo= 1;
 		 		break;
 		 	case "2":
-		 		idTavolo=2;
+		 		idTavolo= 2;
 		 		break;
 		 	case "3":
 		 		idTavolo=3;
@@ -72,6 +76,8 @@ public class PrenotazioneTavolo extends HttpServlet {
 		 		break;
 		}
 		 	
+		System.out.println(idTavolo);
+		
 	 	DAOFactory factory = DAOFactory.getDAOFactory(DAOFactory.POSTGRESQL);
 	 	TavoloDao tavoloDao = factory.getTavoloDAO();
 		Tavolo tavolo = tavoloDao.findByPrimaryKey(idTavolo);

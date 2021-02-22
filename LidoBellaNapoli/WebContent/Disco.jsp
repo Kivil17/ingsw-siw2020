@@ -57,7 +57,7 @@
 						<li><a href="index.jsp">Home</a></li>
 						<li><a href="PrenotazioneDisco.jsp">Book a table</a></li>
 						<li><a href="#disco">Cocktails</a></li>
-						<li class="drop-down"><a href="#">Services</a>
+						<li class="drop-down"><a href="">Services</a>
 							<ul>
 								<li><a href="Ristorante.jsp">Ristorante</a></li>
 								<li><a href="Lido.jsp">Beach Resort</a></li>
@@ -173,7 +173,7 @@
 								class="img-fluid" alt="">
 							<div class="portfolio-links">
 								<a href="assets/img/disco/cocktail/CampariGin.png">
-									<p>Campari-Gin</p>
+									<p>Campari Gin</p>
 								</a>
 							</div>
 						</div>
@@ -202,7 +202,7 @@
 							<img src="assets/img/disco/cocktail/BloodyMary.png"
 								class="img-fluid" alt="">
 							<div class="portfolio-links">
-								<a href="assets/img/disco/cocktail/BloodyMary.png"><p>Bloddy
+								<a href="assets/img/disco/cocktail/BloodyMary.png"><p>Bloody
 										Mary</p></a>
 							</div>
 						</div>

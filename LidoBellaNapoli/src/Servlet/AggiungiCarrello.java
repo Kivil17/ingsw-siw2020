@@ -1,6 +1,7 @@
 package Servlet;
 
 import java.io.IOException;
+import java.util.StringTokenizer;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -29,9 +30,9 @@ public class AggiungiCarrello extends HttpServlet {
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		 HttpSession session = request.getSession();
+		HttpSession session = request.getSession();
 		
-			
+		
 		 
 		 String paramNome= request.getParameter("nome");
 		 String paramPrezzo = request.getParameter("prezzo");
@@ -55,12 +56,14 @@ public class AggiungiCarrello extends HttpServlet {
 			}
 		 
 		 totalePrezzo=q*p;
+		 System.out.println(totalePrezzo);
 		 
-		 //String totPrezzo= Double.toString(totalePrezzo);
+		 String totPrezzo= Double.toString(totalePrezzo);
 		 
 		 session.setAttribute("nomeProdotto", paramNome);
 		 session.setAttribute("quantitaProdotto", paramQuantita);
-		 session.setAttribute("prezzoProdotto", totalePrezzo);
+		 session.setAttribute("prezzoProdotto", paramPrezzo);
+		 session.setAttribute("totaleOrdine", totPrezzo);
 		 
 		 System.out.println(paramNome+" "+paramPrezzo);
 		 

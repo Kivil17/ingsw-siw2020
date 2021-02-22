@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
 
 import Object.Carrello;
 import ObjectDao.CarrelloDao;
@@ -147,6 +149,37 @@ public class CarrelloDaoJDBC implements CarrelloDao{
 				}
 			}
 		return 0;
+	}
+
+	@Override
+	public List<Carrello> findAll() {
+		Connection connection = this.dataSource.getConnection();
+		List<Carrello> carrelli = new LinkedList<>();
+		try {
+			Carrello carrello;
+			PreparedStatement statement;
+			String query = "select * from tavolo";
+			statement = connection.prepareStatement(query);
+			ResultSet result = statement.executeQuery();
+			while (result.next()) {
+				carrello = new Carrello();
+				carrello.setIdProdotto(result.getString("idprodotto"));
+				carrello.setNomeUtente(result.getString("nomeutente"));				
+				carrello.setQuantita(result.getInt("quantita"));
+				carrello.setIdOrdine(result.getInt("idordine"));
+				carrello.setTotaleOrdine(result.getDouble("totaleordine"));
+		        carrelli.add(carrello);
+			}
+		} catch (SQLException e) {
+			throw new PersistenceException(e.getMessage());
+		}	 finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				throw new PersistenceException(e.getMessage());
+			}
+		}
+		return carrelli;
 	}
 
 }
