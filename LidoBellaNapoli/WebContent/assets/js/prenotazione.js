@@ -56,7 +56,9 @@ Booking.numeroPersoneW.addEventListener('click', (e) => {
 
 Booking.tavoliW.addEventListener('click', (e) => {
 	e.preventDefault();
+	
 	let selezionato = +e.target.textContent;
+	
 	if (Booking.tavoli[selezionato - 1].occupato) {
 		Booking.messageStatus.textContent = 'Il tavolo ' + selezionato + ' risulta occupato.';
 	}
@@ -180,7 +182,7 @@ Booking.tavoliW.addEventListener('click', (e) => {
 			selServlet.value = 0;
 		}
 
-}
+	}
 });
 
 /*document.forms[0].addEventListener('submit', (e) => {

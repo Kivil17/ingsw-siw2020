@@ -235,7 +235,7 @@
 						<div class="info-box mb-4">
 							<i class="bx bx-map"></i>
 							<h3>Our Address</h3>
-							<p>Via corfù 7, Rossano Scalo, C</p>
+							<p>Via corfu' 7, Rossano Scalo, C</p>
 						</div>
 					</div>
 
@@ -243,7 +243,7 @@
 						<div class="info-box  mb-4">
 							<i class="bx bx-envelope"></i>
 							<h3>Email Us</h3>
-							<p>lidoBellaNapoli@outlook.it</p>
+							<p>bellanapoli198717@gmail.com</p>
 						</div>
 					</div>
 
